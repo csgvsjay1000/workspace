@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../slog_api.h
+stdio.h
+-
+
+/root/workspace/TeamTalk/slog/src_test/test_slog.cpp
+slog_api.h
+/root/workspace/TeamTalk/slog/src_test/slog_api.h
+

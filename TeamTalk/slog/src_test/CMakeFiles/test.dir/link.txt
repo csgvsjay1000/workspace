@@ -1,0 +1,1 @@
+/usr/bin/c++       CMakeFiles/test.dir/test_slog.cpp.o  -o test  -L..  -L/usr/local/log4cxx/lib -rdynamic -Wl,-Bstatic -lslog -Wl,-Bdynamic -llog4cxx -Wl,-rpath,..:/usr/local/log4cxx/lib 

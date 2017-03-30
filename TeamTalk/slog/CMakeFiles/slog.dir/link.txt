@@ -1,0 +1,2 @@
+/usr/bin/ar cr libslog.a  CMakeFiles/slog.dir/slog_api.cpp.o
+/usr/bin/ranlib libslog.a

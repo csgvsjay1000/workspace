@@ -1,0 +1,1 @@
+/root/workspace/TeamTalk/base/CMakeFiles/base.dir
