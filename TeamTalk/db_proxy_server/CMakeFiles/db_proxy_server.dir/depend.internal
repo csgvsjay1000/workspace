@@ -4,10 +4,11 @@
 CMakeFiles/db_proxy_server.dir/DBPool.cpp.o
  /root/workspace/TeamTalk/base/ConfigFileReader.h
  /root/workspace/TeamTalk/base/StringUtils.h
- /root/workspace/TeamTalk/base/slog/slog_api.h
+ /root/workspace/TeamTalk/base/Thread.h
  /root/workspace/TeamTalk/base/util.h
  /root/workspace/TeamTalk/db_proxy_server/DBPool.cpp
  /root/workspace/TeamTalk/db_proxy_server/DBPool.h
+ /root/workspace/TeamTalk/slog/slog_api.h
  /usr/local/mysql/include/my_alloc.h
  /usr/local/mysql/include/my_list.h
  /usr/local/mysql/include/mysql.h
@@ -15,13 +16,33 @@ CMakeFiles/db_proxy_server.dir/DBPool.cpp.o
  /usr/local/mysql/include/mysql_time.h
  /usr/local/mysql/include/mysql_version.h
  /usr/local/mysql/include/typelib.h
+CMakeFiles/db_proxy_server.dir/business/UserModel.cpp.o
+ ../base/StringUtils.h
+ ../base/Thread.h
+ ../base/public_define.h
+ ../base/util.h
+ ../slog/slog_api.h
+ /root/workspace/TeamTalk/db_proxy_server/business/UserModel.cpp
+ /root/workspace/TeamTalk/db_proxy_server/business/UserModel.h
+ /usr/local/mysql/include/my_alloc.h
+ /usr/local/mysql/include/my_list.h
+ /usr/local/mysql/include/mysql.h
+ /usr/local/mysql/include/mysql_com.h
+ /usr/local/mysql/include/mysql_time.h
+ /usr/local/mysql/include/mysql_version.h
+ /usr/local/mysql/include/typelib.h
+ DBPool.h
 CMakeFiles/db_proxy_server.dir/db_proxy_server.cpp.o
  ../base/StringUtils.h
- ../base/slog/slog_api.h
+ ../base/public_define.h
  ../base/util.h
+ ../slog/slog_api.h
+ /root/workspace/TeamTalk/base/Thread.h
  /root/workspace/TeamTalk/base/util.h
  /root/workspace/TeamTalk/db_proxy_server/DBPool.h
+ /root/workspace/TeamTalk/db_proxy_server/business/UserModel.h
  /root/workspace/TeamTalk/db_proxy_server/db_proxy_server.cpp
+ /root/workspace/TeamTalk/db_proxy_server/test/DBTestUser.h
  /usr/local/mysql/include/my_alloc.h
  /usr/local/mysql/include/my_list.h
  /usr/local/mysql/include/mysql.h
@@ -29,3 +50,11 @@ CMakeFiles/db_proxy_server.dir/db_proxy_server.cpp.o
  /usr/local/mysql/include/mysql_time.h
  /usr/local/mysql/include/mysql_version.h
  /usr/local/mysql/include/typelib.h
+CMakeFiles/db_proxy_server.dir/test/DBTestUser.cpp.o
+ ../base/public_define.h
+ /root/workspace/TeamTalk/base/StringUtils.h
+ /root/workspace/TeamTalk/base/util.h
+ /root/workspace/TeamTalk/db_proxy_server/business/UserModel.h
+ /root/workspace/TeamTalk/db_proxy_server/test/DBTestUser.cpp
+ /root/workspace/TeamTalk/db_proxy_server/test/DBTestUser.h
+ /root/workspace/TeamTalk/slog/slog_api.h

@@ -98,16 +98,66 @@ CMakeFiles/db_proxy_server.dir/db_proxy_server.cpp.o.provides: CMakeFiles/db_pro
 
 CMakeFiles/db_proxy_server.dir/db_proxy_server.cpp.o.provides.build: CMakeFiles/db_proxy_server.dir/db_proxy_server.cpp.o
 
+CMakeFiles/db_proxy_server.dir/test/DBTestUser.cpp.o: CMakeFiles/db_proxy_server.dir/flags.make
+CMakeFiles/db_proxy_server.dir/test/DBTestUser.cpp.o: test/DBTestUser.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /root/workspace/TeamTalk/db_proxy_server/CMakeFiles $(CMAKE_PROGRESS_3)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/db_proxy_server.dir/test/DBTestUser.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/db_proxy_server.dir/test/DBTestUser.cpp.o -c /root/workspace/TeamTalk/db_proxy_server/test/DBTestUser.cpp
+
+CMakeFiles/db_proxy_server.dir/test/DBTestUser.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/db_proxy_server.dir/test/DBTestUser.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /root/workspace/TeamTalk/db_proxy_server/test/DBTestUser.cpp > CMakeFiles/db_proxy_server.dir/test/DBTestUser.cpp.i
+
+CMakeFiles/db_proxy_server.dir/test/DBTestUser.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/db_proxy_server.dir/test/DBTestUser.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /root/workspace/TeamTalk/db_proxy_server/test/DBTestUser.cpp -o CMakeFiles/db_proxy_server.dir/test/DBTestUser.cpp.s
+
+CMakeFiles/db_proxy_server.dir/test/DBTestUser.cpp.o.requires:
+.PHONY : CMakeFiles/db_proxy_server.dir/test/DBTestUser.cpp.o.requires
+
+CMakeFiles/db_proxy_server.dir/test/DBTestUser.cpp.o.provides: CMakeFiles/db_proxy_server.dir/test/DBTestUser.cpp.o.requires
+	$(MAKE) -f CMakeFiles/db_proxy_server.dir/build.make CMakeFiles/db_proxy_server.dir/test/DBTestUser.cpp.o.provides.build
+.PHONY : CMakeFiles/db_proxy_server.dir/test/DBTestUser.cpp.o.provides
+
+CMakeFiles/db_proxy_server.dir/test/DBTestUser.cpp.o.provides.build: CMakeFiles/db_proxy_server.dir/test/DBTestUser.cpp.o
+
+CMakeFiles/db_proxy_server.dir/business/UserModel.cpp.o: CMakeFiles/db_proxy_server.dir/flags.make
+CMakeFiles/db_proxy_server.dir/business/UserModel.cpp.o: business/UserModel.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /root/workspace/TeamTalk/db_proxy_server/CMakeFiles $(CMAKE_PROGRESS_4)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/db_proxy_server.dir/business/UserModel.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/db_proxy_server.dir/business/UserModel.cpp.o -c /root/workspace/TeamTalk/db_proxy_server/business/UserModel.cpp
+
+CMakeFiles/db_proxy_server.dir/business/UserModel.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/db_proxy_server.dir/business/UserModel.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /root/workspace/TeamTalk/db_proxy_server/business/UserModel.cpp > CMakeFiles/db_proxy_server.dir/business/UserModel.cpp.i
+
+CMakeFiles/db_proxy_server.dir/business/UserModel.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/db_proxy_server.dir/business/UserModel.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /root/workspace/TeamTalk/db_proxy_server/business/UserModel.cpp -o CMakeFiles/db_proxy_server.dir/business/UserModel.cpp.s
+
+CMakeFiles/db_proxy_server.dir/business/UserModel.cpp.o.requires:
+.PHONY : CMakeFiles/db_proxy_server.dir/business/UserModel.cpp.o.requires
+
+CMakeFiles/db_proxy_server.dir/business/UserModel.cpp.o.provides: CMakeFiles/db_proxy_server.dir/business/UserModel.cpp.o.requires
+	$(MAKE) -f CMakeFiles/db_proxy_server.dir/build.make CMakeFiles/db_proxy_server.dir/business/UserModel.cpp.o.provides.build
+.PHONY : CMakeFiles/db_proxy_server.dir/business/UserModel.cpp.o.provides
+
+CMakeFiles/db_proxy_server.dir/business/UserModel.cpp.o.provides.build: CMakeFiles/db_proxy_server.dir/business/UserModel.cpp.o
+
 # Object files for target db_proxy_server
 db_proxy_server_OBJECTS = \
 "CMakeFiles/db_proxy_server.dir/DBPool.cpp.o" \
-"CMakeFiles/db_proxy_server.dir/db_proxy_server.cpp.o"
+"CMakeFiles/db_proxy_server.dir/db_proxy_server.cpp.o" \
+"CMakeFiles/db_proxy_server.dir/test/DBTestUser.cpp.o" \
+"CMakeFiles/db_proxy_server.dir/business/UserModel.cpp.o"
 
 # External object files for target db_proxy_server
 db_proxy_server_EXTERNAL_OBJECTS =
 
 db_proxy_server: CMakeFiles/db_proxy_server.dir/DBPool.cpp.o
 db_proxy_server: CMakeFiles/db_proxy_server.dir/db_proxy_server.cpp.o
+db_proxy_server: CMakeFiles/db_proxy_server.dir/test/DBTestUser.cpp.o
+db_proxy_server: CMakeFiles/db_proxy_server.dir/business/UserModel.cpp.o
 db_proxy_server: CMakeFiles/db_proxy_server.dir/build.make
 db_proxy_server: CMakeFiles/db_proxy_server.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX executable db_proxy_server"
@@ -119,6 +169,8 @@ CMakeFiles/db_proxy_server.dir/build: db_proxy_server
 
 CMakeFiles/db_proxy_server.dir/requires: CMakeFiles/db_proxy_server.dir/DBPool.cpp.o.requires
 CMakeFiles/db_proxy_server.dir/requires: CMakeFiles/db_proxy_server.dir/db_proxy_server.cpp.o.requires
+CMakeFiles/db_proxy_server.dir/requires: CMakeFiles/db_proxy_server.dir/test/DBTestUser.cpp.o.requires
+CMakeFiles/db_proxy_server.dir/requires: CMakeFiles/db_proxy_server.dir/business/UserModel.cpp.o.requires
 .PHONY : CMakeFiles/db_proxy_server.dir/requires
 
 CMakeFiles/db_proxy_server.dir/clean:

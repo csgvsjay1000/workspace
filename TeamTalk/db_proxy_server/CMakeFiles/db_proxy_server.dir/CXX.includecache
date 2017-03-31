@@ -6,34 +6,6 @@
 
 #IncludeRegexTransform: 
 
-../base/StringUtils.h
-stdint.h
--
-
-../base/slog/slog_api.h
-stdio.h
--
-
-../base/util.h
-stdio.h
--
-string.h
--
-slog/slog_api.h
-../base/slog/slog_api.h
-map
--
-string
--
-stdint.h
--
-list
--
-errno.h
--
-StringUtils.h
-../base/StringUtils.h
-
 /root/workspace/TeamTalk/base/ConfigFileReader.h
 util.h
 /root/workspace/TeamTalk/base/util.h
@@ -42,8 +14,8 @@ util.h
 stdint.h
 -
 
-/root/workspace/TeamTalk/base/slog/slog_api.h
-stdio.h
+/root/workspace/TeamTalk/base/Thread.h
+pthread.h
 -
 
 /root/workspace/TeamTalk/base/util.h
@@ -51,8 +23,8 @@ stdio.h
 -
 string.h
 -
-slog/slog_api.h
-/root/workspace/TeamTalk/base/slog/slog_api.h
+../slog/slog_api.h
+/root/workspace/TeamTalk/slog/slog_api.h
 map
 -
 string
@@ -87,14 +59,12 @@ stdint.h
 -
 list
 -
+../base/Thread.h
+/root/workspace/TeamTalk/base/Thread.h
 
-/root/workspace/TeamTalk/db_proxy_server/db_proxy_server.cpp
+/root/workspace/TeamTalk/slog/slog_api.h
 stdio.h
 -
-util.h
-/root/workspace/TeamTalk/db_proxy_server/util.h
-DBPool.h
-/root/workspace/TeamTalk/db_proxy_server/DBPool.h
 
 /usr/local/mysql/include/my_alloc.h
 

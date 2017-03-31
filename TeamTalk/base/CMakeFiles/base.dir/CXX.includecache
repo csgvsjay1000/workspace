@@ -6,13 +6,43 @@
 
 #IncludeRegexTransform: 
 
-/root/workspace/TeamTalk/base/StringUtils.cpp
-StringUtils.h
-/root/workspace/TeamTalk/base/StringUtils.h
-string.h
--
+/root/workspace/TeamTalk/base/ConfigFileReader.cpp
+ConfigFileReader.h
+/root/workspace/TeamTalk/base/ConfigFileReader.h
+
+/root/workspace/TeamTalk/base/ConfigFileReader.h
+util.h
+/root/workspace/TeamTalk/base/util.h
 
 /root/workspace/TeamTalk/base/StringUtils.h
 stdint.h
+-
+
+/root/workspace/TeamTalk/base/util.cpp
+util.h
+/root/workspace/TeamTalk/base/util.h
+
+/root/workspace/TeamTalk/base/util.h
+stdio.h
+-
+string.h
+-
+../slog/slog_api.h
+/root/workspace/TeamTalk/slog/slog_api.h
+map
+-
+string
+-
+stdint.h
+-
+list
+-
+errno.h
+-
+StringUtils.h
+/root/workspace/TeamTalk/base/StringUtils.h
+
+/root/workspace/TeamTalk/slog/slog_api.h
+stdio.h
 -
 

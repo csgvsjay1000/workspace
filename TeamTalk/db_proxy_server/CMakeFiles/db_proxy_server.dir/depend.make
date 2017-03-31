@@ -3,10 +3,11 @@
 
 CMakeFiles/db_proxy_server.dir/DBPool.cpp.o: /root/workspace/TeamTalk/base/ConfigFileReader.h
 CMakeFiles/db_proxy_server.dir/DBPool.cpp.o: /root/workspace/TeamTalk/base/StringUtils.h
-CMakeFiles/db_proxy_server.dir/DBPool.cpp.o: /root/workspace/TeamTalk/base/slog/slog_api.h
+CMakeFiles/db_proxy_server.dir/DBPool.cpp.o: /root/workspace/TeamTalk/base/Thread.h
 CMakeFiles/db_proxy_server.dir/DBPool.cpp.o: /root/workspace/TeamTalk/base/util.h
 CMakeFiles/db_proxy_server.dir/DBPool.cpp.o: DBPool.cpp
 CMakeFiles/db_proxy_server.dir/DBPool.cpp.o: DBPool.h
+CMakeFiles/db_proxy_server.dir/DBPool.cpp.o: /root/workspace/TeamTalk/slog/slog_api.h
 CMakeFiles/db_proxy_server.dir/DBPool.cpp.o: /usr/local/mysql/include/my_alloc.h
 CMakeFiles/db_proxy_server.dir/DBPool.cpp.o: /usr/local/mysql/include/my_list.h
 CMakeFiles/db_proxy_server.dir/DBPool.cpp.o: /usr/local/mysql/include/mysql.h
@@ -15,12 +16,32 @@ CMakeFiles/db_proxy_server.dir/DBPool.cpp.o: /usr/local/mysql/include/mysql_time
 CMakeFiles/db_proxy_server.dir/DBPool.cpp.o: /usr/local/mysql/include/mysql_version.h
 CMakeFiles/db_proxy_server.dir/DBPool.cpp.o: /usr/local/mysql/include/typelib.h
 
+CMakeFiles/db_proxy_server.dir/business/UserModel.cpp.o: ../base/StringUtils.h
+CMakeFiles/db_proxy_server.dir/business/UserModel.cpp.o: ../base/Thread.h
+CMakeFiles/db_proxy_server.dir/business/UserModel.cpp.o: ../base/public_define.h
+CMakeFiles/db_proxy_server.dir/business/UserModel.cpp.o: ../base/util.h
+CMakeFiles/db_proxy_server.dir/business/UserModel.cpp.o: ../slog/slog_api.h
+CMakeFiles/db_proxy_server.dir/business/UserModel.cpp.o: business/UserModel.cpp
+CMakeFiles/db_proxy_server.dir/business/UserModel.cpp.o: business/UserModel.h
+CMakeFiles/db_proxy_server.dir/business/UserModel.cpp.o: /usr/local/mysql/include/my_alloc.h
+CMakeFiles/db_proxy_server.dir/business/UserModel.cpp.o: /usr/local/mysql/include/my_list.h
+CMakeFiles/db_proxy_server.dir/business/UserModel.cpp.o: /usr/local/mysql/include/mysql.h
+CMakeFiles/db_proxy_server.dir/business/UserModel.cpp.o: /usr/local/mysql/include/mysql_com.h
+CMakeFiles/db_proxy_server.dir/business/UserModel.cpp.o: /usr/local/mysql/include/mysql_time.h
+CMakeFiles/db_proxy_server.dir/business/UserModel.cpp.o: /usr/local/mysql/include/mysql_version.h
+CMakeFiles/db_proxy_server.dir/business/UserModel.cpp.o: /usr/local/mysql/include/typelib.h
+CMakeFiles/db_proxy_server.dir/business/UserModel.cpp.o: DBPool.h
+
 CMakeFiles/db_proxy_server.dir/db_proxy_server.cpp.o: ../base/StringUtils.h
-CMakeFiles/db_proxy_server.dir/db_proxy_server.cpp.o: ../base/slog/slog_api.h
+CMakeFiles/db_proxy_server.dir/db_proxy_server.cpp.o: ../base/public_define.h
 CMakeFiles/db_proxy_server.dir/db_proxy_server.cpp.o: ../base/util.h
+CMakeFiles/db_proxy_server.dir/db_proxy_server.cpp.o: ../slog/slog_api.h
+CMakeFiles/db_proxy_server.dir/db_proxy_server.cpp.o: /root/workspace/TeamTalk/base/Thread.h
 CMakeFiles/db_proxy_server.dir/db_proxy_server.cpp.o: /root/workspace/TeamTalk/base/util.h
 CMakeFiles/db_proxy_server.dir/db_proxy_server.cpp.o: DBPool.h
+CMakeFiles/db_proxy_server.dir/db_proxy_server.cpp.o: business/UserModel.h
 CMakeFiles/db_proxy_server.dir/db_proxy_server.cpp.o: db_proxy_server.cpp
+CMakeFiles/db_proxy_server.dir/db_proxy_server.cpp.o: test/DBTestUser.h
 CMakeFiles/db_proxy_server.dir/db_proxy_server.cpp.o: /usr/local/mysql/include/my_alloc.h
 CMakeFiles/db_proxy_server.dir/db_proxy_server.cpp.o: /usr/local/mysql/include/my_list.h
 CMakeFiles/db_proxy_server.dir/db_proxy_server.cpp.o: /usr/local/mysql/include/mysql.h
@@ -28,4 +49,12 @@ CMakeFiles/db_proxy_server.dir/db_proxy_server.cpp.o: /usr/local/mysql/include/m
 CMakeFiles/db_proxy_server.dir/db_proxy_server.cpp.o: /usr/local/mysql/include/mysql_time.h
 CMakeFiles/db_proxy_server.dir/db_proxy_server.cpp.o: /usr/local/mysql/include/mysql_version.h
 CMakeFiles/db_proxy_server.dir/db_proxy_server.cpp.o: /usr/local/mysql/include/typelib.h
+
+CMakeFiles/db_proxy_server.dir/test/DBTestUser.cpp.o: ../base/public_define.h
+CMakeFiles/db_proxy_server.dir/test/DBTestUser.cpp.o: /root/workspace/TeamTalk/base/StringUtils.h
+CMakeFiles/db_proxy_server.dir/test/DBTestUser.cpp.o: /root/workspace/TeamTalk/base/util.h
+CMakeFiles/db_proxy_server.dir/test/DBTestUser.cpp.o: business/UserModel.h
+CMakeFiles/db_proxy_server.dir/test/DBTestUser.cpp.o: test/DBTestUser.cpp
+CMakeFiles/db_proxy_server.dir/test/DBTestUser.cpp.o: test/DBTestUser.h
+CMakeFiles/db_proxy_server.dir/test/DBTestUser.cpp.o: /root/workspace/TeamTalk/slog/slog_api.h
 

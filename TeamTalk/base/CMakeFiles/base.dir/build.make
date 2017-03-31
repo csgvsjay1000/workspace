@@ -75,9 +75,32 @@ CMakeFiles/base.dir/util.cpp.o.provides: CMakeFiles/base.dir/util.cpp.o.requires
 
 CMakeFiles/base.dir/util.cpp.o.provides.build: CMakeFiles/base.dir/util.cpp.o
 
+CMakeFiles/base.dir/Thread.cpp.o: CMakeFiles/base.dir/flags.make
+CMakeFiles/base.dir/Thread.cpp.o: Thread.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /root/workspace/TeamTalk/base/CMakeFiles $(CMAKE_PROGRESS_2)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/base.dir/Thread.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/base.dir/Thread.cpp.o -c /root/workspace/TeamTalk/base/Thread.cpp
+
+CMakeFiles/base.dir/Thread.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/base.dir/Thread.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /root/workspace/TeamTalk/base/Thread.cpp > CMakeFiles/base.dir/Thread.cpp.i
+
+CMakeFiles/base.dir/Thread.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/base.dir/Thread.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /root/workspace/TeamTalk/base/Thread.cpp -o CMakeFiles/base.dir/Thread.cpp.s
+
+CMakeFiles/base.dir/Thread.cpp.o.requires:
+.PHONY : CMakeFiles/base.dir/Thread.cpp.o.requires
+
+CMakeFiles/base.dir/Thread.cpp.o.provides: CMakeFiles/base.dir/Thread.cpp.o.requires
+	$(MAKE) -f CMakeFiles/base.dir/build.make CMakeFiles/base.dir/Thread.cpp.o.provides.build
+.PHONY : CMakeFiles/base.dir/Thread.cpp.o.provides
+
+CMakeFiles/base.dir/Thread.cpp.o.provides.build: CMakeFiles/base.dir/Thread.cpp.o
+
 CMakeFiles/base.dir/StringUtils.cpp.o: CMakeFiles/base.dir/flags.make
 CMakeFiles/base.dir/StringUtils.cpp.o: StringUtils.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /root/workspace/TeamTalk/base/CMakeFiles $(CMAKE_PROGRESS_2)
+	$(CMAKE_COMMAND) -E cmake_progress_report /root/workspace/TeamTalk/base/CMakeFiles $(CMAKE_PROGRESS_3)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/base.dir/StringUtils.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/base.dir/StringUtils.cpp.o -c /root/workspace/TeamTalk/base/StringUtils.cpp
 
@@ -100,7 +123,7 @@ CMakeFiles/base.dir/StringUtils.cpp.o.provides.build: CMakeFiles/base.dir/String
 
 CMakeFiles/base.dir/ConfigFileReader.cpp.o: CMakeFiles/base.dir/flags.make
 CMakeFiles/base.dir/ConfigFileReader.cpp.o: ConfigFileReader.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /root/workspace/TeamTalk/base/CMakeFiles $(CMAKE_PROGRESS_3)
+	$(CMAKE_COMMAND) -E cmake_progress_report /root/workspace/TeamTalk/base/CMakeFiles $(CMAKE_PROGRESS_4)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/base.dir/ConfigFileReader.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/base.dir/ConfigFileReader.cpp.o -c /root/workspace/TeamTalk/base/ConfigFileReader.cpp
 
@@ -123,7 +146,7 @@ CMakeFiles/base.dir/ConfigFileReader.cpp.o.provides.build: CMakeFiles/base.dir/C
 
 CMakeFiles/base.dir/test_base.cpp.o: CMakeFiles/base.dir/flags.make
 CMakeFiles/base.dir/test_base.cpp.o: test_base.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /root/workspace/TeamTalk/base/CMakeFiles $(CMAKE_PROGRESS_4)
+	$(CMAKE_COMMAND) -E cmake_progress_report /root/workspace/TeamTalk/base/CMakeFiles $(CMAKE_PROGRESS_5)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/base.dir/test_base.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/base.dir/test_base.cpp.o -c /root/workspace/TeamTalk/base/test_base.cpp
 
@@ -147,6 +170,7 @@ CMakeFiles/base.dir/test_base.cpp.o.provides.build: CMakeFiles/base.dir/test_bas
 # Object files for target base
 base_OBJECTS = \
 "CMakeFiles/base.dir/util.cpp.o" \
+"CMakeFiles/base.dir/Thread.cpp.o" \
 "CMakeFiles/base.dir/StringUtils.cpp.o" \
 "CMakeFiles/base.dir/ConfigFileReader.cpp.o" \
 "CMakeFiles/base.dir/test_base.cpp.o"
@@ -155,6 +179,7 @@ base_OBJECTS = \
 base_EXTERNAL_OBJECTS =
 
 libbase.a: CMakeFiles/base.dir/util.cpp.o
+libbase.a: CMakeFiles/base.dir/Thread.cpp.o
 libbase.a: CMakeFiles/base.dir/StringUtils.cpp.o
 libbase.a: CMakeFiles/base.dir/ConfigFileReader.cpp.o
 libbase.a: CMakeFiles/base.dir/test_base.cpp.o
@@ -169,6 +194,7 @@ CMakeFiles/base.dir/build: libbase.a
 .PHONY : CMakeFiles/base.dir/build
 
 CMakeFiles/base.dir/requires: CMakeFiles/base.dir/util.cpp.o.requires
+CMakeFiles/base.dir/requires: CMakeFiles/base.dir/Thread.cpp.o.requires
 CMakeFiles/base.dir/requires: CMakeFiles/base.dir/StringUtils.cpp.o.requires
 CMakeFiles/base.dir/requires: CMakeFiles/base.dir/ConfigFileReader.cpp.o.requires
 CMakeFiles/base.dir/requires: CMakeFiles/base.dir/test_base.cpp.o.requires

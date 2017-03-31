@@ -17,6 +17,8 @@ public:
 
 	void Info(const char* format,...);
 	void Error(const char* format,...);
+	void StdInfo(const char* format,...);
+	void StdError(const char* format,...);
 
 private:
 	CSLogObject* m_log;

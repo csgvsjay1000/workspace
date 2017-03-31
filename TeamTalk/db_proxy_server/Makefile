@@ -138,6 +138,30 @@ DBPool.cpp.s:
 	$(MAKE) -f CMakeFiles/db_proxy_server.dir/build.make CMakeFiles/db_proxy_server.dir/DBPool.cpp.s
 .PHONY : DBPool.cpp.s
 
+business/UserModel.o: business/UserModel.cpp.o
+.PHONY : business/UserModel.o
+
+# target to build an object file
+business/UserModel.cpp.o:
+	$(MAKE) -f CMakeFiles/db_proxy_server.dir/build.make CMakeFiles/db_proxy_server.dir/business/UserModel.cpp.o
+.PHONY : business/UserModel.cpp.o
+
+business/UserModel.i: business/UserModel.cpp.i
+.PHONY : business/UserModel.i
+
+# target to preprocess a source file
+business/UserModel.cpp.i:
+	$(MAKE) -f CMakeFiles/db_proxy_server.dir/build.make CMakeFiles/db_proxy_server.dir/business/UserModel.cpp.i
+.PHONY : business/UserModel.cpp.i
+
+business/UserModel.s: business/UserModel.cpp.s
+.PHONY : business/UserModel.s
+
+# target to generate assembly for a file
+business/UserModel.cpp.s:
+	$(MAKE) -f CMakeFiles/db_proxy_server.dir/build.make CMakeFiles/db_proxy_server.dir/business/UserModel.cpp.s
+.PHONY : business/UserModel.cpp.s
+
 db_proxy_server.o: db_proxy_server.cpp.o
 .PHONY : db_proxy_server.o
 
@@ -162,6 +186,30 @@ db_proxy_server.cpp.s:
 	$(MAKE) -f CMakeFiles/db_proxy_server.dir/build.make CMakeFiles/db_proxy_server.dir/db_proxy_server.cpp.s
 .PHONY : db_proxy_server.cpp.s
 
+test/DBTestUser.o: test/DBTestUser.cpp.o
+.PHONY : test/DBTestUser.o
+
+# target to build an object file
+test/DBTestUser.cpp.o:
+	$(MAKE) -f CMakeFiles/db_proxy_server.dir/build.make CMakeFiles/db_proxy_server.dir/test/DBTestUser.cpp.o
+.PHONY : test/DBTestUser.cpp.o
+
+test/DBTestUser.i: test/DBTestUser.cpp.i
+.PHONY : test/DBTestUser.i
+
+# target to preprocess a source file
+test/DBTestUser.cpp.i:
+	$(MAKE) -f CMakeFiles/db_proxy_server.dir/build.make CMakeFiles/db_proxy_server.dir/test/DBTestUser.cpp.i
+.PHONY : test/DBTestUser.cpp.i
+
+test/DBTestUser.s: test/DBTestUser.cpp.s
+.PHONY : test/DBTestUser.s
+
+# target to generate assembly for a file
+test/DBTestUser.cpp.s:
+	$(MAKE) -f CMakeFiles/db_proxy_server.dir/build.make CMakeFiles/db_proxy_server.dir/test/DBTestUser.cpp.s
+.PHONY : test/DBTestUser.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -174,9 +222,15 @@ help:
 	@echo "... DBPool.o"
 	@echo "... DBPool.i"
 	@echo "... DBPool.s"
+	@echo "... business/UserModel.o"
+	@echo "... business/UserModel.i"
+	@echo "... business/UserModel.s"
 	@echo "... db_proxy_server.o"
 	@echo "... db_proxy_server.i"
 	@echo "... db_proxy_server.s"
+	@echo "... test/DBTestUser.o"
+	@echo "... test/DBTestUser.i"
+	@echo "... test/DBTestUser.s"
 .PHONY : help
 
 

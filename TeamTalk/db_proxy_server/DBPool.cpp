@@ -1,7 +1,8 @@
 #include "DBPool.h"
 #include "../base/ConfigFileReader.h"
 #include <stdlib.h>
-#include "../base/Thread.h"
+
+#define MIN_DB_CONN_CNT 	2
 
 //// CResultSet
 CResultSet::CResultSet(MYSQL_RES* res)
@@ -22,24 +23,140 @@ CResultSet::~CResultSet()
 		m_res = NULL;
 	}
 }
-
-CPrepareStatement::CPrepareStatement()
+bool CResultSet::Next()
 {
 	
+	return true;
+}
+int CResultSet::GetInt(const char* key)
+{
+
+	return 0
+}
+char* CResultSet::GetString(const char* key)
+{
+
+	return "";
+}
+
+int CResultSet::_GetIndex(const char* key)
+{
+	
+	return 0;
+}
+
+// CPrepareStatement
+CPrepareStatement::CPrepareStatement()
+{
+	m_stmt = NULL;
+	m_param_bind = NULL;
+	m_param_cnt = 0;	
 }
 
 CPrepareStatement::~CPrepareStatement()
 {
+	if(m_stmt){
+		mysql_stmt_close(m_stmt);
+		m_stmt = NULL;
+	}
+	if(m_param_bind){
+		delete[] m_param_bind;
+		m_param_bind = NULL;
+	}
+}
+bool CPrepareStatement::Init(MYSQL* mysql,string& sql)
+{
+	mysql_ping(mysql);
+	m_stmt = mysql_stmt_init(mysql);
+	if(!m_stmt){
+		log("mysql_stmt_init failed");
+		return false;
+	}
+	if(mysql_stmt_prepare(m_stmt,sql.c_str(),sql.size())){
+		log("mysql_stmt_prepare failed: %s",mysql_stmt_error(m_stmt));
+		return false;
+	}
+	m_param_cnt = mysql_stmt_param_count(m_stmt);
+	if(m_param_cnt>0){
+		m_param_bind = new MYSQL_BIND[m_param_cnt];
+		if(!m_param_bind){
+			log("new failed");
+			return false;
+		}
+		memset(m_param_bind,0,sizeof(MYSQL_BIND)*m_param_cnt);
+	}
+	return true;
+}
+void CPrepareStatement::SetParam(uint32_t index, int& value)
+{
+	if(index >= m_param_cnt){
+		log("index too large: %d",index);
+		return;
+	}
+	m_param_bind[index].buffer_type = MYSQL_TYPE_LONG;
+	m_param_bind[index].buffer = &value;
+}
+void CPrepareStatement::SetParam(uint32_t index, uint32_t& value)
+{
+	if(index >= m_param_cnt){
+		log("index too large: %d",index);
+		return;
+	}
+	m_param_bind[index].buffer_type = MYSQL_TYPE_LONG;
+	m_param_bind[index].buffer = &value;
+
+}
+void CPrepareStatement::SetParam(uint32_t index, string& value)
+{
+	if(index >= m_param_cnt){
+		log("index too large: %d",index);
+		return;
+	}
+	m_param_bind[index].buffer_type = MYSQL_TYPE_STRING;
+	m_param_bind[index].buffer = (char*)value.c_str();
+	m_param_bind[index].buffer_length = value.size();
+
+}
+void CPrepareStatement::SetParam(uint32_t index, const string& value)
+{
+	if(index >= m_param_cnt){
+		log("index too large: %d",index);
+		return;
+	}
+	m_param_bind[index].buffer_type = MYSQL_TYPE_STRING;
+	m_param_bind[index].buffer = (char*)value.c_str();
+	m_param_bind[index].buffer_length = value.size();
+
+}
 	
+bool CPrepareStatement::ExecuteUpdate()
+{
+	if(!m_stmt){
+		log("no m_stmt");
+		return false;
+	}
+	if(mysql_stmt_bind_param(m_stmt,m_param_bind)){
+		log("mysql_stmt_bind_param failed: %s",mysql_stmt_error(m_stmt));
+		return false;
+	}
+	if(mysql_stmt_execute(m_stmt)){
+		log("mysql_stmt_execute failed: %s",mysql_stmt_error(m_stmt));
+		return false;
+	}
+	if(mysql_stmt_affected_rows(m_stmt) == 0){
+		log("ExecuteUpdate have no effect");
+		return false;
+	}
+	return true;
 }
 
+/// CDBConn
 CDBConn::CDBConn(CDBPool* pDBPool)
 {
 	m_pDBPool = pDBPool;
 	m_mysql = NULL;
 }
 
-/// CDBConn
 int CDBConn::Init()
 {
 	m_mysql = mysql_init(NULL);
@@ -49,7 +166,7 @@ int CDBConn::Init()
 	}
 	my_bool reconnect = true;
    	mysql_options(m_mysql,MYSQL_OPT_RECONNECT,&reconnect);
-	mysql_options(m_mysql,MYSQL_SET_CHARSET_NAME,"utf8mp4");
+	mysql_options(m_mysql,MYSQL_SET_CHARSET_NAME,"utf8mb4");
 
 	if(!mysql_real_connect(m_mysql,m_pDBPool->GetDBServerIP(),m_pDBPool->GetUserName(),m_pDBPool->GetPassword(),m_pDBPool->GetDBName(),m_pDBPool->GetDBServerPort(),NULL,0)){
 		log("mysql_real_connect failed: %s",mysql_error(m_mysql));
@@ -59,6 +176,19 @@ int CDBConn::Init()
 	return 0;
 }
 
+bool CDBConn::ExecuteUpdate(const char* sql_query)
+{
+	mysql_ping(m_mysql);
+	if(mysql_real_query(m_mysql,sql_query,strlen(sql_query))){
+		log("mysql_real_query failed: %s, sql: %s",mysql_error(m_mysql),sql_query);
+		return false;
+	}
+	if(mysql_affected_rows(m_mysql)>0){
+		return true;
+	}else{
+		return false;
+	}
+}
 /// CDBPool
 CDBPool::CDBPool(const char* pool_name,const char*db_server_ip,uint16_t db_server_port,
 			const char* user_name,const char* password,const char* db_name,int max_conn_cnt)
@@ -70,6 +200,7 @@ CDBPool::CDBPool(const char* pool_name,const char*db_server_ip,uint16_t db_serve
 	m_password = password;
 	m_db_name = db_name;
 	m_db_max_conn_cnt = max_conn_cnt;	
+	m_db_cur_conn_cnt = MIN_DB_CONN_CNT;
 }
 
 int CDBPool::Init()
@@ -114,17 +245,30 @@ CDBConn* CDBPool::GetDBConn()
 				// 初始化成功
 				m_free_list.push_back(pDBConn);
 				m_db_cur_conn_cnt++;
-				log("new db connection: %s, conn_cnt: %d",m_pool_name.c_str(),m_db_cur_conn_cnt);
+				loginfo("new db connection: %s, conn_cnt: %d",m_pool_name.c_str(),m_db_cur_conn_cnt);
 			}
 		}
 	}
-
+	CDBConn* pConn = m_free_list.front();
+	m_free_list.pop_front();
 	m_free_notify.Unlock();
+	return pConn;
 }
 
 void CDBPool::RelDBConn(CDBConn* pConn)
 {
-
+	m_free_notify.Lock();
+	list<CDBConn*>::iterator it = m_free_list.begin();
+	for(;it != m_free_list.end();it++){
+		if(*it == pConn){
+			break;
+		}
+	}
+	if(it == m_free_list.end()){
+		m_free_list.push_back(pConn);
+	}
+	m_free_notify.Signal();
+	m_free_notify.Unlock();
 }
 
 /// CDBManager
@@ -185,9 +329,30 @@ int CDBManager::Init()
 			log("init db instance failed: %s",pool_name);
 			return 3;
 		}
-		log("init db instance successed: %s",pool_name);
+		loginfo("init db instance successed: %s",pool_name);
 		m_dbpool_map.insert(make_pair(pool_name,pDBPool));
 	}
 
 	return 0;
+}
+CDBConn* CDBManager::GetDBConn(const char* dbpool_name)
+{
+	map<string,CDBPool*>::iterator it = m_dbpool_map.find(dbpool_name);
+	if(it == m_dbpool_map.end()){
+		return NULL;
+	}
+	CDBPool* pDBPool = it->second;
+	return pDBPool->GetDBConn();	
+}
+
+void CDBManager::RelDBConn(CDBConn* pConn)
+{
+	map<string,CDBPool*>::iterator it = m_dbpool_map.find(pConn->GetDBPool()->GetPoolName());
+	if(it == m_dbpool_map.end()){
+		return;
+	}
+	CDBPool* pDBPool = it->second;
+	pDBPool->RelDBConn(pConn);	
+
+
 }

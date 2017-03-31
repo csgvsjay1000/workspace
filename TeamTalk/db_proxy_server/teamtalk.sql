@@ -13,6 +13,7 @@ CREATE TABLE IMUser(
 	phone varchar(11) COLLATE utf8mb4_bin NOT NULL DEFAULT '' COMMENT '手机号码',
 	email varchar(64) COLLATE utf8mb4_bin NOT NULL DEFAULT '' COMMENT '手机号码',
 	avatar varchar(255) COLLATE utf8mb4_bin NOT NULL DEFAULT '' COMMENT '手机号码',
+	sign_info varchar(255) COLLATE utf8mb4_bin NOT NULL DEFAULT '' COMMENT '个性签名',
 	departId int(11) unsigned NOT NULL COMMENT '所属部门Id',
 	status tinyint(2) unsigned NOT NULL DEFAULT '0' COMMENT '1. 试用期 2. 正式 3. 离职 4. 实习',
 	created int(11) unsigned NOT NULL COMMENT '创建时间',

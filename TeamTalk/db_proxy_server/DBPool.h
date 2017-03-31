@@ -12,6 +12,8 @@
 #include <stdint.h>
 #include <list>
 
+#include "../base/Thread.h"
+
 #define MAX_ESCAPE_STRING_LEN 	1024*10
 
 using namespace std;
@@ -21,7 +23,14 @@ class CResultSet
 public:
 	CResultSet(MYSQL_RES* res);
 	~CResultSet();
+	
+	bool Next();
+	int GetInt(const char* key);
+	char* GetString(const char* key);
+
 private:
+	int _GetIndex(const char* key);
+
 	MYSQL_RES* 			m_res;
 	MYSQL_ROW 			m_row;
 	map<string,int> 	m_key_map;
@@ -32,6 +41,13 @@ class CPrepareStatement
 public:
 	CPrepareStatement();
 	~CPrepareStatement();
+	bool Init(MYSQL* mysql,string& sql);
+	void SetParam(uint32_t index, int& value);
+	void SetParam(uint32_t index, uint32_t& value);
+	void SetParam(uint32_t index, string& value);
+	void SetParam(uint32_t index, const string& value);
+	
+	bool ExecuteUpdate();
 
 private:
 	MYSQL_STMT* 	m_stmt;
@@ -46,7 +62,9 @@ class CDBConn
 public:
 	CDBConn(CDBPool* pDBPool);
 	int Init();
-
+	CDBPool* GetDBPool(){return m_pDBPool;}
+	bool ExecuteUpdate(const char* sql_query);
+	MYSQL* GetMysql(){return m_mysql;}
 private:
 	CDBPool* 		m_pDBPool;
 	MYSQL* 			m_mysql;
@@ -91,6 +109,10 @@ class CDBManager
 public:
 	static CDBManager* Instance();
 	int Init();
+
+	CDBConn* GetDBConn(const char* dbpool_name);
+	void RelDBConn(CDBConn* pConn);
+
 private:
 	static CDBManager* 		s_Instance;
 	map<string,CDBPool*> 	m_dbpool_map;

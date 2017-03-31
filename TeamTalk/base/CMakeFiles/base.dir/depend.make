@@ -4,17 +4,20 @@
 CMakeFiles/base.dir/ConfigFileReader.cpp.o: ConfigFileReader.cpp
 CMakeFiles/base.dir/ConfigFileReader.cpp.o: ConfigFileReader.h
 CMakeFiles/base.dir/ConfigFileReader.cpp.o: StringUtils.h
-CMakeFiles/base.dir/ConfigFileReader.cpp.o: slog/slog_api.h
 CMakeFiles/base.dir/ConfigFileReader.cpp.o: util.h
+CMakeFiles/base.dir/ConfigFileReader.cpp.o: /root/workspace/TeamTalk/slog/slog_api.h
 
 CMakeFiles/base.dir/StringUtils.cpp.o: StringUtils.cpp
 CMakeFiles/base.dir/StringUtils.cpp.o: StringUtils.h
+
+CMakeFiles/base.dir/Thread.cpp.o: Thread.cpp
+CMakeFiles/base.dir/Thread.cpp.o: Thread.h
 
 CMakeFiles/base.dir/test_base.cpp.o: slog/slog_api.h
 CMakeFiles/base.dir/test_base.cpp.o: test_base.cpp
 
 CMakeFiles/base.dir/util.cpp.o: StringUtils.h
-CMakeFiles/base.dir/util.cpp.o: slog/slog_api.h
 CMakeFiles/base.dir/util.cpp.o: util.cpp
 CMakeFiles/base.dir/util.cpp.o: util.h
+CMakeFiles/base.dir/util.cpp.o: /root/workspace/TeamTalk/slog/slog_api.h
 

@@ -5,16 +5,19 @@ CMakeFiles/base.dir/ConfigFileReader.cpp.o
  /root/workspace/TeamTalk/base/ConfigFileReader.cpp
  /root/workspace/TeamTalk/base/ConfigFileReader.h
  /root/workspace/TeamTalk/base/StringUtils.h
- /root/workspace/TeamTalk/base/slog/slog_api.h
  /root/workspace/TeamTalk/base/util.h
+ /root/workspace/TeamTalk/slog/slog_api.h
 CMakeFiles/base.dir/StringUtils.cpp.o
  /root/workspace/TeamTalk/base/StringUtils.cpp
  /root/workspace/TeamTalk/base/StringUtils.h
+CMakeFiles/base.dir/Thread.cpp.o
+ /root/workspace/TeamTalk/base/Thread.cpp
+ /root/workspace/TeamTalk/base/Thread.h
 CMakeFiles/base.dir/test_base.cpp.o
  /root/workspace/TeamTalk/base/slog/slog_api.h
  /root/workspace/TeamTalk/base/test_base.cpp
 CMakeFiles/base.dir/util.cpp.o
  /root/workspace/TeamTalk/base/StringUtils.h
- /root/workspace/TeamTalk/base/slog/slog_api.h
  /root/workspace/TeamTalk/base/util.cpp
  /root/workspace/TeamTalk/base/util.h
+ /root/workspace/TeamTalk/slog/slog_api.h

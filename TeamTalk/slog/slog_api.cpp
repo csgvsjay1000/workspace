@@ -21,6 +21,8 @@ public:
 
 	virtual void Info(const char* loginfo){};
 	virtual void Error(const char* loginfo){};
+	virtual void StdInfo(const char* loginfo){};
+	virtual void StdError(const char* loginfo){};
 };
 
 class CLog4CXX : public CSLogObject
@@ -31,14 +33,19 @@ public:
 
 	virtual void Info(const char* loginfo);
 	virtual void Error(const char* loginfo);
+	
+	virtual void StdInfo(const char* loginfo);
+	virtual void StdError(const char* loginfo);
 private:
 	LoggerPtr m_logger;
+	LoggerPtr m_stdLogger;
 };
 
 CLog4CXX::CLog4CXX(const char* module_name) : CSLogObject(module_name)
 {
 	PropertyConfigurator::configureAndWatch(File("log4cxx.properties"));
-	m_logger = Logger::getLogger(module_name);
+	m_logger = Logger::getLogger("file");
+	m_stdLogger = Logger::getLogger("console");
 }
 
 void CLog4CXX::Info(const char* loginfo)
@@ -49,6 +56,16 @@ void CLog4CXX::Info(const char* loginfo)
 void CLog4CXX::Error(const char* loginfo)
 {
 	m_logger->error(loginfo);
+}
+
+void CLog4CXX::StdInfo(const char* loginfo)
+{
+	m_stdLogger->info(loginfo);
+}
+
+void CLog4CXX::StdError(const char* loginfo)
+{
+	m_stdLogger->error(loginfo);
 }
 
 CSLog::CSLog(const char* module_name)
@@ -76,3 +93,22 @@ void CSLog::Error(const char* format,...)
 	m_log->Error(szBuffer);
 }
 
+void CSLog::StdInfo(const char* format,...)
+{
+	va_list args;
+	va_start(args,format);
+	char szBuffer[MAX_LOG_LENGTH];
+	vsnprintf(szBuffer,sizeof(szBuffer),format,args);
+	va_end(args);
+	m_log->StdInfo(szBuffer);
+}
+
+void CSLog::StdError(const char* format,...)
+{
+	va_list args;
+	va_start(args,format);
+	char szBuffer[MAX_LOG_LENGTH];
+	vsnprintf(szBuffer,sizeof(szBuffer),format,args);
+	va_end(args);
+	m_log->StdError(szBuffer);
+}

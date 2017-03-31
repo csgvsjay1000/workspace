@@ -6,6 +6,7 @@ SET(CMAKE_DEPENDS_LANGUAGES
 SET(CMAKE_DEPENDS_CHECK_CXX
   "/root/workspace/TeamTalk/base/ConfigFileReader.cpp" "/root/workspace/TeamTalk/base/CMakeFiles/base.dir/ConfigFileReader.cpp.o"
   "/root/workspace/TeamTalk/base/StringUtils.cpp" "/root/workspace/TeamTalk/base/CMakeFiles/base.dir/StringUtils.cpp.o"
+  "/root/workspace/TeamTalk/base/Thread.cpp" "/root/workspace/TeamTalk/base/CMakeFiles/base.dir/Thread.cpp.o"
   "/root/workspace/TeamTalk/base/test_base.cpp" "/root/workspace/TeamTalk/base/CMakeFiles/base.dir/test_base.cpp.o"
   "/root/workspace/TeamTalk/base/util.cpp" "/root/workspace/TeamTalk/base/CMakeFiles/base.dir/util.cpp.o"
   )

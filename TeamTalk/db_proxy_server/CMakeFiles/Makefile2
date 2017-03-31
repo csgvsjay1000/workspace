@@ -62,7 +62,7 @@ CMAKE_BINARY_DIR = /root/workspace/TeamTalk/db_proxy_server
 CMakeFiles/db_proxy_server.dir/all:
 	$(MAKE) -f CMakeFiles/db_proxy_server.dir/build.make CMakeFiles/db_proxy_server.dir/depend
 	$(MAKE) -f CMakeFiles/db_proxy_server.dir/build.make CMakeFiles/db_proxy_server.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /root/workspace/TeamTalk/db_proxy_server/CMakeFiles  1 2
+	$(CMAKE_COMMAND) -E cmake_progress_report /root/workspace/TeamTalk/db_proxy_server/CMakeFiles  1 2 3 4
 	@echo "Built target db_proxy_server"
 .PHONY : CMakeFiles/db_proxy_server.dir/all
 
@@ -72,7 +72,7 @@ all: CMakeFiles/db_proxy_server.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/db_proxy_server.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/workspace/TeamTalk/db_proxy_server/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/workspace/TeamTalk/db_proxy_server/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/db_proxy_server.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /root/workspace/TeamTalk/db_proxy_server/CMakeFiles 0
 .PHONY : CMakeFiles/db_proxy_server.dir/rule
