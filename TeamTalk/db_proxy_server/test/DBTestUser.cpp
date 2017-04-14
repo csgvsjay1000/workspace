@@ -16,3 +16,14 @@ void CDBUserTest::TestInsert()
 	}
 	loginfo("InsertUser successed. user: %s",user.strNick.c_str());
 }
+
+void CDBUserTest::TestSelect()
+{
+	DBUserInfo_t user;
+	if(!CUserModel::Instance()->GetUser((uint32_t)1,user)){
+		log("GetUser failed.");
+		return;
+	}
+	
+	loginfo("user.name: %s",user.strName.c_str());
+}

@@ -13,7 +13,7 @@ public:
 	static CUserModel* Instance();
 
 	bool InsertUser(DBUserInfo_t& cUser);
-	
+	bool GetUser(uint32_t nUserId,DBUserInfo_t& cUser);	
 private:
 	static CUserModel* m_pInstance;
 };

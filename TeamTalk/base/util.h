@@ -14,6 +14,7 @@
 #include <errno.h>
 
 #include "StringUtils.h"
+#include "Lock.h"
 
 using namespace std;
 
@@ -27,18 +28,9 @@ extern CSLog g_imlog;
 
 #define loginfo(fmt,args...) g_imlog.Info("<%s>\t<%d>\t<%s>," fmt,__FILENAME__,__LINE__,__FUNCTION__,##args)
 
+string int2string(uint32_t user_id);
+uint32_t string2int(const string& value);
 
-#define stdlog(fmt,args...) g_imlog.StdError("<%s>\t<%d>\t<%s>," fmt,__FILENAME__,__LINE__,__FUNCTION__,##args)
+uint64_t get_tick_count();
 
-#define stdloginfo(fmt,args...) g_imlog.StdInfo("<%s>\t<%d>\t<%s>," fmt,__FILENAME__,__LINE__,__FUNCTION__,##args)
-/*
-extern CSLog g_calog;
-
-#define __FILENAME__ (strrchr(__FILE__,'/') ? strrchr(__FILE__,'/')+1 : __FILE__)
-
-#define stdlog(fmt,args...) g_calog.Error("<%s>\t<%d>\t<%s>," fmt,__FILENAME__,__LINE__,__FUNCTION__,##args)
-
-#define stdloginfo(fmt,args...) g_calog.Info("<%s>\t<%d>\t<%s>," fmt,__FILENAME__,__LINE__,__FUNCTION__,##args)
-
-*/
 #endif

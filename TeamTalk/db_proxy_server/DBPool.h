@@ -27,7 +27,7 @@ public:
 	bool Next();
 	int GetInt(const char* key);
 	char* GetString(const char* key);
-
+	
 private:
 	int _GetIndex(const char* key);
 
@@ -64,6 +64,7 @@ public:
 	int Init();
 	CDBPool* GetDBPool(){return m_pDBPool;}
 	bool ExecuteUpdate(const char* sql_query);
+	CResultSet* ExecuteQuery(const char* sql_query);
 	MYSQL* GetMysql(){return m_mysql;}
 private:
 	CDBPool* 		m_pDBPool;

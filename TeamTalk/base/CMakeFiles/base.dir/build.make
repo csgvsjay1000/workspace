@@ -52,9 +52,32 @@ include CMakeFiles/base.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/base.dir/flags.make
 
+CMakeFiles/base.dir/netlib.cpp.o: CMakeFiles/base.dir/flags.make
+CMakeFiles/base.dir/netlib.cpp.o: netlib.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /root/workspace/TeamTalk/base/CMakeFiles $(CMAKE_PROGRESS_1)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/base.dir/netlib.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/base.dir/netlib.cpp.o -c /root/workspace/TeamTalk/base/netlib.cpp
+
+CMakeFiles/base.dir/netlib.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/base.dir/netlib.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /root/workspace/TeamTalk/base/netlib.cpp > CMakeFiles/base.dir/netlib.cpp.i
+
+CMakeFiles/base.dir/netlib.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/base.dir/netlib.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /root/workspace/TeamTalk/base/netlib.cpp -o CMakeFiles/base.dir/netlib.cpp.s
+
+CMakeFiles/base.dir/netlib.cpp.o.requires:
+.PHONY : CMakeFiles/base.dir/netlib.cpp.o.requires
+
+CMakeFiles/base.dir/netlib.cpp.o.provides: CMakeFiles/base.dir/netlib.cpp.o.requires
+	$(MAKE) -f CMakeFiles/base.dir/build.make CMakeFiles/base.dir/netlib.cpp.o.provides.build
+.PHONY : CMakeFiles/base.dir/netlib.cpp.o.provides
+
+CMakeFiles/base.dir/netlib.cpp.o.provides.build: CMakeFiles/base.dir/netlib.cpp.o
+
 CMakeFiles/base.dir/util.cpp.o: CMakeFiles/base.dir/flags.make
 CMakeFiles/base.dir/util.cpp.o: util.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /root/workspace/TeamTalk/base/CMakeFiles $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report /root/workspace/TeamTalk/base/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/base.dir/util.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/base.dir/util.cpp.o -c /root/workspace/TeamTalk/base/util.cpp
 
@@ -77,7 +100,7 @@ CMakeFiles/base.dir/util.cpp.o.provides.build: CMakeFiles/base.dir/util.cpp.o
 
 CMakeFiles/base.dir/Thread.cpp.o: CMakeFiles/base.dir/flags.make
 CMakeFiles/base.dir/Thread.cpp.o: Thread.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /root/workspace/TeamTalk/base/CMakeFiles $(CMAKE_PROGRESS_2)
+	$(CMAKE_COMMAND) -E cmake_progress_report /root/workspace/TeamTalk/base/CMakeFiles $(CMAKE_PROGRESS_3)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/base.dir/Thread.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/base.dir/Thread.cpp.o -c /root/workspace/TeamTalk/base/Thread.cpp
 
@@ -98,9 +121,32 @@ CMakeFiles/base.dir/Thread.cpp.o.provides: CMakeFiles/base.dir/Thread.cpp.o.requ
 
 CMakeFiles/base.dir/Thread.cpp.o.provides.build: CMakeFiles/base.dir/Thread.cpp.o
 
+CMakeFiles/base.dir/Lock.cpp.o: CMakeFiles/base.dir/flags.make
+CMakeFiles/base.dir/Lock.cpp.o: Lock.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /root/workspace/TeamTalk/base/CMakeFiles $(CMAKE_PROGRESS_4)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/base.dir/Lock.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/base.dir/Lock.cpp.o -c /root/workspace/TeamTalk/base/Lock.cpp
+
+CMakeFiles/base.dir/Lock.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/base.dir/Lock.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /root/workspace/TeamTalk/base/Lock.cpp > CMakeFiles/base.dir/Lock.cpp.i
+
+CMakeFiles/base.dir/Lock.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/base.dir/Lock.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /root/workspace/TeamTalk/base/Lock.cpp -o CMakeFiles/base.dir/Lock.cpp.s
+
+CMakeFiles/base.dir/Lock.cpp.o.requires:
+.PHONY : CMakeFiles/base.dir/Lock.cpp.o.requires
+
+CMakeFiles/base.dir/Lock.cpp.o.provides: CMakeFiles/base.dir/Lock.cpp.o.requires
+	$(MAKE) -f CMakeFiles/base.dir/build.make CMakeFiles/base.dir/Lock.cpp.o.provides.build
+.PHONY : CMakeFiles/base.dir/Lock.cpp.o.provides
+
+CMakeFiles/base.dir/Lock.cpp.o.provides.build: CMakeFiles/base.dir/Lock.cpp.o
+
 CMakeFiles/base.dir/StringUtils.cpp.o: CMakeFiles/base.dir/flags.make
 CMakeFiles/base.dir/StringUtils.cpp.o: StringUtils.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /root/workspace/TeamTalk/base/CMakeFiles $(CMAKE_PROGRESS_3)
+	$(CMAKE_COMMAND) -E cmake_progress_report /root/workspace/TeamTalk/base/CMakeFiles $(CMAKE_PROGRESS_5)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/base.dir/StringUtils.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/base.dir/StringUtils.cpp.o -c /root/workspace/TeamTalk/base/StringUtils.cpp
 
@@ -123,7 +169,7 @@ CMakeFiles/base.dir/StringUtils.cpp.o.provides.build: CMakeFiles/base.dir/String
 
 CMakeFiles/base.dir/ConfigFileReader.cpp.o: CMakeFiles/base.dir/flags.make
 CMakeFiles/base.dir/ConfigFileReader.cpp.o: ConfigFileReader.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /root/workspace/TeamTalk/base/CMakeFiles $(CMAKE_PROGRESS_4)
+	$(CMAKE_COMMAND) -E cmake_progress_report /root/workspace/TeamTalk/base/CMakeFiles $(CMAKE_PROGRESS_6)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/base.dir/ConfigFileReader.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/base.dir/ConfigFileReader.cpp.o -c /root/workspace/TeamTalk/base/ConfigFileReader.cpp
 
@@ -146,7 +192,7 @@ CMakeFiles/base.dir/ConfigFileReader.cpp.o.provides.build: CMakeFiles/base.dir/C
 
 CMakeFiles/base.dir/test_base.cpp.o: CMakeFiles/base.dir/flags.make
 CMakeFiles/base.dir/test_base.cpp.o: test_base.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /root/workspace/TeamTalk/base/CMakeFiles $(CMAKE_PROGRESS_5)
+	$(CMAKE_COMMAND) -E cmake_progress_report /root/workspace/TeamTalk/base/CMakeFiles $(CMAKE_PROGRESS_7)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/base.dir/test_base.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/base.dir/test_base.cpp.o -c /root/workspace/TeamTalk/base/test_base.cpp
 
@@ -167,22 +213,76 @@ CMakeFiles/base.dir/test_base.cpp.o.provides: CMakeFiles/base.dir/test_base.cpp.
 
 CMakeFiles/base.dir/test_base.cpp.o.provides.build: CMakeFiles/base.dir/test_base.cpp.o
 
+CMakeFiles/base.dir/BaseSocket.cpp.o: CMakeFiles/base.dir/flags.make
+CMakeFiles/base.dir/BaseSocket.cpp.o: BaseSocket.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /root/workspace/TeamTalk/base/CMakeFiles $(CMAKE_PROGRESS_8)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/base.dir/BaseSocket.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/base.dir/BaseSocket.cpp.o -c /root/workspace/TeamTalk/base/BaseSocket.cpp
+
+CMakeFiles/base.dir/BaseSocket.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/base.dir/BaseSocket.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /root/workspace/TeamTalk/base/BaseSocket.cpp > CMakeFiles/base.dir/BaseSocket.cpp.i
+
+CMakeFiles/base.dir/BaseSocket.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/base.dir/BaseSocket.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /root/workspace/TeamTalk/base/BaseSocket.cpp -o CMakeFiles/base.dir/BaseSocket.cpp.s
+
+CMakeFiles/base.dir/BaseSocket.cpp.o.requires:
+.PHONY : CMakeFiles/base.dir/BaseSocket.cpp.o.requires
+
+CMakeFiles/base.dir/BaseSocket.cpp.o.provides: CMakeFiles/base.dir/BaseSocket.cpp.o.requires
+	$(MAKE) -f CMakeFiles/base.dir/build.make CMakeFiles/base.dir/BaseSocket.cpp.o.provides.build
+.PHONY : CMakeFiles/base.dir/BaseSocket.cpp.o.provides
+
+CMakeFiles/base.dir/BaseSocket.cpp.o.provides.build: CMakeFiles/base.dir/BaseSocket.cpp.o
+
+CMakeFiles/base.dir/EventDispatch.cpp.o: CMakeFiles/base.dir/flags.make
+CMakeFiles/base.dir/EventDispatch.cpp.o: EventDispatch.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /root/workspace/TeamTalk/base/CMakeFiles $(CMAKE_PROGRESS_9)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/base.dir/EventDispatch.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/base.dir/EventDispatch.cpp.o -c /root/workspace/TeamTalk/base/EventDispatch.cpp
+
+CMakeFiles/base.dir/EventDispatch.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/base.dir/EventDispatch.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /root/workspace/TeamTalk/base/EventDispatch.cpp > CMakeFiles/base.dir/EventDispatch.cpp.i
+
+CMakeFiles/base.dir/EventDispatch.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/base.dir/EventDispatch.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /root/workspace/TeamTalk/base/EventDispatch.cpp -o CMakeFiles/base.dir/EventDispatch.cpp.s
+
+CMakeFiles/base.dir/EventDispatch.cpp.o.requires:
+.PHONY : CMakeFiles/base.dir/EventDispatch.cpp.o.requires
+
+CMakeFiles/base.dir/EventDispatch.cpp.o.provides: CMakeFiles/base.dir/EventDispatch.cpp.o.requires
+	$(MAKE) -f CMakeFiles/base.dir/build.make CMakeFiles/base.dir/EventDispatch.cpp.o.provides.build
+.PHONY : CMakeFiles/base.dir/EventDispatch.cpp.o.provides
+
+CMakeFiles/base.dir/EventDispatch.cpp.o.provides.build: CMakeFiles/base.dir/EventDispatch.cpp.o
+
 # Object files for target base
 base_OBJECTS = \
+"CMakeFiles/base.dir/netlib.cpp.o" \
 "CMakeFiles/base.dir/util.cpp.o" \
 "CMakeFiles/base.dir/Thread.cpp.o" \
+"CMakeFiles/base.dir/Lock.cpp.o" \
 "CMakeFiles/base.dir/StringUtils.cpp.o" \
 "CMakeFiles/base.dir/ConfigFileReader.cpp.o" \
-"CMakeFiles/base.dir/test_base.cpp.o"
+"CMakeFiles/base.dir/test_base.cpp.o" \
+"CMakeFiles/base.dir/BaseSocket.cpp.o" \
+"CMakeFiles/base.dir/EventDispatch.cpp.o"
 
 # External object files for target base
 base_EXTERNAL_OBJECTS =
 
+libbase.a: CMakeFiles/base.dir/netlib.cpp.o
 libbase.a: CMakeFiles/base.dir/util.cpp.o
 libbase.a: CMakeFiles/base.dir/Thread.cpp.o
+libbase.a: CMakeFiles/base.dir/Lock.cpp.o
 libbase.a: CMakeFiles/base.dir/StringUtils.cpp.o
 libbase.a: CMakeFiles/base.dir/ConfigFileReader.cpp.o
 libbase.a: CMakeFiles/base.dir/test_base.cpp.o
+libbase.a: CMakeFiles/base.dir/BaseSocket.cpp.o
+libbase.a: CMakeFiles/base.dir/EventDispatch.cpp.o
 libbase.a: CMakeFiles/base.dir/build.make
 libbase.a: CMakeFiles/base.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX static library libbase.a"
@@ -193,11 +293,15 @@ libbase.a: CMakeFiles/base.dir/link.txt
 CMakeFiles/base.dir/build: libbase.a
 .PHONY : CMakeFiles/base.dir/build
 
+CMakeFiles/base.dir/requires: CMakeFiles/base.dir/netlib.cpp.o.requires
 CMakeFiles/base.dir/requires: CMakeFiles/base.dir/util.cpp.o.requires
 CMakeFiles/base.dir/requires: CMakeFiles/base.dir/Thread.cpp.o.requires
+CMakeFiles/base.dir/requires: CMakeFiles/base.dir/Lock.cpp.o.requires
 CMakeFiles/base.dir/requires: CMakeFiles/base.dir/StringUtils.cpp.o.requires
 CMakeFiles/base.dir/requires: CMakeFiles/base.dir/ConfigFileReader.cpp.o.requires
 CMakeFiles/base.dir/requires: CMakeFiles/base.dir/test_base.cpp.o.requires
+CMakeFiles/base.dir/requires: CMakeFiles/base.dir/BaseSocket.cpp.o.requires
+CMakeFiles/base.dir/requires: CMakeFiles/base.dir/EventDispatch.cpp.o.requires
 .PHONY : CMakeFiles/base.dir/requires
 
 CMakeFiles/base.dir/clean:

@@ -13,6 +13,7 @@ class CDBUserTest
 {
 public:
 	void TestInsert();
+	void TestSelect();
 };
 
 #endif

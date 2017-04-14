@@ -1,0 +1,1 @@
+/usr/bin/c++       CMakeFiles/msg_server.dir/msg_server.cpp.o  -o msg_server  -L../base  -L../slog  -L/usr/local/log4cxx/lib -rdynamic -lbase -Wl,-Bstatic -lslog -Wl,-Bdynamic -llog4cxx -Wl,-rpath,../base:../slog:/usr/local/log4cxx/lib 

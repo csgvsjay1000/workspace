@@ -18,10 +18,9 @@ int main(){
 		log("DBManager init failed");
 		return -1;
 	}
-	
     CDBUserTest	 testUser;
-	testUser.TestInsert();
-
+//	testUser.TestInsert();
+	testUser.TestSelect();
 
 	return 0;
 }

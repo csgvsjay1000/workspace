@@ -1,9 +1,13 @@
 FILE(REMOVE_RECURSE
+  "CMakeFiles/base.dir/netlib.cpp.o"
   "CMakeFiles/base.dir/util.cpp.o"
   "CMakeFiles/base.dir/Thread.cpp.o"
+  "CMakeFiles/base.dir/Lock.cpp.o"
   "CMakeFiles/base.dir/StringUtils.cpp.o"
   "CMakeFiles/base.dir/ConfigFileReader.cpp.o"
   "CMakeFiles/base.dir/test_base.cpp.o"
+  "CMakeFiles/base.dir/BaseSocket.cpp.o"
+  "CMakeFiles/base.dir/EventDispatch.cpp.o"
   "libbase.pdb"
   "libbase.a"
 )

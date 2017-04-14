@@ -114,6 +114,30 @@ base/fast:
 	$(MAKE) -f CMakeFiles/base.dir/build.make CMakeFiles/base.dir/build
 .PHONY : base/fast
 
+BaseSocket.o: BaseSocket.cpp.o
+.PHONY : BaseSocket.o
+
+# target to build an object file
+BaseSocket.cpp.o:
+	$(MAKE) -f CMakeFiles/base.dir/build.make CMakeFiles/base.dir/BaseSocket.cpp.o
+.PHONY : BaseSocket.cpp.o
+
+BaseSocket.i: BaseSocket.cpp.i
+.PHONY : BaseSocket.i
+
+# target to preprocess a source file
+BaseSocket.cpp.i:
+	$(MAKE) -f CMakeFiles/base.dir/build.make CMakeFiles/base.dir/BaseSocket.cpp.i
+.PHONY : BaseSocket.cpp.i
+
+BaseSocket.s: BaseSocket.cpp.s
+.PHONY : BaseSocket.s
+
+# target to generate assembly for a file
+BaseSocket.cpp.s:
+	$(MAKE) -f CMakeFiles/base.dir/build.make CMakeFiles/base.dir/BaseSocket.cpp.s
+.PHONY : BaseSocket.cpp.s
+
 ConfigFileReader.o: ConfigFileReader.cpp.o
 .PHONY : ConfigFileReader.o
 
@@ -137,6 +161,54 @@ ConfigFileReader.s: ConfigFileReader.cpp.s
 ConfigFileReader.cpp.s:
 	$(MAKE) -f CMakeFiles/base.dir/build.make CMakeFiles/base.dir/ConfigFileReader.cpp.s
 .PHONY : ConfigFileReader.cpp.s
+
+EventDispatch.o: EventDispatch.cpp.o
+.PHONY : EventDispatch.o
+
+# target to build an object file
+EventDispatch.cpp.o:
+	$(MAKE) -f CMakeFiles/base.dir/build.make CMakeFiles/base.dir/EventDispatch.cpp.o
+.PHONY : EventDispatch.cpp.o
+
+EventDispatch.i: EventDispatch.cpp.i
+.PHONY : EventDispatch.i
+
+# target to preprocess a source file
+EventDispatch.cpp.i:
+	$(MAKE) -f CMakeFiles/base.dir/build.make CMakeFiles/base.dir/EventDispatch.cpp.i
+.PHONY : EventDispatch.cpp.i
+
+EventDispatch.s: EventDispatch.cpp.s
+.PHONY : EventDispatch.s
+
+# target to generate assembly for a file
+EventDispatch.cpp.s:
+	$(MAKE) -f CMakeFiles/base.dir/build.make CMakeFiles/base.dir/EventDispatch.cpp.s
+.PHONY : EventDispatch.cpp.s
+
+Lock.o: Lock.cpp.o
+.PHONY : Lock.o
+
+# target to build an object file
+Lock.cpp.o:
+	$(MAKE) -f CMakeFiles/base.dir/build.make CMakeFiles/base.dir/Lock.cpp.o
+.PHONY : Lock.cpp.o
+
+Lock.i: Lock.cpp.i
+.PHONY : Lock.i
+
+# target to preprocess a source file
+Lock.cpp.i:
+	$(MAKE) -f CMakeFiles/base.dir/build.make CMakeFiles/base.dir/Lock.cpp.i
+.PHONY : Lock.cpp.i
+
+Lock.s: Lock.cpp.s
+.PHONY : Lock.s
+
+# target to generate assembly for a file
+Lock.cpp.s:
+	$(MAKE) -f CMakeFiles/base.dir/build.make CMakeFiles/base.dir/Lock.cpp.s
+.PHONY : Lock.cpp.s
 
 StringUtils.o: StringUtils.cpp.o
 .PHONY : StringUtils.o
@@ -185,6 +257,30 @@ Thread.s: Thread.cpp.s
 Thread.cpp.s:
 	$(MAKE) -f CMakeFiles/base.dir/build.make CMakeFiles/base.dir/Thread.cpp.s
 .PHONY : Thread.cpp.s
+
+netlib.o: netlib.cpp.o
+.PHONY : netlib.o
+
+# target to build an object file
+netlib.cpp.o:
+	$(MAKE) -f CMakeFiles/base.dir/build.make CMakeFiles/base.dir/netlib.cpp.o
+.PHONY : netlib.cpp.o
+
+netlib.i: netlib.cpp.i
+.PHONY : netlib.i
+
+# target to preprocess a source file
+netlib.cpp.i:
+	$(MAKE) -f CMakeFiles/base.dir/build.make CMakeFiles/base.dir/netlib.cpp.i
+.PHONY : netlib.cpp.i
+
+netlib.s: netlib.cpp.s
+.PHONY : netlib.s
+
+# target to generate assembly for a file
+netlib.cpp.s:
+	$(MAKE) -f CMakeFiles/base.dir/build.make CMakeFiles/base.dir/netlib.cpp.s
+.PHONY : netlib.cpp.s
 
 test_base.o: test_base.cpp.o
 .PHONY : test_base.o
@@ -243,15 +339,27 @@ help:
 	@echo "... base"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... BaseSocket.o"
+	@echo "... BaseSocket.i"
+	@echo "... BaseSocket.s"
 	@echo "... ConfigFileReader.o"
 	@echo "... ConfigFileReader.i"
 	@echo "... ConfigFileReader.s"
+	@echo "... EventDispatch.o"
+	@echo "... EventDispatch.i"
+	@echo "... EventDispatch.s"
+	@echo "... Lock.o"
+	@echo "... Lock.i"
+	@echo "... Lock.s"
 	@echo "... StringUtils.o"
 	@echo "... StringUtils.i"
 	@echo "... StringUtils.s"
 	@echo "... Thread.o"
 	@echo "... Thread.i"
 	@echo "... Thread.s"
+	@echo "... netlib.o"
+	@echo "... netlib.i"
+	@echo "... netlib.s"
 	@echo "... test_base.o"
 	@echo "... test_base.i"
 	@echo "... test_base.s"

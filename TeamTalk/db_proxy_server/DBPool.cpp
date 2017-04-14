@@ -25,24 +25,36 @@ CResultSet::~CResultSet()
 }
 bool CResultSet::Next()
 {
-	
-	return true;
+	m_row = mysql_fetch_row(m_res);
+	if(m_row){
+		return true;
+	}	
+	return false;
 }
 int CResultSet::GetInt(const char* key)
 {
-
-	return 0
+	int idx = _GetIndex(key);
+	if(idx == -1){
+		return NULL;
+	}
+	return atoi(m_row[idx]);
 }
 char* CResultSet::GetString(const char* key)
 {
-
-	return "";
+	int idx = _GetIndex(key);
+	if(idx == -1){
+		return NULL;
+	}
+	return m_row[idx];
 }
 
 int CResultSet::_GetIndex(const char* key)
 {
-	
-	return 0;
+	map<string,int>::iterator it = m_key_map.find(key);
+	if(it == m_key_map.end()){
+		return -1;
+	}	
+	return it->second;
 }
 
 // CPrepareStatement
@@ -189,6 +201,23 @@ bool CDBConn::ExecuteUpdate(const char* sql_query)
 		return false;
 	}
 }
+
+CResultSet* CDBConn::ExecuteQuery(const char* sql_query)
+{
+	mysql_ping(m_mysql);
+	if(mysql_real_query(m_mysql,sql_query,strlen(sql_query))){
+		log("mysql_real_query failed: %s, sql: %s",mysql_error(m_mysql),sql_query);
+		return NULL;
+	}	
+	MYSQL_RES *res = mysql_store_result(m_mysql);
+	if(!res){
+		log("mysql_real_query failed: %s, ",mysql_error(m_mysql));
+		return NULL;
+	}
+	CResultSet *result_set = new CResultSet(res);
+	return result_set;
+}
+
 /// CDBPool
 CDBPool::CDBPool(const char* pool_name,const char*db_server_ip,uint16_t db_server_port,
 			const char* user_name,const char* password,const char* db_name,int max_conn_cnt)

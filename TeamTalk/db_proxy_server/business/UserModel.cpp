@@ -52,3 +52,34 @@ bool CUserModel::InsertUser(DBUserInfo_t& user)
 	return ret;
 
 }
+
+bool CUserModel::GetUser(uint32_t nUserId,DBUserInfo_t& cUser)
+{
+	CDBManager* pDBManager = CDBManager::Instance();
+	CDBConn* pDBConn = pDBManager->GetDBConn(DB_MASTER);
+	if(!pDBConn){
+		log("no db connection for %s",DB_MASTER);
+		return false;
+	}
+	bool ret = false;
+	string sql = "select * from IMUser where id="+int2string(nUserId);
+	CResultSet *pResultSet = pDBConn->ExecuteQuery(sql.c_str());
+	if(pResultSet){
+		while(pResultSet->Next()){
+			cUser.nId = pResultSet->GetInt("id");
+			cUser.nSex = pResultSet->GetInt("sex");
+			cUser.strNick= pResultSet->GetString("nick");
+			cUser.strDomain= pResultSet->GetString("domain");
+			cUser.strTel= pResultSet->GetString("phone");
+			cUser.strEmail= pResultSet->GetString("email");
+			cUser.strAvatar= pResultSet->GetString("avatar");
+			cUser.sign_info= pResultSet->GetString("sign_info");
+			cUser.strName= pResultSet->GetString("name");
+			cUser.nDeptId= pResultSet->GetInt("departId");
+			cUser.nStatus= pResultSet->GetInt("status");
+			ret = true;
+		}
+		delete pResultSet;
+	}
+	return ret;
+}	
