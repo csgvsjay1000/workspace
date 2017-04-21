@@ -75,14 +75,39 @@ CMakeFiles/msg_server.dir/msg_server.cpp.o.provides: CMakeFiles/msg_server.dir/m
 
 CMakeFiles/msg_server.dir/msg_server.cpp.o.provides.build: CMakeFiles/msg_server.dir/msg_server.cpp.o
 
+CMakeFiles/msg_server.dir/MsgConn.cpp.o: CMakeFiles/msg_server.dir/flags.make
+CMakeFiles/msg_server.dir/MsgConn.cpp.o: MsgConn.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /root/workspace/TeamTalk/msg_server/CMakeFiles $(CMAKE_PROGRESS_2)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/msg_server.dir/MsgConn.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/msg_server.dir/MsgConn.cpp.o -c /root/workspace/TeamTalk/msg_server/MsgConn.cpp
+
+CMakeFiles/msg_server.dir/MsgConn.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/msg_server.dir/MsgConn.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /root/workspace/TeamTalk/msg_server/MsgConn.cpp > CMakeFiles/msg_server.dir/MsgConn.cpp.i
+
+CMakeFiles/msg_server.dir/MsgConn.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/msg_server.dir/MsgConn.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /root/workspace/TeamTalk/msg_server/MsgConn.cpp -o CMakeFiles/msg_server.dir/MsgConn.cpp.s
+
+CMakeFiles/msg_server.dir/MsgConn.cpp.o.requires:
+.PHONY : CMakeFiles/msg_server.dir/MsgConn.cpp.o.requires
+
+CMakeFiles/msg_server.dir/MsgConn.cpp.o.provides: CMakeFiles/msg_server.dir/MsgConn.cpp.o.requires
+	$(MAKE) -f CMakeFiles/msg_server.dir/build.make CMakeFiles/msg_server.dir/MsgConn.cpp.o.provides.build
+.PHONY : CMakeFiles/msg_server.dir/MsgConn.cpp.o.provides
+
+CMakeFiles/msg_server.dir/MsgConn.cpp.o.provides.build: CMakeFiles/msg_server.dir/MsgConn.cpp.o
+
 # Object files for target msg_server
 msg_server_OBJECTS = \
-"CMakeFiles/msg_server.dir/msg_server.cpp.o"
+"CMakeFiles/msg_server.dir/msg_server.cpp.o" \
+"CMakeFiles/msg_server.dir/MsgConn.cpp.o"
 
 # External object files for target msg_server
 msg_server_EXTERNAL_OBJECTS =
 
 msg_server: CMakeFiles/msg_server.dir/msg_server.cpp.o
+msg_server: CMakeFiles/msg_server.dir/MsgConn.cpp.o
 msg_server: CMakeFiles/msg_server.dir/build.make
 msg_server: CMakeFiles/msg_server.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX executable msg_server"
@@ -93,6 +118,7 @@ CMakeFiles/msg_server.dir/build: msg_server
 .PHONY : CMakeFiles/msg_server.dir/build
 
 CMakeFiles/msg_server.dir/requires: CMakeFiles/msg_server.dir/msg_server.cpp.o.requires
+CMakeFiles/msg_server.dir/requires: CMakeFiles/msg_server.dir/MsgConn.cpp.o.requires
 .PHONY : CMakeFiles/msg_server.dir/requires
 
 CMakeFiles/msg_server.dir/clean:

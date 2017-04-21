@@ -39,7 +39,7 @@ public:
 	void operator >> (uint32_t& data);
 
 private:
-	void _ReadByte(void* buf,uint32_t& len);
+	void _ReadByte(void* buf,uint32_t len);
 
 private:
 	uint8_t* m_buf;

@@ -1,4 +1,5 @@
 #include "ImPduBase.h"
+#include <stdlib.h>
 
 CImPdu::CImPdu()
 {
@@ -22,7 +23,7 @@ bool CImPdu::IsPduAvailable(uint8_t* buf,uint32_t len,uint32_t& pdu_len)
 	return true;
 }
 
-int CImConn::ReadPduHeader(uint8_t* buf,uint32_t len)
+int CImPdu::ReadPduHeader(uint8_t* buf,uint32_t len)
 {
 	if(len < IM_PDU_HEADER_LEN || !buf)
 		return -1;
@@ -79,32 +80,32 @@ void CImPdu::SetVersion(uint16_t version)
 void CImPdu::SetFlag(uint16_t flag)
 {
 	uint8_t* buf = GetBuffer();
-	CByteStream::WriteUint16(buf+6,version);
+	CByteStream::WriteUint16(buf+6,flag);
 }
 
 void CImPdu::SetServiceId(uint16_t service_id)
 {
 	uint8_t* buf = GetBuffer();
-	CByteStream::WriteUint16(buf+8,version);
+	CByteStream::WriteUint16(buf+8,service_id);
 }
 
 void CImPdu::SetCommandId(uint16_t command_id)
 {
 	uint8_t* buf = GetBuffer();
-	CByteStream::WriteUint16(buf+10,version);
+	CByteStream::WriteUint16(buf+10,command_id);
 }
-void CImPdu::SetError(uint16_t error);
+void CImPdu::SetError(uint16_t error)
 {
 }
-void CImPdu::SetSeqNum(uint16_t seq_num);
-{
-	uint8_t* buf = GetBuffer();
-	CByteStream::WriteUint16(buf+12,version);
-}
-void CImPdu::SetReversed(uint16_t reversed);
+void CImPdu::SetSeqNum(uint16_t seq_num)
 {
 	uint8_t* buf = GetBuffer();
-	CByteStream::WriteUint16(buf+14,version);
+	CByteStream::WriteUint16(buf+12,seq_num);
+}
+void CImPdu::SetReversed(uint16_t reversed)
+{
+	uint8_t* buf = GetBuffer();
+	CByteStream::WriteUint16(buf+14,reversed);
 }
 void CImPdu::WriteHeader()
 {
@@ -117,4 +118,9 @@ void CImPdu::WriteHeader()
 	CByteStream::WriteUint16(buf+10,m_pduHeader.command_id);
 	CByteStream::WriteUint16(buf+12,m_pduHeader.seq_num);
 	CByteStream::WriteUint16(buf+14,m_pduHeader.reversed);
+}
+void CImPdu::SendMsg(const char* msg)
+{
+	m_simpleBuffer.Read(NULL,m_simpleBuffer.GetWriteOffset());
+	
 }

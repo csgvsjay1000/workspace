@@ -14,7 +14,7 @@ typedef struct{
 	uint16_t 	command_id; 			//  12
 	uint16_t 	seq_num; 		//包序号 	14
 	uint16_t 	reversed; 		//保留 	 	16
-}PduHeader_t 
+}PduHeader_t;
 
 class CImPdu
 {
@@ -45,9 +45,9 @@ public:
 	void WriteHeader();
 	static bool IsPduAvailable(uint8_t* buf,uint32_t len,uint32_t& pdu_len);
 	static CImPdu* ReadPdu(uint8_t* buf,uint32_t len);
-	void Write(uint8_t* buf,uint32_t len){m_buf.Write(buf,len);}
+	void Write(uint8_t* buf,uint32_t len){m_simpleBuffer.Write(buf,len);}
 	int ReadPduHeader(uint8_t* buf,uint32_t len);
-
+	void SendMsg(const char* msg);
 
 protected:
 	CSimpleBuffer 	m_simpleBuffer;

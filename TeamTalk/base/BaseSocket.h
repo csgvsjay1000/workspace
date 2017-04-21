@@ -23,6 +23,7 @@ public:
 	CBaseSocket();
 	~CBaseSocket(){};
 	int Listen(const char* ip,uint16_t port,callback_t callback,void* callback_data);
+	int Connect(const char* ip,uint16_t port,callback_t callback,void* callback_data);
 	
 	void OnRead();
 	void OnWrite();
@@ -47,7 +48,7 @@ private:
 	void _SetNonblock(int fd);
 	void _SetReuseAddr(int fd);
 	void _SetAddr(const char* ip,uint16_t port,sockaddr_in* pAddr);
-
+	bool _IsBlock();
 	void _AcceptNewSocket();
 
 private:

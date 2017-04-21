@@ -26,14 +26,32 @@ CMakeFiles/base.dir/EventDispatch.cpp.o: ostype.h
 CMakeFiles/base.dir/EventDispatch.cpp.o: util.h
 CMakeFiles/base.dir/EventDispatch.cpp.o: /root/workspace/TeamTalk/slog/slog_api.h
 
+CMakeFiles/base.dir/ImPduBase.cpp.o: ImPduBase.cpp
+CMakeFiles/base.dir/ImPduBase.cpp.o: ImPduBase.h
+CMakeFiles/base.dir/ImPduBase.cpp.o: SimpleBuffer.h
+
 CMakeFiles/base.dir/Lock.cpp.o: Lock.cpp
 CMakeFiles/base.dir/Lock.cpp.o: Lock.h
+
+CMakeFiles/base.dir/SimpleBuffer.cpp.o: SimpleBuffer.cpp
+CMakeFiles/base.dir/SimpleBuffer.cpp.o: SimpleBuffer.h
 
 CMakeFiles/base.dir/StringUtils.cpp.o: StringUtils.cpp
 CMakeFiles/base.dir/StringUtils.cpp.o: StringUtils.h
 
 CMakeFiles/base.dir/Thread.cpp.o: Thread.cpp
 CMakeFiles/base.dir/Thread.cpp.o: Thread.h
+
+CMakeFiles/base.dir/imconn.cpp.o: ImPduBase.h
+CMakeFiles/base.dir/imconn.cpp.o: Lock.h
+CMakeFiles/base.dir/imconn.cpp.o: SimpleBuffer.h
+CMakeFiles/base.dir/imconn.cpp.o: StringUtils.h
+CMakeFiles/base.dir/imconn.cpp.o: imconn.cpp
+CMakeFiles/base.dir/imconn.cpp.o: imconn.h
+CMakeFiles/base.dir/imconn.cpp.o: netlib.h
+CMakeFiles/base.dir/imconn.cpp.o: ostype.h
+CMakeFiles/base.dir/imconn.cpp.o: util.h
+CMakeFiles/base.dir/imconn.cpp.o: /root/workspace/TeamTalk/slog/slog_api.h
 
 CMakeFiles/base.dir/netlib.cpp.o: BaseSocket.h
 CMakeFiles/base.dir/netlib.cpp.o: EventDispatch.h

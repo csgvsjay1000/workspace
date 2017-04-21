@@ -67,7 +67,7 @@ void CEventDispatch::StartDispatch(int timeout)
 				pSocket->OnWrite();
 			}
 
-			if(events[i].events & EPOLLPRI | EPOLLERR | EPOLLHUP)
+			if(events[i].events & (EPOLLPRI | EPOLLERR | EPOLLHUP))
 			{
 				pSocket->OnClose();
 			}

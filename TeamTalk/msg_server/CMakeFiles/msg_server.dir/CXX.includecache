@@ -10,13 +10,31 @@
 util.h
 ../base/util.h
 
+../base/ImPduBase.h
+SimpleBuffer.h
+../base/SimpleBuffer.h
+
 ../base/Lock.h
 pthread.h
+-
+
+../base/SimpleBuffer.h
+stdint.h
 -
 
 ../base/StringUtils.h
 stdint.h
 -
+
+../base/imconn.h
+netlib.h
+../base/netlib.h
+ImPduBase.h
+../base/ImPduBase.h
+string
+-
+Lock.h
+../base/Lock.h
 
 ../base/netlib.h
 ostype.h
@@ -78,6 +96,16 @@ Lock.h
 stdio.h
 -
 
+/root/workspace/TeamTalk/msg_server/MsgConn.cpp
+MsgConn.h
+/root/workspace/TeamTalk/msg_server/MsgConn.h
+util.h
+/root/workspace/TeamTalk/msg_server/util.h
+
+/root/workspace/TeamTalk/msg_server/MsgConn.h
+imconn.h
+/root/workspace/TeamTalk/msg_server/imconn.h
+
 /root/workspace/TeamTalk/msg_server/msg_server.cpp
 util.h
 /root/workspace/TeamTalk/msg_server/util.h
@@ -85,4 +113,6 @@ ConfigFileReader.h
 /root/workspace/TeamTalk/msg_server/ConfigFileReader.h
 netlib.h
 /root/workspace/TeamTalk/msg_server/netlib.h
+MsgConn.h
+/root/workspace/TeamTalk/msg_server/MsgConn.h
 

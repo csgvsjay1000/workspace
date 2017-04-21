@@ -38,6 +38,8 @@ CBaseSocket::CBaseSocket()
 
 int CBaseSocket::Listen(const char* ip,uint16_t port,callback_t callback,void* callback_data)
 {
+	m_callback = callback;
+	m_callbackData = callback_data;
 	m_socket = socket(AF_INET,SOCK_STREAM,0);
 	if(m_socket == -1)
 	{
@@ -69,6 +71,37 @@ int CBaseSocket::Listen(const char* ip,uint16_t port,callback_t callback,void* c
 	AddBaseSocket(this);
 	CEventDispatch::Instance()->AddEvent(m_socket);
 	return 0;
+}
+int CBaseSocket::Connect(const char* ip,uint16_t port,callback_t callback,void* callback_data)
+{
+	m_callback = callback;
+	m_callbackData = callback_data;
+
+	m_socket = socket(AF_INET,SOCK_STREAM,0);
+	if(m_socket == -1)
+	{
+		log("socket failed, err_code=%d ",errno);
+		return -1;
+	}
+
+	_SetNonblock(m_socket);
+	sockaddr_in serv_addr;
+	_SetAddr(ip,port,&serv_addr);
+	int ret = connect(m_socket,(sockaddr*)&serv_addr,sizeof(serv_addr));
+	if(ret == -1 && !_IsBlock() )
+	{
+		log("connect failed, err_code=%d ",errno);
+		close(m_socket);
+		return -1;
+	}
+	m_state = SOCKET_STATE_CONNECTING;
+	AddBaseSocket(this);
+	CEventDispatch::Instance()->AddEvent(m_socket);
+	return m_socket;
+}
+bool CBaseSocket::_IsBlock()
+{
+	return ((errno == EINPROGRESS) || errno == EWOULDBLOCK);
 }
 
 void CBaseSocket::OnRead()

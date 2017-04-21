@@ -114,6 +114,30 @@ msg_server/fast:
 	$(MAKE) -f CMakeFiles/msg_server.dir/build.make CMakeFiles/msg_server.dir/build
 .PHONY : msg_server/fast
 
+MsgConn.o: MsgConn.cpp.o
+.PHONY : MsgConn.o
+
+# target to build an object file
+MsgConn.cpp.o:
+	$(MAKE) -f CMakeFiles/msg_server.dir/build.make CMakeFiles/msg_server.dir/MsgConn.cpp.o
+.PHONY : MsgConn.cpp.o
+
+MsgConn.i: MsgConn.cpp.i
+.PHONY : MsgConn.i
+
+# target to preprocess a source file
+MsgConn.cpp.i:
+	$(MAKE) -f CMakeFiles/msg_server.dir/build.make CMakeFiles/msg_server.dir/MsgConn.cpp.i
+.PHONY : MsgConn.cpp.i
+
+MsgConn.s: MsgConn.cpp.s
+.PHONY : MsgConn.s
+
+# target to generate assembly for a file
+MsgConn.cpp.s:
+	$(MAKE) -f CMakeFiles/msg_server.dir/build.make CMakeFiles/msg_server.dir/MsgConn.cpp.s
+.PHONY : MsgConn.cpp.s
+
 msg_server.o: msg_server.cpp.o
 .PHONY : msg_server.o
 
@@ -147,6 +171,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... msg_server"
 	@echo "... rebuild_cache"
+	@echo "... MsgConn.o"
+	@echo "... MsgConn.i"
+	@echo "... MsgConn.s"
 	@echo "... msg_server.o"
 	@echo "... msg_server.i"
 	@echo "... msg_server.s"

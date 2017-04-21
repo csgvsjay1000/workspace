@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/root/workspace/TeamTalk_V2_20170422/base/SZPduBase.cpp
+SZPduBase.h
+/root/workspace/TeamTalk_V2_20170422/base/SZPduBase.h
+SZSimpleBuffer.h
+/root/workspace/TeamTalk_V2_20170422/base/SZSimpleBuffer.h
+string.h
+-
+stdio.h
+-
+
+/root/workspace/TeamTalk_V2_20170422/base/SZPduBase.h
+SZSimpleBuffer.h
+/root/workspace/TeamTalk_V2_20170422/base/SZSimpleBuffer.h
+google/protobuf/message_lite.h
+-
+
+/root/workspace/TeamTalk_V2_20170422/base/SZSimpleBuffer.h
+stdint.h
+-
+

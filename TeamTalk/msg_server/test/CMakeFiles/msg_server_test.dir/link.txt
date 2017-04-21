@@ -1,0 +1,1 @@
+/usr/bin/c++       CMakeFiles/msg_server_test.dir/MsgServerTest.cpp.o CMakeFiles/msg_server_test.dir/MsgTest.cpp.o  -o msg_server_test  -L../../base  -L../../slog  -L/usr/local/log4cxx/lib -rdynamic -lbase -Wl,-Bstatic -lslog -Wl,-Bdynamic -llog4cxx -Wl,-rpath,../../base:../../slog:/usr/local/log4cxx/lib 

@@ -1,0 +1,6 @@
+package IM.Server;
+
+message IMValidateReq{
+	required string user_name = 1;
+	required string password = 2;
+}

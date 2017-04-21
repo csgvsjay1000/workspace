@@ -5,13 +5,13 @@
 
 void msg_serv_callback(void* callbackData,uint8_t msg,uint32_t handle,void* pParam)
 {
+	log("!!! msg: %d",msg);
 	if(msg == NETLIB_MSG_CONNECT)
 	{
 		
 	}
 	else
 	{
-		log("!!! error msg: %d",msg);
 	}
 }
 

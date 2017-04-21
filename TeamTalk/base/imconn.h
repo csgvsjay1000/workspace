@@ -4,6 +4,7 @@
 #include "netlib.h"
 #include "ImPduBase.h"
 #include <string>
+#include "Lock.h"
 
 using namespace std;
 
@@ -24,16 +25,20 @@ public:
 	int Send(void* data, int len);
 	int SendPdu(CImPdu* pPdu){return Send(pPdu->GetBuffer(),pPdu->GetLength());}
 
-	virtual void OnConnect(int handle){}
+	virtual void OnConnect(int handle){m_handle = handle;}
 	virtual void OnConfirm(){}
-	virtual void OnRead(){}
-	virtual void OnWrite(){}
+	virtual void OnRead();
+	virtual void OnWrite();
 	virtual void OnClose(){}
 	virtual void OnTimer(uint64_t curr_tick){}
 	virtual void OnWriteCompelete(){}
 
-private:
+	virtual void HandlePdu(CImPdu* pPdu){}
+
+protected:
 	int 		m_handle;
+
+private:
 	bool 		m_busy;
 
 	string 		m_peerIp;

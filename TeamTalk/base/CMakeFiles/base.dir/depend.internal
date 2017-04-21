@@ -26,15 +26,33 @@ CMakeFiles/base.dir/EventDispatch.cpp.o
  /root/workspace/TeamTalk/base/ostype.h
  /root/workspace/TeamTalk/base/util.h
  /root/workspace/TeamTalk/slog/slog_api.h
+CMakeFiles/base.dir/ImPduBase.cpp.o
+ /root/workspace/TeamTalk/base/ImPduBase.cpp
+ /root/workspace/TeamTalk/base/ImPduBase.h
+ /root/workspace/TeamTalk/base/SimpleBuffer.h
 CMakeFiles/base.dir/Lock.cpp.o
  /root/workspace/TeamTalk/base/Lock.cpp
  /root/workspace/TeamTalk/base/Lock.h
+CMakeFiles/base.dir/SimpleBuffer.cpp.o
+ /root/workspace/TeamTalk/base/SimpleBuffer.cpp
+ /root/workspace/TeamTalk/base/SimpleBuffer.h
 CMakeFiles/base.dir/StringUtils.cpp.o
  /root/workspace/TeamTalk/base/StringUtils.cpp
  /root/workspace/TeamTalk/base/StringUtils.h
 CMakeFiles/base.dir/Thread.cpp.o
  /root/workspace/TeamTalk/base/Thread.cpp
  /root/workspace/TeamTalk/base/Thread.h
+CMakeFiles/base.dir/imconn.cpp.o
+ /root/workspace/TeamTalk/base/ImPduBase.h
+ /root/workspace/TeamTalk/base/Lock.h
+ /root/workspace/TeamTalk/base/SimpleBuffer.h
+ /root/workspace/TeamTalk/base/StringUtils.h
+ /root/workspace/TeamTalk/base/imconn.cpp
+ /root/workspace/TeamTalk/base/imconn.h
+ /root/workspace/TeamTalk/base/netlib.h
+ /root/workspace/TeamTalk/base/ostype.h
+ /root/workspace/TeamTalk/base/util.h
+ /root/workspace/TeamTalk/slog/slog_api.h
 CMakeFiles/base.dir/netlib.cpp.o
  /root/workspace/TeamTalk/base/BaseSocket.h
  /root/workspace/TeamTalk/base/EventDispatch.h

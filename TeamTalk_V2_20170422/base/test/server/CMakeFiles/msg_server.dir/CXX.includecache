@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../../SZBaseSocket.h
+SZHeaders.h
+../../SZHeaders.h
+
+../../SZHeaders.h
+stdlib.h
+-
+unistd.h
+-
+sys/socket.h
+-
+stdint.h
+-
+netinet/in.h
+-
+
+/root/workspace/TeamTalk_V2_20170422/base/test/server/server.cpp
+SZBaseSocket.h
+/root/workspace/TeamTalk_V2_20170422/base/test/server/SZBaseSocket.h
+

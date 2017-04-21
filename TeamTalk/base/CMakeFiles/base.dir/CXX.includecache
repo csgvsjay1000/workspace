@@ -6,37 +6,43 @@
 
 #IncludeRegexTransform: 
 
-/root/workspace/TeamTalk/base/BaseSocket.h
-sys/socket.h
--
-string
--
-ostype.h
-/root/workspace/TeamTalk/base/ostype.h
-util.h
-/root/workspace/TeamTalk/base/util.h
-
-/root/workspace/TeamTalk/base/EventDispatch.cpp
-EventDispatch.h
-/root/workspace/TeamTalk/base/EventDispatch.h
-sys/epoll.h
--
-BaseSocket.h
-/root/workspace/TeamTalk/base/BaseSocket.h
-
-/root/workspace/TeamTalk/base/EventDispatch.h
-ostype.h
-/root/workspace/TeamTalk/base/ostype.h
-util.h
-/root/workspace/TeamTalk/base/util.h
+/root/workspace/TeamTalk/base/ImPduBase.h
+SimpleBuffer.h
+/root/workspace/TeamTalk/base/SimpleBuffer.h
 
 /root/workspace/TeamTalk/base/Lock.h
 pthread.h
 -
 
+/root/workspace/TeamTalk/base/SimpleBuffer.h
+stdint.h
+-
+
 /root/workspace/TeamTalk/base/StringUtils.h
 stdint.h
 -
+
+/root/workspace/TeamTalk/base/imconn.cpp
+imconn.h
+/root/workspace/TeamTalk/base/imconn.h
+util.h
+/root/workspace/TeamTalk/base/util.h
+netlib.h
+/root/workspace/TeamTalk/base/netlib.h
+
+/root/workspace/TeamTalk/base/imconn.h
+netlib.h
+/root/workspace/TeamTalk/base/netlib.h
+ImPduBase.h
+/root/workspace/TeamTalk/base/ImPduBase.h
+string
+-
+Lock.h
+/root/workspace/TeamTalk/base/Lock.h
+
+/root/workspace/TeamTalk/base/netlib.h
+ostype.h
+/root/workspace/TeamTalk/base/ostype.h
 
 /root/workspace/TeamTalk/base/ostype.h
 stdint.h

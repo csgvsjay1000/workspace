@@ -62,7 +62,7 @@ CMAKE_BINARY_DIR = /root/workspace/TeamTalk/msg_server
 CMakeFiles/msg_server.dir/all:
 	$(MAKE) -f CMakeFiles/msg_server.dir/build.make CMakeFiles/msg_server.dir/depend
 	$(MAKE) -f CMakeFiles/msg_server.dir/build.make CMakeFiles/msg_server.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /root/workspace/TeamTalk/msg_server/CMakeFiles  1
+	$(CMAKE_COMMAND) -E cmake_progress_report /root/workspace/TeamTalk/msg_server/CMakeFiles  1 2
 	@echo "Built target msg_server"
 .PHONY : CMakeFiles/msg_server.dir/all
 
@@ -72,7 +72,7 @@ all: CMakeFiles/msg_server.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/msg_server.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/workspace/TeamTalk/msg_server/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/workspace/TeamTalk/msg_server/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/msg_server.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /root/workspace/TeamTalk/msg_server/CMakeFiles 0
 .PHONY : CMakeFiles/msg_server.dir/rule

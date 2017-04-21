@@ -1,6 +1,7 @@
 #include "util.h"
 #include <sstream>
 #include <stdlib.h>
+#include <sys/time.h>
 
 CSLog g_imlog = CSLog(LOG_MODULE_IM);
 

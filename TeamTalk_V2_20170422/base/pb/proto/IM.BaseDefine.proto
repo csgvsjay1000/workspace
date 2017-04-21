@@ -1,0 +1,10 @@
+package IM.BaseDefine;
+
+// service id
+enum ServiceID{
+	SID_LOGIN 				= 0x0001;
+}
+
+enum LoginCmdID{
+	CID_LOGIN_REQ_MSGSERVER 			= 0X0101;
+}

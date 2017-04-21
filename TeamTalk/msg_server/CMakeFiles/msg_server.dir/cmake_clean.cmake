@@ -1,5 +1,6 @@
 FILE(REMOVE_RECURSE
   "CMakeFiles/msg_server.dir/msg_server.cpp.o"
+  "CMakeFiles/msg_server.dir/MsgConn.cpp.o"
   "msg_server.pdb"
   "msg_server"
 )

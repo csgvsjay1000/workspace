@@ -1,5 +1,7 @@
 #include "SimpleBuffer.h"
 #include <string.h>
+#include <unistd.h>
+#include <stdlib.h>
 
 CSimpleBuffer::CSimpleBuffer()
 {
@@ -99,7 +101,7 @@ void CByteStream::operator >> (uint32_t& data)
 	data = (buf[0]<<24)|(buf[1]<<16)|(buf[2]<<8)|(buf[3]);
 }
 
-void CByteStream::_ReadByte(void* buf,uint32_t& len)
+void CByteStream::_ReadByte(void* buf,uint32_t len)
 {
 	if(m_pos+len>m_len)
 	{
