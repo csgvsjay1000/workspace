@@ -1,0 +1,1 @@
+/usr/bin/c++       CMakeFiles/db_proxy_server.dir/RedisTest.cpp.o  -o db_proxy_server  -L/usr/local/lib -rdynamic -lprotobuf -lpthread -lhiredis -Wl,-rpath,/usr/local/lib 

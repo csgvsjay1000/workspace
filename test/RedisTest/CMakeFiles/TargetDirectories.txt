@@ -1,0 +1,1 @@
+/root/workspace/test/RedisTest/CMakeFiles/db_proxy_server.dir

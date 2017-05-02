@@ -21,8 +21,15 @@ namespace BaseDefine {
 
 namespace {
 
+const ::google::protobuf::Descriptor* UserInfo_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  UserInfo_reflection_ = NULL;
 const ::google::protobuf::EnumDescriptor* ServiceID_descriptor_ = NULL;
 const ::google::protobuf::EnumDescriptor* LoginCmdID_descriptor_ = NULL;
+const ::google::protobuf::EnumDescriptor* MessageCmdID_descriptor_ = NULL;
+const ::google::protobuf::EnumDescriptor* OtherCmdID_descriptor_ = NULL;
+const ::google::protobuf::EnumDescriptor* SessionType_descriptor_ = NULL;
+const ::google::protobuf::EnumDescriptor* MsgType_descriptor_ = NULL;
 
 }  // namespace
 
@@ -33,8 +40,28 @@ void protobuf_AssignDesc_IM_2eBaseDefine_2eproto() {
     ::google::protobuf::DescriptorPool::generated_pool()->FindFileByName(
       "IM.BaseDefine.proto");
   GOOGLE_CHECK(file != NULL);
+  UserInfo_descriptor_ = file->message_type(0);
+  static const int UserInfo_offsets_[2] = {
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(UserInfo, user_id_),
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(UserInfo, user_nick_name_),
+  };
+  UserInfo_reflection_ =
+    new ::google::protobuf::internal::GeneratedMessageReflection(
+      UserInfo_descriptor_,
+      UserInfo::default_instance_,
+      UserInfo_offsets_,
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(UserInfo, _has_bits_[0]),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(UserInfo, _unknown_fields_),
+      -1,
+      ::google::protobuf::DescriptorPool::generated_pool(),
+      ::google::protobuf::MessageFactory::generated_factory(),
+      sizeof(UserInfo));
   ServiceID_descriptor_ = file->enum_type(0);
   LoginCmdID_descriptor_ = file->enum_type(1);
+  MessageCmdID_descriptor_ = file->enum_type(2);
+  OtherCmdID_descriptor_ = file->enum_type(3);
+  SessionType_descriptor_ = file->enum_type(4);
+  MsgType_descriptor_ = file->enum_type(5);
 }
 
 namespace {
@@ -47,11 +74,15 @@ inline void protobuf_AssignDescriptorsOnce() {
 
 void protobuf_RegisterTypes(const ::std::string&) {
   protobuf_AssignDescriptorsOnce();
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+    UserInfo_descriptor_, &UserInfo::default_instance());
 }
 
 }  // namespace
 
 void protobuf_ShutdownFile_IM_2eBaseDefine_2eproto() {
+  delete UserInfo::default_instance_;
+  delete UserInfo_reflection_;
 }
 
 void protobuf_AddDesc_IM_2eBaseDefine_2eproto() {
@@ -61,11 +92,23 @@ void protobuf_AddDesc_IM_2eBaseDefine_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-    "\n\023IM.BaseDefine.proto\022\rIM.BaseDefine*\032\n\t"
-    "ServiceID\022\r\n\tSID_LOGIN\020\001**\n\nLoginCmdID\022\034"
-    "\n\027CID_LOGIN_REQ_MSGSERVER\020\201\002", 108);
+    "\n\023IM.BaseDefine.proto\022\rIM.BaseDefine\"3\n\010"
+    "UserInfo\022\017\n\007user_id\030\001 \002(\r\022\026\n\016user_nick_n"
+    "ame\030\002 \002(\t*6\n\tServiceID\022\r\n\tSID_LOGIN\020\001\022\013\n"
+    "\007SID_MSG\020\003\022\r\n\tSID_OTHER\020\007**\n\nLoginCmdID\022"
+    "\034\n\027CID_LOGIN_REQ_MSGSERVER\020\201\002*8\n\014Message"
+    "CmdID\022\021\n\014CID_MSG_DATA\020\201\006\022\025\n\020CID_MSG_DATA"
+    "_ACK\020\202\006*F\n\nOtherCmdID\022\033\n\026CID_OTHER_VALID"
+    "ATE_REQ\020\203\016\022\033\n\026CID_OTHER_VALIDATE_RSP\020\204\016*"
+    ">\n\013SessionType\022\027\n\023SESSION_TYPE_SINGLE\020\001\022"
+    "\026\n\022SESSION_TYPE_GROUP\020\002*q\n\007MsgType\022\030\n\024MS"
+    "G_TYPE_SINGLE_TEXT\020\001\022\031\n\025MSG_TYPE_SINGLE_"
+    "AUDIO\020\002\022\027\n\023MSG_TYPE_GROUP_TEXT\020\021\022\030\n\024MSG_"
+    "TYPE_GROUP_AUDIO\020\022", 498);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "IM.BaseDefine.proto", &protobuf_RegisterTypes);
+  UserInfo::default_instance_ = new UserInfo();
+  UserInfo::default_instance_->InitAsDefaultInstance();
   ::google::protobuf::internal::OnShutdown(&protobuf_ShutdownFile_IM_2eBaseDefine_2eproto);
 }
 
@@ -82,6 +125,8 @@ const ::google::protobuf::EnumDescriptor* ServiceID_descriptor() {
 bool ServiceID_IsValid(int value) {
   switch(value) {
     case 1:
+    case 3:
+    case 7:
       return true;
     default:
       return false;
@@ -99,6 +144,349 @@ bool LoginCmdID_IsValid(int value) {
     default:
       return false;
   }
+}
+
+const ::google::protobuf::EnumDescriptor* MessageCmdID_descriptor() {
+  protobuf_AssignDescriptorsOnce();
+  return MessageCmdID_descriptor_;
+}
+bool MessageCmdID_IsValid(int value) {
+  switch(value) {
+    case 769:
+    case 770:
+      return true;
+    default:
+      return false;
+  }
+}
+
+const ::google::protobuf::EnumDescriptor* OtherCmdID_descriptor() {
+  protobuf_AssignDescriptorsOnce();
+  return OtherCmdID_descriptor_;
+}
+bool OtherCmdID_IsValid(int value) {
+  switch(value) {
+    case 1795:
+    case 1796:
+      return true;
+    default:
+      return false;
+  }
+}
+
+const ::google::protobuf::EnumDescriptor* SessionType_descriptor() {
+  protobuf_AssignDescriptorsOnce();
+  return SessionType_descriptor_;
+}
+bool SessionType_IsValid(int value) {
+  switch(value) {
+    case 1:
+    case 2:
+      return true;
+    default:
+      return false;
+  }
+}
+
+const ::google::protobuf::EnumDescriptor* MsgType_descriptor() {
+  protobuf_AssignDescriptorsOnce();
+  return MsgType_descriptor_;
+}
+bool MsgType_IsValid(int value) {
+  switch(value) {
+    case 1:
+    case 2:
+    case 17:
+    case 18:
+      return true;
+    default:
+      return false;
+  }
+}
+
+
+// ===================================================================
+
+#ifndef _MSC_VER
+const int UserInfo::kUserIdFieldNumber;
+const int UserInfo::kUserNickNameFieldNumber;
+#endif  // !_MSC_VER
+
+UserInfo::UserInfo()
+  : ::google::protobuf::Message() {
+  SharedCtor();
+  // @@protoc_insertion_point(constructor:IM.BaseDefine.UserInfo)
+}
+
+void UserInfo::InitAsDefaultInstance() {
+}
+
+UserInfo::UserInfo(const UserInfo& from)
+  : ::google::protobuf::Message() {
+  SharedCtor();
+  MergeFrom(from);
+  // @@protoc_insertion_point(copy_constructor:IM.BaseDefine.UserInfo)
+}
+
+void UserInfo::SharedCtor() {
+  ::google::protobuf::internal::GetEmptyString();
+  _cached_size_ = 0;
+  user_id_ = 0u;
+  user_nick_name_ = const_cast< ::std::string*>(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  ::memset(_has_bits_, 0, sizeof(_has_bits_));
+}
+
+UserInfo::~UserInfo() {
+  // @@protoc_insertion_point(destructor:IM.BaseDefine.UserInfo)
+  SharedDtor();
+}
+
+void UserInfo::SharedDtor() {
+  if (user_nick_name_ != &::google::protobuf::internal::GetEmptyStringAlreadyInited()) {
+    delete user_nick_name_;
+  }
+  if (this != default_instance_) {
+  }
+}
+
+void UserInfo::SetCachedSize(int size) const {
+  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
+  _cached_size_ = size;
+  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+}
+const ::google::protobuf::Descriptor* UserInfo::descriptor() {
+  protobuf_AssignDescriptorsOnce();
+  return UserInfo_descriptor_;
+}
+
+const UserInfo& UserInfo::default_instance() {
+  if (default_instance_ == NULL) protobuf_AddDesc_IM_2eBaseDefine_2eproto();
+  return *default_instance_;
+}
+
+UserInfo* UserInfo::default_instance_ = NULL;
+
+UserInfo* UserInfo::New() const {
+  return new UserInfo;
+}
+
+void UserInfo::Clear() {
+  if (_has_bits_[0 / 32] & 3) {
+    user_id_ = 0u;
+    if (has_user_nick_name()) {
+      if (user_nick_name_ != &::google::protobuf::internal::GetEmptyStringAlreadyInited()) {
+        user_nick_name_->clear();
+      }
+    }
+  }
+  ::memset(_has_bits_, 0, sizeof(_has_bits_));
+  mutable_unknown_fields()->Clear();
+}
+
+bool UserInfo::MergePartialFromCodedStream(
+    ::google::protobuf::io::CodedInputStream* input) {
+#define DO_(EXPRESSION) if (!(EXPRESSION)) goto failure
+  ::google::protobuf::uint32 tag;
+  // @@protoc_insertion_point(parse_start:IM.BaseDefine.UserInfo)
+  for (;;) {
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
+    switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+      // required uint32 user_id = 1;
+      case 1: {
+        if (tag == 8) {
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
+                 input, &user_id_)));
+          set_has_user_id();
+        } else {
+          goto handle_unusual;
+        }
+        if (input->ExpectTag(18)) goto parse_user_nick_name;
+        break;
+      }
+
+      // required string user_nick_name = 2;
+      case 2: {
+        if (tag == 18) {
+         parse_user_nick_name:
+          DO_(::google::protobuf::internal::WireFormatLite::ReadString(
+                input, this->mutable_user_nick_name()));
+          ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
+            this->user_nick_name().data(), this->user_nick_name().length(),
+            ::google::protobuf::internal::WireFormat::PARSE,
+            "user_nick_name");
+        } else {
+          goto handle_unusual;
+        }
+        if (input->ExpectAtEnd()) goto success;
+        break;
+      }
+
+      default: {
+      handle_unusual:
+        if (tag == 0 ||
+            ::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+            ::google::protobuf::internal::WireFormatLite::WIRETYPE_END_GROUP) {
+          goto success;
+        }
+        DO_(::google::protobuf::internal::WireFormat::SkipField(
+              input, tag, mutable_unknown_fields()));
+        break;
+      }
+    }
+  }
+success:
+  // @@protoc_insertion_point(parse_success:IM.BaseDefine.UserInfo)
+  return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:IM.BaseDefine.UserInfo)
+  return false;
+#undef DO_
+}
+
+void UserInfo::SerializeWithCachedSizes(
+    ::google::protobuf::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:IM.BaseDefine.UserInfo)
+  // required uint32 user_id = 1;
+  if (has_user_id()) {
+    ::google::protobuf::internal::WireFormatLite::WriteUInt32(1, this->user_id(), output);
+  }
+
+  // required string user_nick_name = 2;
+  if (has_user_nick_name()) {
+    ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
+      this->user_nick_name().data(), this->user_nick_name().length(),
+      ::google::protobuf::internal::WireFormat::SERIALIZE,
+      "user_nick_name");
+    ::google::protobuf::internal::WireFormatLite::WriteStringMaybeAliased(
+      2, this->user_nick_name(), output);
+  }
+
+  if (!unknown_fields().empty()) {
+    ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
+        unknown_fields(), output);
+  }
+  // @@protoc_insertion_point(serialize_end:IM.BaseDefine.UserInfo)
+}
+
+::google::protobuf::uint8* UserInfo::SerializeWithCachedSizesToArray(
+    ::google::protobuf::uint8* target) const {
+  // @@protoc_insertion_point(serialize_to_array_start:IM.BaseDefine.UserInfo)
+  // required uint32 user_id = 1;
+  if (has_user_id()) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(1, this->user_id(), target);
+  }
+
+  // required string user_nick_name = 2;
+  if (has_user_nick_name()) {
+    ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
+      this->user_nick_name().data(), this->user_nick_name().length(),
+      ::google::protobuf::internal::WireFormat::SERIALIZE,
+      "user_nick_name");
+    target =
+      ::google::protobuf::internal::WireFormatLite::WriteStringToArray(
+        2, this->user_nick_name(), target);
+  }
+
+  if (!unknown_fields().empty()) {
+    target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
+        unknown_fields(), target);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:IM.BaseDefine.UserInfo)
+  return target;
+}
+
+int UserInfo::ByteSize() const {
+  int total_size = 0;
+
+  if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
+    // required uint32 user_id = 1;
+    if (has_user_id()) {
+      total_size += 1 +
+        ::google::protobuf::internal::WireFormatLite::UInt32Size(
+          this->user_id());
+    }
+
+    // required string user_nick_name = 2;
+    if (has_user_nick_name()) {
+      total_size += 1 +
+        ::google::protobuf::internal::WireFormatLite::StringSize(
+          this->user_nick_name());
+    }
+
+  }
+  if (!unknown_fields().empty()) {
+    total_size +=
+      ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
+        unknown_fields());
+  }
+  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
+  _cached_size_ = total_size;
+  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+  return total_size;
+}
+
+void UserInfo::MergeFrom(const ::google::protobuf::Message& from) {
+  GOOGLE_CHECK_NE(&from, this);
+  const UserInfo* source =
+    ::google::protobuf::internal::dynamic_cast_if_available<const UserInfo*>(
+      &from);
+  if (source == NULL) {
+    ::google::protobuf::internal::ReflectionOps::Merge(from, this);
+  } else {
+    MergeFrom(*source);
+  }
+}
+
+void UserInfo::MergeFrom(const UserInfo& from) {
+  GOOGLE_CHECK_NE(&from, this);
+  if (from._has_bits_[0 / 32] & (0xffu << (0 % 32))) {
+    if (from.has_user_id()) {
+      set_user_id(from.user_id());
+    }
+    if (from.has_user_nick_name()) {
+      set_user_nick_name(from.user_nick_name());
+    }
+  }
+  mutable_unknown_fields()->MergeFrom(from.unknown_fields());
+}
+
+void UserInfo::CopyFrom(const ::google::protobuf::Message& from) {
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+void UserInfo::CopyFrom(const UserInfo& from) {
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool UserInfo::IsInitialized() const {
+  if ((_has_bits_[0] & 0x00000003) != 0x00000003) return false;
+
+  return true;
+}
+
+void UserInfo::Swap(UserInfo* other) {
+  if (other != this) {
+    std::swap(user_id_, other->user_id_);
+    std::swap(user_nick_name_, other->user_nick_name_);
+    std::swap(_has_bits_[0], other->_has_bits_[0]);
+    _unknown_fields_.Swap(&other->_unknown_fields_);
+    std::swap(_cached_size_, other->_cached_size_);
+  }
+}
+
+::google::protobuf::Metadata UserInfo::GetMetadata() const {
+  protobuf_AssignDescriptorsOnce();
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = UserInfo_descriptor_;
+  metadata.reflection = UserInfo_reflection_;
+  return metadata;
 }
 
 

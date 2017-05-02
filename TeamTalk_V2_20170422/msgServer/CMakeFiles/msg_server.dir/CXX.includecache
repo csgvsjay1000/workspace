@@ -12,6 +12,8 @@ SZHeaders.h
 SZPduBase.h
 ../base/SZPduBase.h
 
+../base/SZEventDispatch.h
+
 ../base/SZHeaders.h
 stdlib.h
 -
@@ -44,13 +46,21 @@ google/protobuf/message_lite.h
 stdint.h
 -
 
-/root/workspace/TeamTalk_V2_20170422/msgServer/SZDBServConn.cpp
-SZDBServConn.h
-/root/workspace/TeamTalk_V2_20170422/msgServer/SZDBServConn.h
-vector
--
-
 /root/workspace/TeamTalk_V2_20170422/msgServer/SZDBServConn.h
 SZBaseSocket.h
 /root/workspace/TeamTalk_V2_20170422/msgServer/SZBaseSocket.h
+
+/root/workspace/TeamTalk_V2_20170422/msgServer/SZMsgConn.h
+SZBaseSocket.h
+/root/workspace/TeamTalk_V2_20170422/msgServer/SZBaseSocket.h
+
+/root/workspace/TeamTalk_V2_20170422/msgServer/msg_server.cpp
+SZBaseSocket.h
+/root/workspace/TeamTalk_V2_20170422/msgServer/SZBaseSocket.h
+SZEventDispatch.h
+/root/workspace/TeamTalk_V2_20170422/msgServer/SZEventDispatch.h
+SZMsgConn.h
+/root/workspace/TeamTalk_V2_20170422/msgServer/SZMsgConn.h
+SZDBServConn.h
+/root/workspace/TeamTalk_V2_20170422/msgServer/SZDBServConn.h
 

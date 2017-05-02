@@ -121,9 +121,55 @@ CMakeFiles/msg_server.dir/SZMsgConn.cpp.o.provides: CMakeFiles/msg_server.dir/SZ
 
 CMakeFiles/msg_server.dir/SZMsgConn.cpp.o.provides.build: CMakeFiles/msg_server.dir/SZMsgConn.cpp.o
 
+CMakeFiles/msg_server.dir/root/workspace/TeamTalk_V2_20170422/base/SZThread.cpp.o: CMakeFiles/msg_server.dir/flags.make
+CMakeFiles/msg_server.dir/root/workspace/TeamTalk_V2_20170422/base/SZThread.cpp.o: /root/workspace/TeamTalk_V2_20170422/base/SZThread.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /root/workspace/TeamTalk_V2_20170422/msgServer/CMakeFiles $(CMAKE_PROGRESS_4)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/msg_server.dir/root/workspace/TeamTalk_V2_20170422/base/SZThread.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/msg_server.dir/root/workspace/TeamTalk_V2_20170422/base/SZThread.cpp.o -c /root/workspace/TeamTalk_V2_20170422/base/SZThread.cpp
+
+CMakeFiles/msg_server.dir/root/workspace/TeamTalk_V2_20170422/base/SZThread.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/msg_server.dir/root/workspace/TeamTalk_V2_20170422/base/SZThread.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /root/workspace/TeamTalk_V2_20170422/base/SZThread.cpp > CMakeFiles/msg_server.dir/root/workspace/TeamTalk_V2_20170422/base/SZThread.cpp.i
+
+CMakeFiles/msg_server.dir/root/workspace/TeamTalk_V2_20170422/base/SZThread.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/msg_server.dir/root/workspace/TeamTalk_V2_20170422/base/SZThread.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /root/workspace/TeamTalk_V2_20170422/base/SZThread.cpp -o CMakeFiles/msg_server.dir/root/workspace/TeamTalk_V2_20170422/base/SZThread.cpp.s
+
+CMakeFiles/msg_server.dir/root/workspace/TeamTalk_V2_20170422/base/SZThread.cpp.o.requires:
+.PHONY : CMakeFiles/msg_server.dir/root/workspace/TeamTalk_V2_20170422/base/SZThread.cpp.o.requires
+
+CMakeFiles/msg_server.dir/root/workspace/TeamTalk_V2_20170422/base/SZThread.cpp.o.provides: CMakeFiles/msg_server.dir/root/workspace/TeamTalk_V2_20170422/base/SZThread.cpp.o.requires
+	$(MAKE) -f CMakeFiles/msg_server.dir/build.make CMakeFiles/msg_server.dir/root/workspace/TeamTalk_V2_20170422/base/SZThread.cpp.o.provides.build
+.PHONY : CMakeFiles/msg_server.dir/root/workspace/TeamTalk_V2_20170422/base/SZThread.cpp.o.provides
+
+CMakeFiles/msg_server.dir/root/workspace/TeamTalk_V2_20170422/base/SZThread.cpp.o.provides.build: CMakeFiles/msg_server.dir/root/workspace/TeamTalk_V2_20170422/base/SZThread.cpp.o
+
+CMakeFiles/msg_server.dir/root/workspace/TeamTalk_V2_20170422/base/SZThreadPool.cpp.o: CMakeFiles/msg_server.dir/flags.make
+CMakeFiles/msg_server.dir/root/workspace/TeamTalk_V2_20170422/base/SZThreadPool.cpp.o: /root/workspace/TeamTalk_V2_20170422/base/SZThreadPool.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /root/workspace/TeamTalk_V2_20170422/msgServer/CMakeFiles $(CMAKE_PROGRESS_5)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/msg_server.dir/root/workspace/TeamTalk_V2_20170422/base/SZThreadPool.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/msg_server.dir/root/workspace/TeamTalk_V2_20170422/base/SZThreadPool.cpp.o -c /root/workspace/TeamTalk_V2_20170422/base/SZThreadPool.cpp
+
+CMakeFiles/msg_server.dir/root/workspace/TeamTalk_V2_20170422/base/SZThreadPool.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/msg_server.dir/root/workspace/TeamTalk_V2_20170422/base/SZThreadPool.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /root/workspace/TeamTalk_V2_20170422/base/SZThreadPool.cpp > CMakeFiles/msg_server.dir/root/workspace/TeamTalk_V2_20170422/base/SZThreadPool.cpp.i
+
+CMakeFiles/msg_server.dir/root/workspace/TeamTalk_V2_20170422/base/SZThreadPool.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/msg_server.dir/root/workspace/TeamTalk_V2_20170422/base/SZThreadPool.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /root/workspace/TeamTalk_V2_20170422/base/SZThreadPool.cpp -o CMakeFiles/msg_server.dir/root/workspace/TeamTalk_V2_20170422/base/SZThreadPool.cpp.s
+
+CMakeFiles/msg_server.dir/root/workspace/TeamTalk_V2_20170422/base/SZThreadPool.cpp.o.requires:
+.PHONY : CMakeFiles/msg_server.dir/root/workspace/TeamTalk_V2_20170422/base/SZThreadPool.cpp.o.requires
+
+CMakeFiles/msg_server.dir/root/workspace/TeamTalk_V2_20170422/base/SZThreadPool.cpp.o.provides: CMakeFiles/msg_server.dir/root/workspace/TeamTalk_V2_20170422/base/SZThreadPool.cpp.o.requires
+	$(MAKE) -f CMakeFiles/msg_server.dir/build.make CMakeFiles/msg_server.dir/root/workspace/TeamTalk_V2_20170422/base/SZThreadPool.cpp.o.provides.build
+.PHONY : CMakeFiles/msg_server.dir/root/workspace/TeamTalk_V2_20170422/base/SZThreadPool.cpp.o.provides
+
+CMakeFiles/msg_server.dir/root/workspace/TeamTalk_V2_20170422/base/SZThreadPool.cpp.o.provides.build: CMakeFiles/msg_server.dir/root/workspace/TeamTalk_V2_20170422/base/SZThreadPool.cpp.o
+
 CMakeFiles/msg_server.dir/root/workspace/TeamTalk_V2_20170422/base/SZSimpleBuffer.cpp.o: CMakeFiles/msg_server.dir/flags.make
 CMakeFiles/msg_server.dir/root/workspace/TeamTalk_V2_20170422/base/SZSimpleBuffer.cpp.o: /root/workspace/TeamTalk_V2_20170422/base/SZSimpleBuffer.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /root/workspace/TeamTalk_V2_20170422/msgServer/CMakeFiles $(CMAKE_PROGRESS_4)
+	$(CMAKE_COMMAND) -E cmake_progress_report /root/workspace/TeamTalk_V2_20170422/msgServer/CMakeFiles $(CMAKE_PROGRESS_6)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/msg_server.dir/root/workspace/TeamTalk_V2_20170422/base/SZSimpleBuffer.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/msg_server.dir/root/workspace/TeamTalk_V2_20170422/base/SZSimpleBuffer.cpp.o -c /root/workspace/TeamTalk_V2_20170422/base/SZSimpleBuffer.cpp
 
@@ -146,7 +192,7 @@ CMakeFiles/msg_server.dir/root/workspace/TeamTalk_V2_20170422/base/SZSimpleBuffe
 
 CMakeFiles/msg_server.dir/root/workspace/TeamTalk_V2_20170422/base/SZPduBase.cpp.o: CMakeFiles/msg_server.dir/flags.make
 CMakeFiles/msg_server.dir/root/workspace/TeamTalk_V2_20170422/base/SZPduBase.cpp.o: /root/workspace/TeamTalk_V2_20170422/base/SZPduBase.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /root/workspace/TeamTalk_V2_20170422/msgServer/CMakeFiles $(CMAKE_PROGRESS_5)
+	$(CMAKE_COMMAND) -E cmake_progress_report /root/workspace/TeamTalk_V2_20170422/msgServer/CMakeFiles $(CMAKE_PROGRESS_7)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/msg_server.dir/root/workspace/TeamTalk_V2_20170422/base/SZPduBase.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/msg_server.dir/root/workspace/TeamTalk_V2_20170422/base/SZPduBase.cpp.o -c /root/workspace/TeamTalk_V2_20170422/base/SZPduBase.cpp
 
@@ -169,7 +215,7 @@ CMakeFiles/msg_server.dir/root/workspace/TeamTalk_V2_20170422/base/SZPduBase.cpp
 
 CMakeFiles/msg_server.dir/root/workspace/TeamTalk_V2_20170422/base/SZEventDispatch.cpp.o: CMakeFiles/msg_server.dir/flags.make
 CMakeFiles/msg_server.dir/root/workspace/TeamTalk_V2_20170422/base/SZEventDispatch.cpp.o: /root/workspace/TeamTalk_V2_20170422/base/SZEventDispatch.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /root/workspace/TeamTalk_V2_20170422/msgServer/CMakeFiles $(CMAKE_PROGRESS_6)
+	$(CMAKE_COMMAND) -E cmake_progress_report /root/workspace/TeamTalk_V2_20170422/msgServer/CMakeFiles $(CMAKE_PROGRESS_8)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/msg_server.dir/root/workspace/TeamTalk_V2_20170422/base/SZEventDispatch.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/msg_server.dir/root/workspace/TeamTalk_V2_20170422/base/SZEventDispatch.cpp.o -c /root/workspace/TeamTalk_V2_20170422/base/SZEventDispatch.cpp
 
@@ -192,7 +238,7 @@ CMakeFiles/msg_server.dir/root/workspace/TeamTalk_V2_20170422/base/SZEventDispat
 
 CMakeFiles/msg_server.dir/root/workspace/TeamTalk_V2_20170422/base/SZBaseSocket.cpp.o: CMakeFiles/msg_server.dir/flags.make
 CMakeFiles/msg_server.dir/root/workspace/TeamTalk_V2_20170422/base/SZBaseSocket.cpp.o: /root/workspace/TeamTalk_V2_20170422/base/SZBaseSocket.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /root/workspace/TeamTalk_V2_20170422/msgServer/CMakeFiles $(CMAKE_PROGRESS_7)
+	$(CMAKE_COMMAND) -E cmake_progress_report /root/workspace/TeamTalk_V2_20170422/msgServer/CMakeFiles $(CMAKE_PROGRESS_9)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/msg_server.dir/root/workspace/TeamTalk_V2_20170422/base/SZBaseSocket.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/msg_server.dir/root/workspace/TeamTalk_V2_20170422/base/SZBaseSocket.cpp.o -c /root/workspace/TeamTalk_V2_20170422/base/SZBaseSocket.cpp
 
@@ -215,7 +261,7 @@ CMakeFiles/msg_server.dir/root/workspace/TeamTalk_V2_20170422/base/SZBaseSocket.
 
 CMakeFiles/msg_server.dir/root/workspace/TeamTalk_V2_20170422/base/pb/IM.Server.pb.cc.o: CMakeFiles/msg_server.dir/flags.make
 CMakeFiles/msg_server.dir/root/workspace/TeamTalk_V2_20170422/base/pb/IM.Server.pb.cc.o: /root/workspace/TeamTalk_V2_20170422/base/pb/IM.Server.pb.cc
-	$(CMAKE_COMMAND) -E cmake_progress_report /root/workspace/TeamTalk_V2_20170422/msgServer/CMakeFiles $(CMAKE_PROGRESS_8)
+	$(CMAKE_COMMAND) -E cmake_progress_report /root/workspace/TeamTalk_V2_20170422/msgServer/CMakeFiles $(CMAKE_PROGRESS_10)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/msg_server.dir/root/workspace/TeamTalk_V2_20170422/base/pb/IM.Server.pb.cc.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/msg_server.dir/root/workspace/TeamTalk_V2_20170422/base/pb/IM.Server.pb.cc.o -c /root/workspace/TeamTalk_V2_20170422/base/pb/IM.Server.pb.cc
 
@@ -238,7 +284,7 @@ CMakeFiles/msg_server.dir/root/workspace/TeamTalk_V2_20170422/base/pb/IM.Server.
 
 CMakeFiles/msg_server.dir/root/workspace/TeamTalk_V2_20170422/base/pb/IM.BaseDefine.pb.cc.o: CMakeFiles/msg_server.dir/flags.make
 CMakeFiles/msg_server.dir/root/workspace/TeamTalk_V2_20170422/base/pb/IM.BaseDefine.pb.cc.o: /root/workspace/TeamTalk_V2_20170422/base/pb/IM.BaseDefine.pb.cc
-	$(CMAKE_COMMAND) -E cmake_progress_report /root/workspace/TeamTalk_V2_20170422/msgServer/CMakeFiles $(CMAKE_PROGRESS_9)
+	$(CMAKE_COMMAND) -E cmake_progress_report /root/workspace/TeamTalk_V2_20170422/msgServer/CMakeFiles $(CMAKE_PROGRESS_11)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/msg_server.dir/root/workspace/TeamTalk_V2_20170422/base/pb/IM.BaseDefine.pb.cc.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/msg_server.dir/root/workspace/TeamTalk_V2_20170422/base/pb/IM.BaseDefine.pb.cc.o -c /root/workspace/TeamTalk_V2_20170422/base/pb/IM.BaseDefine.pb.cc
 
@@ -264,6 +310,8 @@ msg_server_OBJECTS = \
 "CMakeFiles/msg_server.dir/SZDBServConn.cpp.o" \
 "CMakeFiles/msg_server.dir/msg_server.cpp.o" \
 "CMakeFiles/msg_server.dir/SZMsgConn.cpp.o" \
+"CMakeFiles/msg_server.dir/root/workspace/TeamTalk_V2_20170422/base/SZThread.cpp.o" \
+"CMakeFiles/msg_server.dir/root/workspace/TeamTalk_V2_20170422/base/SZThreadPool.cpp.o" \
 "CMakeFiles/msg_server.dir/root/workspace/TeamTalk_V2_20170422/base/SZSimpleBuffer.cpp.o" \
 "CMakeFiles/msg_server.dir/root/workspace/TeamTalk_V2_20170422/base/SZPduBase.cpp.o" \
 "CMakeFiles/msg_server.dir/root/workspace/TeamTalk_V2_20170422/base/SZEventDispatch.cpp.o" \
@@ -277,6 +325,8 @@ msg_server_EXTERNAL_OBJECTS =
 msg_server: CMakeFiles/msg_server.dir/SZDBServConn.cpp.o
 msg_server: CMakeFiles/msg_server.dir/msg_server.cpp.o
 msg_server: CMakeFiles/msg_server.dir/SZMsgConn.cpp.o
+msg_server: CMakeFiles/msg_server.dir/root/workspace/TeamTalk_V2_20170422/base/SZThread.cpp.o
+msg_server: CMakeFiles/msg_server.dir/root/workspace/TeamTalk_V2_20170422/base/SZThreadPool.cpp.o
 msg_server: CMakeFiles/msg_server.dir/root/workspace/TeamTalk_V2_20170422/base/SZSimpleBuffer.cpp.o
 msg_server: CMakeFiles/msg_server.dir/root/workspace/TeamTalk_V2_20170422/base/SZPduBase.cpp.o
 msg_server: CMakeFiles/msg_server.dir/root/workspace/TeamTalk_V2_20170422/base/SZEventDispatch.cpp.o
@@ -295,6 +345,8 @@ CMakeFiles/msg_server.dir/build: msg_server
 CMakeFiles/msg_server.dir/requires: CMakeFiles/msg_server.dir/SZDBServConn.cpp.o.requires
 CMakeFiles/msg_server.dir/requires: CMakeFiles/msg_server.dir/msg_server.cpp.o.requires
 CMakeFiles/msg_server.dir/requires: CMakeFiles/msg_server.dir/SZMsgConn.cpp.o.requires
+CMakeFiles/msg_server.dir/requires: CMakeFiles/msg_server.dir/root/workspace/TeamTalk_V2_20170422/base/SZThread.cpp.o.requires
+CMakeFiles/msg_server.dir/requires: CMakeFiles/msg_server.dir/root/workspace/TeamTalk_V2_20170422/base/SZThreadPool.cpp.o.requires
 CMakeFiles/msg_server.dir/requires: CMakeFiles/msg_server.dir/root/workspace/TeamTalk_V2_20170422/base/SZSimpleBuffer.cpp.o.requires
 CMakeFiles/msg_server.dir/requires: CMakeFiles/msg_server.dir/root/workspace/TeamTalk_V2_20170422/base/SZPduBase.cpp.o.requires
 CMakeFiles/msg_server.dir/requires: CMakeFiles/msg_server.dir/root/workspace/TeamTalk_V2_20170422/base/SZEventDispatch.cpp.o.requires

@@ -1,0 +1,38 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/root/workspace/test/RedisTest/RedisTest.cpp
+hiredis/hiredis.h
+/root/workspace/test/RedisTest/hiredis/hiredis.h
+stdio.h
+-
+
+/root/workspace/test/RedisTest/hiredis/hiredis.h
+read.h
+/root/workspace/test/RedisTest/hiredis/read.h
+stdarg.h
+-
+sys/time.h
+-
+stdint.h
+-
+sds.h
+/root/workspace/test/RedisTest/hiredis/sds.h
+
+/root/workspace/test/RedisTest/hiredis/read.h
+stdio.h
+-
+
+/root/workspace/test/RedisTest/hiredis/sds.h
+sys/types.h
+-
+stdarg.h
+-
+stdint.h
+-
+

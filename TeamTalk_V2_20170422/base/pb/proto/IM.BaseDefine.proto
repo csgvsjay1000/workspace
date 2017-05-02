@@ -3,8 +3,39 @@ package IM.BaseDefine;
 // service id
 enum ServiceID{
 	SID_LOGIN 				= 0x0001;
+	SID_MSG 				= 0x0003;
+	SID_OTHER 				= 0x0007;
 }
 
 enum LoginCmdID{
-	CID_LOGIN_REQ_MSGSERVER 			= 0X0101;
+	CID_LOGIN_REQ_MSGSERVER 			= 0x0101;
 }
+
+enum MessageCmdID{
+	CID_MSG_DATA 						= 0x0301;  
+	CID_MSG_DATA_ACK 					= 0x0302;
+}
+
+enum OtherCmdID{
+	CID_OTHER_VALIDATE_REQ 				= 0x0703;
+	CID_OTHER_VALIDATE_RSP 				= 0x0704;
+
+}
+
+enum SessionType{
+	SESSION_TYPE_SINGLE 				= 0x01;
+	SESSION_TYPE_GROUP 					= 0x02;
+}
+
+enum MsgType{
+	MSG_TYPE_SINGLE_TEXT 				= 0x01;
+	MSG_TYPE_SINGLE_AUDIO 				= 0x02;
+	MSG_TYPE_GROUP_TEXT 				= 0x11;
+	MSG_TYPE_GROUP_AUDIO 				= 0x12;
+}
+
+message UserInfo{
+	required uint32 user_id = 1;
+	required string user_nick_name = 2; 	
+}
+

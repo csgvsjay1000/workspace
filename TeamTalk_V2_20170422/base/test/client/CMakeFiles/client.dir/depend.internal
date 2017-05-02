@@ -6,6 +6,7 @@ CMakeFiles/client.dir/SZClientConn.cpp.o
  ../../SZHeaders.h
  ../../SZPduBase.h
  ../../SZSimpleBuffer.h
+ ../../pb/IM.BaseDefine.pb.h
  ../../pb/IM.Server.pb.h
  /root/workspace/TeamTalk_V2_20170422/base/test/client/SZClientConn.cpp
  /root/workspace/TeamTalk_V2_20170422/base/test/client/SZClientConn.h
@@ -15,6 +16,7 @@ CMakeFiles/client.dir/client.cpp.o
  ../../SZHeaders.h
  ../../SZPduBase.h
  ../../SZSimpleBuffer.h
+ ../../pb/IM.BaseDefine.pb.h
  ../../pb/IM.Server.pb.h
  /root/workspace/TeamTalk_V2_20170422/base/test/client/SZClientConn.h
  /root/workspace/TeamTalk_V2_20170422/base/test/client/client.cpp
@@ -25,6 +27,7 @@ CMakeFiles/client.dir/root/workspace/TeamTalk_V2_20170422/base/SZBaseSocket.cpp.
  /root/workspace/TeamTalk_V2_20170422/base/SZHeaders.h
  /root/workspace/TeamTalk_V2_20170422/base/SZPduBase.h
  /root/workspace/TeamTalk_V2_20170422/base/SZSimpleBuffer.h
+ /root/workspace/TeamTalk_V2_20170422/base/pb/IM.BaseDefine.pb.h
  /root/workspace/TeamTalk_V2_20170422/base/pb/IM.Server.pb.h
 CMakeFiles/client.dir/root/workspace/TeamTalk_V2_20170422/base/SZEventDispatch.cpp.o
  /root/workspace/TeamTalk_V2_20170422/base/SZBaseSocket.h
@@ -53,5 +56,6 @@ CMakeFiles/client.dir/root/workspace/TeamTalk_V2_20170422/base/pb/IM.BaseDefine.
  /root/workspace/TeamTalk_V2_20170422/base/pb/IM.BaseDefine.pb.cc
  /root/workspace/TeamTalk_V2_20170422/base/pb/IM.BaseDefine.pb.h
 CMakeFiles/client.dir/root/workspace/TeamTalk_V2_20170422/base/pb/IM.Server.pb.cc.o
+ /root/workspace/TeamTalk_V2_20170422/base/pb/IM.BaseDefine.pb.h
  /root/workspace/TeamTalk_V2_20170422/base/pb/IM.Server.pb.cc
  /root/workspace/TeamTalk_V2_20170422/base/pb/IM.Server.pb.h

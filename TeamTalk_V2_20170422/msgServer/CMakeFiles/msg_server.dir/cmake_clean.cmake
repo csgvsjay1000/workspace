@@ -2,6 +2,8 @@ FILE(REMOVE_RECURSE
   "CMakeFiles/msg_server.dir/SZDBServConn.cpp.o"
   "CMakeFiles/msg_server.dir/msg_server.cpp.o"
   "CMakeFiles/msg_server.dir/SZMsgConn.cpp.o"
+  "CMakeFiles/msg_server.dir/root/workspace/TeamTalk_V2_20170422/base/SZThread.cpp.o"
+  "CMakeFiles/msg_server.dir/root/workspace/TeamTalk_V2_20170422/base/SZThreadPool.cpp.o"
   "CMakeFiles/msg_server.dir/root/workspace/TeamTalk_V2_20170422/base/SZSimpleBuffer.cpp.o"
   "CMakeFiles/msg_server.dir/root/workspace/TeamTalk_V2_20170422/base/SZPduBase.cpp.o"
   "CMakeFiles/msg_server.dir/root/workspace/TeamTalk_V2_20170422/base/SZEventDispatch.cpp.o"

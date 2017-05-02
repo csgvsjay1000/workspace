@@ -5,6 +5,7 @@ CMakeFiles/client.dir/SZClientConn.cpp.o: ../../SZBaseSocket.h
 CMakeFiles/client.dir/SZClientConn.cpp.o: ../../SZHeaders.h
 CMakeFiles/client.dir/SZClientConn.cpp.o: ../../SZPduBase.h
 CMakeFiles/client.dir/SZClientConn.cpp.o: ../../SZSimpleBuffer.h
+CMakeFiles/client.dir/SZClientConn.cpp.o: ../../pb/IM.BaseDefine.pb.h
 CMakeFiles/client.dir/SZClientConn.cpp.o: ../../pb/IM.Server.pb.h
 CMakeFiles/client.dir/SZClientConn.cpp.o: SZClientConn.cpp
 CMakeFiles/client.dir/SZClientConn.cpp.o: SZClientConn.h
@@ -14,6 +15,7 @@ CMakeFiles/client.dir/client.cpp.o: ../../SZEventDispatch.h
 CMakeFiles/client.dir/client.cpp.o: ../../SZHeaders.h
 CMakeFiles/client.dir/client.cpp.o: ../../SZPduBase.h
 CMakeFiles/client.dir/client.cpp.o: ../../SZSimpleBuffer.h
+CMakeFiles/client.dir/client.cpp.o: ../../pb/IM.BaseDefine.pb.h
 CMakeFiles/client.dir/client.cpp.o: ../../pb/IM.Server.pb.h
 CMakeFiles/client.dir/client.cpp.o: SZClientConn.h
 CMakeFiles/client.dir/client.cpp.o: client.cpp
@@ -24,6 +26,7 @@ CMakeFiles/client.dir/root/workspace/TeamTalk_V2_20170422/base/SZBaseSocket.cpp.
 CMakeFiles/client.dir/root/workspace/TeamTalk_V2_20170422/base/SZBaseSocket.cpp.o: /root/workspace/TeamTalk_V2_20170422/base/SZHeaders.h
 CMakeFiles/client.dir/root/workspace/TeamTalk_V2_20170422/base/SZBaseSocket.cpp.o: /root/workspace/TeamTalk_V2_20170422/base/SZPduBase.h
 CMakeFiles/client.dir/root/workspace/TeamTalk_V2_20170422/base/SZBaseSocket.cpp.o: /root/workspace/TeamTalk_V2_20170422/base/SZSimpleBuffer.h
+CMakeFiles/client.dir/root/workspace/TeamTalk_V2_20170422/base/SZBaseSocket.cpp.o: /root/workspace/TeamTalk_V2_20170422/base/pb/IM.BaseDefine.pb.h
 CMakeFiles/client.dir/root/workspace/TeamTalk_V2_20170422/base/SZBaseSocket.cpp.o: /root/workspace/TeamTalk_V2_20170422/base/pb/IM.Server.pb.h
 
 CMakeFiles/client.dir/root/workspace/TeamTalk_V2_20170422/base/SZEventDispatch.cpp.o: /root/workspace/TeamTalk_V2_20170422/base/SZBaseSocket.h
@@ -52,6 +55,7 @@ CMakeFiles/client.dir/root/workspace/TeamTalk_V2_20170422/base/SZThreadPool.cpp.
 CMakeFiles/client.dir/root/workspace/TeamTalk_V2_20170422/base/pb/IM.BaseDefine.pb.cc.o: /root/workspace/TeamTalk_V2_20170422/base/pb/IM.BaseDefine.pb.cc
 CMakeFiles/client.dir/root/workspace/TeamTalk_V2_20170422/base/pb/IM.BaseDefine.pb.cc.o: /root/workspace/TeamTalk_V2_20170422/base/pb/IM.BaseDefine.pb.h
 
+CMakeFiles/client.dir/root/workspace/TeamTalk_V2_20170422/base/pb/IM.Server.pb.cc.o: /root/workspace/TeamTalk_V2_20170422/base/pb/IM.BaseDefine.pb.h
 CMakeFiles/client.dir/root/workspace/TeamTalk_V2_20170422/base/pb/IM.Server.pb.cc.o: /root/workspace/TeamTalk_V2_20170422/base/pb/IM.Server.pb.cc
 CMakeFiles/client.dir/root/workspace/TeamTalk_V2_20170422/base/pb/IM.Server.pb.cc.o: /root/workspace/TeamTalk_V2_20170422/base/pb/IM.Server.pb.h
 

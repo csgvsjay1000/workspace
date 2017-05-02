@@ -15,7 +15,7 @@ int main()
 	SZBaseSocket socket;
 	int listenFd = socket.Listen("127.0.0.1",8000,&msg_conn_callback);
 
-	init_db_serv_conn();
+	//init_db_serv_conn();
 
 	SZEventDispatch::Instance()->StartDispatch();
 	printf("server stop...\n");

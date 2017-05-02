@@ -49,6 +49,14 @@ CMakeFiles/msg_server.dir/root/workspace/TeamTalk_V2_20170422/base/SZSimpleBuffe
 CMakeFiles/msg_server.dir/root/workspace/TeamTalk_V2_20170422/base/SZSimpleBuffer.cpp.o: /root/workspace/TeamTalk_V2_20170422/base/SZSimpleBuffer.cpp
 CMakeFiles/msg_server.dir/root/workspace/TeamTalk_V2_20170422/base/SZSimpleBuffer.cpp.o: /root/workspace/TeamTalk_V2_20170422/base/SZSimpleBuffer.h
 
+CMakeFiles/msg_server.dir/root/workspace/TeamTalk_V2_20170422/base/SZThread.cpp.o: /root/workspace/TeamTalk_V2_20170422/base/SZThread.cpp
+CMakeFiles/msg_server.dir/root/workspace/TeamTalk_V2_20170422/base/SZThread.cpp.o: /root/workspace/TeamTalk_V2_20170422/base/SZThread.h
+
+CMakeFiles/msg_server.dir/root/workspace/TeamTalk_V2_20170422/base/SZThreadPool.cpp.o: /root/workspace/TeamTalk_V2_20170422/base/SZTask.h
+CMakeFiles/msg_server.dir/root/workspace/TeamTalk_V2_20170422/base/SZThreadPool.cpp.o: /root/workspace/TeamTalk_V2_20170422/base/SZThread.h
+CMakeFiles/msg_server.dir/root/workspace/TeamTalk_V2_20170422/base/SZThreadPool.cpp.o: /root/workspace/TeamTalk_V2_20170422/base/SZThreadPool.cpp
+CMakeFiles/msg_server.dir/root/workspace/TeamTalk_V2_20170422/base/SZThreadPool.cpp.o: /root/workspace/TeamTalk_V2_20170422/base/SZThreadPool.h
+
 CMakeFiles/msg_server.dir/root/workspace/TeamTalk_V2_20170422/base/pb/IM.BaseDefine.pb.cc.o: /root/workspace/TeamTalk_V2_20170422/base/pb/IM.BaseDefine.pb.cc
 CMakeFiles/msg_server.dir/root/workspace/TeamTalk_V2_20170422/base/pb/IM.BaseDefine.pb.cc.o: /root/workspace/TeamTalk_V2_20170422/base/pb/IM.BaseDefine.pb.h
 

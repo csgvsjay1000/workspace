@@ -52,9 +52,55 @@ include CMakeFiles/db_proxy_server.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/db_proxy_server.dir/flags.make
 
+CMakeFiles/db_proxy_server.dir/SZCachePool.cpp.o: CMakeFiles/db_proxy_server.dir/flags.make
+CMakeFiles/db_proxy_server.dir/SZCachePool.cpp.o: SZCachePool.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /root/workspace/TeamTalk_V2_20170422/db_proxy_server/CMakeFiles $(CMAKE_PROGRESS_1)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/db_proxy_server.dir/SZCachePool.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/db_proxy_server.dir/SZCachePool.cpp.o -c /root/workspace/TeamTalk_V2_20170422/db_proxy_server/SZCachePool.cpp
+
+CMakeFiles/db_proxy_server.dir/SZCachePool.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/db_proxy_server.dir/SZCachePool.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /root/workspace/TeamTalk_V2_20170422/db_proxy_server/SZCachePool.cpp > CMakeFiles/db_proxy_server.dir/SZCachePool.cpp.i
+
+CMakeFiles/db_proxy_server.dir/SZCachePool.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/db_proxy_server.dir/SZCachePool.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /root/workspace/TeamTalk_V2_20170422/db_proxy_server/SZCachePool.cpp -o CMakeFiles/db_proxy_server.dir/SZCachePool.cpp.s
+
+CMakeFiles/db_proxy_server.dir/SZCachePool.cpp.o.requires:
+.PHONY : CMakeFiles/db_proxy_server.dir/SZCachePool.cpp.o.requires
+
+CMakeFiles/db_proxy_server.dir/SZCachePool.cpp.o.provides: CMakeFiles/db_proxy_server.dir/SZCachePool.cpp.o.requires
+	$(MAKE) -f CMakeFiles/db_proxy_server.dir/build.make CMakeFiles/db_proxy_server.dir/SZCachePool.cpp.o.provides.build
+.PHONY : CMakeFiles/db_proxy_server.dir/SZCachePool.cpp.o.provides
+
+CMakeFiles/db_proxy_server.dir/SZCachePool.cpp.o.provides.build: CMakeFiles/db_proxy_server.dir/SZCachePool.cpp.o
+
+CMakeFiles/db_proxy_server.dir/DBPool.cpp.o: CMakeFiles/db_proxy_server.dir/flags.make
+CMakeFiles/db_proxy_server.dir/DBPool.cpp.o: DBPool.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /root/workspace/TeamTalk_V2_20170422/db_proxy_server/CMakeFiles $(CMAKE_PROGRESS_2)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/db_proxy_server.dir/DBPool.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/db_proxy_server.dir/DBPool.cpp.o -c /root/workspace/TeamTalk_V2_20170422/db_proxy_server/DBPool.cpp
+
+CMakeFiles/db_proxy_server.dir/DBPool.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/db_proxy_server.dir/DBPool.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /root/workspace/TeamTalk_V2_20170422/db_proxy_server/DBPool.cpp > CMakeFiles/db_proxy_server.dir/DBPool.cpp.i
+
+CMakeFiles/db_proxy_server.dir/DBPool.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/db_proxy_server.dir/DBPool.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /root/workspace/TeamTalk_V2_20170422/db_proxy_server/DBPool.cpp -o CMakeFiles/db_proxy_server.dir/DBPool.cpp.s
+
+CMakeFiles/db_proxy_server.dir/DBPool.cpp.o.requires:
+.PHONY : CMakeFiles/db_proxy_server.dir/DBPool.cpp.o.requires
+
+CMakeFiles/db_proxy_server.dir/DBPool.cpp.o.provides: CMakeFiles/db_proxy_server.dir/DBPool.cpp.o.requires
+	$(MAKE) -f CMakeFiles/db_proxy_server.dir/build.make CMakeFiles/db_proxy_server.dir/DBPool.cpp.o.provides.build
+.PHONY : CMakeFiles/db_proxy_server.dir/DBPool.cpp.o.provides
+
+CMakeFiles/db_proxy_server.dir/DBPool.cpp.o.provides.build: CMakeFiles/db_proxy_server.dir/DBPool.cpp.o
+
 CMakeFiles/db_proxy_server.dir/SZProxyTask.cpp.o: CMakeFiles/db_proxy_server.dir/flags.make
 CMakeFiles/db_proxy_server.dir/SZProxyTask.cpp.o: SZProxyTask.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /root/workspace/TeamTalk_V2_20170422/db_proxy_server/CMakeFiles $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report /root/workspace/TeamTalk_V2_20170422/db_proxy_server/CMakeFiles $(CMAKE_PROGRESS_3)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/db_proxy_server.dir/SZProxyTask.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/db_proxy_server.dir/SZProxyTask.cpp.o -c /root/workspace/TeamTalk_V2_20170422/db_proxy_server/SZProxyTask.cpp
 
@@ -77,7 +123,7 @@ CMakeFiles/db_proxy_server.dir/SZProxyTask.cpp.o.provides.build: CMakeFiles/db_p
 
 CMakeFiles/db_proxy_server.dir/SZProxyConn.cpp.o: CMakeFiles/db_proxy_server.dir/flags.make
 CMakeFiles/db_proxy_server.dir/SZProxyConn.cpp.o: SZProxyConn.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /root/workspace/TeamTalk_V2_20170422/db_proxy_server/CMakeFiles $(CMAKE_PROGRESS_2)
+	$(CMAKE_COMMAND) -E cmake_progress_report /root/workspace/TeamTalk_V2_20170422/db_proxy_server/CMakeFiles $(CMAKE_PROGRESS_4)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/db_proxy_server.dir/SZProxyConn.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/db_proxy_server.dir/SZProxyConn.cpp.o -c /root/workspace/TeamTalk_V2_20170422/db_proxy_server/SZProxyConn.cpp
 
@@ -100,7 +146,7 @@ CMakeFiles/db_proxy_server.dir/SZProxyConn.cpp.o.provides.build: CMakeFiles/db_p
 
 CMakeFiles/db_proxy_server.dir/SZHandlerMap.cpp.o: CMakeFiles/db_proxy_server.dir/flags.make
 CMakeFiles/db_proxy_server.dir/SZHandlerMap.cpp.o: SZHandlerMap.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /root/workspace/TeamTalk_V2_20170422/db_proxy_server/CMakeFiles $(CMAKE_PROGRESS_3)
+	$(CMAKE_COMMAND) -E cmake_progress_report /root/workspace/TeamTalk_V2_20170422/db_proxy_server/CMakeFiles $(CMAKE_PROGRESS_5)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/db_proxy_server.dir/SZHandlerMap.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/db_proxy_server.dir/SZHandlerMap.cpp.o -c /root/workspace/TeamTalk_V2_20170422/db_proxy_server/SZHandlerMap.cpp
 
@@ -123,7 +169,7 @@ CMakeFiles/db_proxy_server.dir/SZHandlerMap.cpp.o.provides.build: CMakeFiles/db_
 
 CMakeFiles/db_proxy_server.dir/db_proxy_server.cpp.o: CMakeFiles/db_proxy_server.dir/flags.make
 CMakeFiles/db_proxy_server.dir/db_proxy_server.cpp.o: db_proxy_server.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /root/workspace/TeamTalk_V2_20170422/db_proxy_server/CMakeFiles $(CMAKE_PROGRESS_4)
+	$(CMAKE_COMMAND) -E cmake_progress_report /root/workspace/TeamTalk_V2_20170422/db_proxy_server/CMakeFiles $(CMAKE_PROGRESS_6)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/db_proxy_server.dir/db_proxy_server.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/db_proxy_server.dir/db_proxy_server.cpp.o -c /root/workspace/TeamTalk_V2_20170422/db_proxy_server/db_proxy_server.cpp
 
@@ -146,7 +192,7 @@ CMakeFiles/db_proxy_server.dir/db_proxy_server.cpp.o.provides.build: CMakeFiles/
 
 CMakeFiles/db_proxy_server.dir/root/workspace/TeamTalk_V2_20170422/base/SZThread.cpp.o: CMakeFiles/db_proxy_server.dir/flags.make
 CMakeFiles/db_proxy_server.dir/root/workspace/TeamTalk_V2_20170422/base/SZThread.cpp.o: /root/workspace/TeamTalk_V2_20170422/base/SZThread.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /root/workspace/TeamTalk_V2_20170422/db_proxy_server/CMakeFiles $(CMAKE_PROGRESS_5)
+	$(CMAKE_COMMAND) -E cmake_progress_report /root/workspace/TeamTalk_V2_20170422/db_proxy_server/CMakeFiles $(CMAKE_PROGRESS_7)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/db_proxy_server.dir/root/workspace/TeamTalk_V2_20170422/base/SZThread.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/db_proxy_server.dir/root/workspace/TeamTalk_V2_20170422/base/SZThread.cpp.o -c /root/workspace/TeamTalk_V2_20170422/base/SZThread.cpp
 
@@ -169,7 +215,7 @@ CMakeFiles/db_proxy_server.dir/root/workspace/TeamTalk_V2_20170422/base/SZThread
 
 CMakeFiles/db_proxy_server.dir/root/workspace/TeamTalk_V2_20170422/base/SZThreadPool.cpp.o: CMakeFiles/db_proxy_server.dir/flags.make
 CMakeFiles/db_proxy_server.dir/root/workspace/TeamTalk_V2_20170422/base/SZThreadPool.cpp.o: /root/workspace/TeamTalk_V2_20170422/base/SZThreadPool.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /root/workspace/TeamTalk_V2_20170422/db_proxy_server/CMakeFiles $(CMAKE_PROGRESS_6)
+	$(CMAKE_COMMAND) -E cmake_progress_report /root/workspace/TeamTalk_V2_20170422/db_proxy_server/CMakeFiles $(CMAKE_PROGRESS_8)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/db_proxy_server.dir/root/workspace/TeamTalk_V2_20170422/base/SZThreadPool.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/db_proxy_server.dir/root/workspace/TeamTalk_V2_20170422/base/SZThreadPool.cpp.o -c /root/workspace/TeamTalk_V2_20170422/base/SZThreadPool.cpp
 
@@ -192,7 +238,7 @@ CMakeFiles/db_proxy_server.dir/root/workspace/TeamTalk_V2_20170422/base/SZThread
 
 CMakeFiles/db_proxy_server.dir/root/workspace/TeamTalk_V2_20170422/base/SZSimpleBuffer.cpp.o: CMakeFiles/db_proxy_server.dir/flags.make
 CMakeFiles/db_proxy_server.dir/root/workspace/TeamTalk_V2_20170422/base/SZSimpleBuffer.cpp.o: /root/workspace/TeamTalk_V2_20170422/base/SZSimpleBuffer.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /root/workspace/TeamTalk_V2_20170422/db_proxy_server/CMakeFiles $(CMAKE_PROGRESS_7)
+	$(CMAKE_COMMAND) -E cmake_progress_report /root/workspace/TeamTalk_V2_20170422/db_proxy_server/CMakeFiles $(CMAKE_PROGRESS_9)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/db_proxy_server.dir/root/workspace/TeamTalk_V2_20170422/base/SZSimpleBuffer.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/db_proxy_server.dir/root/workspace/TeamTalk_V2_20170422/base/SZSimpleBuffer.cpp.o -c /root/workspace/TeamTalk_V2_20170422/base/SZSimpleBuffer.cpp
 
@@ -215,7 +261,7 @@ CMakeFiles/db_proxy_server.dir/root/workspace/TeamTalk_V2_20170422/base/SZSimple
 
 CMakeFiles/db_proxy_server.dir/root/workspace/TeamTalk_V2_20170422/base/SZPduBase.cpp.o: CMakeFiles/db_proxy_server.dir/flags.make
 CMakeFiles/db_proxy_server.dir/root/workspace/TeamTalk_V2_20170422/base/SZPduBase.cpp.o: /root/workspace/TeamTalk_V2_20170422/base/SZPduBase.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /root/workspace/TeamTalk_V2_20170422/db_proxy_server/CMakeFiles $(CMAKE_PROGRESS_8)
+	$(CMAKE_COMMAND) -E cmake_progress_report /root/workspace/TeamTalk_V2_20170422/db_proxy_server/CMakeFiles $(CMAKE_PROGRESS_10)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/db_proxy_server.dir/root/workspace/TeamTalk_V2_20170422/base/SZPduBase.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/db_proxy_server.dir/root/workspace/TeamTalk_V2_20170422/base/SZPduBase.cpp.o -c /root/workspace/TeamTalk_V2_20170422/base/SZPduBase.cpp
 
@@ -236,9 +282,78 @@ CMakeFiles/db_proxy_server.dir/root/workspace/TeamTalk_V2_20170422/base/SZPduBas
 
 CMakeFiles/db_proxy_server.dir/root/workspace/TeamTalk_V2_20170422/base/SZPduBase.cpp.o.provides.build: CMakeFiles/db_proxy_server.dir/root/workspace/TeamTalk_V2_20170422/base/SZPduBase.cpp.o
 
+CMakeFiles/db_proxy_server.dir/root/workspace/TeamTalk_V2_20170422/base/StringUtils.cpp.o: CMakeFiles/db_proxy_server.dir/flags.make
+CMakeFiles/db_proxy_server.dir/root/workspace/TeamTalk_V2_20170422/base/StringUtils.cpp.o: /root/workspace/TeamTalk_V2_20170422/base/StringUtils.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /root/workspace/TeamTalk_V2_20170422/db_proxy_server/CMakeFiles $(CMAKE_PROGRESS_11)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/db_proxy_server.dir/root/workspace/TeamTalk_V2_20170422/base/StringUtils.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/db_proxy_server.dir/root/workspace/TeamTalk_V2_20170422/base/StringUtils.cpp.o -c /root/workspace/TeamTalk_V2_20170422/base/StringUtils.cpp
+
+CMakeFiles/db_proxy_server.dir/root/workspace/TeamTalk_V2_20170422/base/StringUtils.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/db_proxy_server.dir/root/workspace/TeamTalk_V2_20170422/base/StringUtils.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /root/workspace/TeamTalk_V2_20170422/base/StringUtils.cpp > CMakeFiles/db_proxy_server.dir/root/workspace/TeamTalk_V2_20170422/base/StringUtils.cpp.i
+
+CMakeFiles/db_proxy_server.dir/root/workspace/TeamTalk_V2_20170422/base/StringUtils.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/db_proxy_server.dir/root/workspace/TeamTalk_V2_20170422/base/StringUtils.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /root/workspace/TeamTalk_V2_20170422/base/StringUtils.cpp -o CMakeFiles/db_proxy_server.dir/root/workspace/TeamTalk_V2_20170422/base/StringUtils.cpp.s
+
+CMakeFiles/db_proxy_server.dir/root/workspace/TeamTalk_V2_20170422/base/StringUtils.cpp.o.requires:
+.PHONY : CMakeFiles/db_proxy_server.dir/root/workspace/TeamTalk_V2_20170422/base/StringUtils.cpp.o.requires
+
+CMakeFiles/db_proxy_server.dir/root/workspace/TeamTalk_V2_20170422/base/StringUtils.cpp.o.provides: CMakeFiles/db_proxy_server.dir/root/workspace/TeamTalk_V2_20170422/base/StringUtils.cpp.o.requires
+	$(MAKE) -f CMakeFiles/db_proxy_server.dir/build.make CMakeFiles/db_proxy_server.dir/root/workspace/TeamTalk_V2_20170422/base/StringUtils.cpp.o.provides.build
+.PHONY : CMakeFiles/db_proxy_server.dir/root/workspace/TeamTalk_V2_20170422/base/StringUtils.cpp.o.provides
+
+CMakeFiles/db_proxy_server.dir/root/workspace/TeamTalk_V2_20170422/base/StringUtils.cpp.o.provides.build: CMakeFiles/db_proxy_server.dir/root/workspace/TeamTalk_V2_20170422/base/StringUtils.cpp.o
+
+CMakeFiles/db_proxy_server.dir/root/workspace/TeamTalk_V2_20170422/base/ConfigFileReader.cpp.o: CMakeFiles/db_proxy_server.dir/flags.make
+CMakeFiles/db_proxy_server.dir/root/workspace/TeamTalk_V2_20170422/base/ConfigFileReader.cpp.o: /root/workspace/TeamTalk_V2_20170422/base/ConfigFileReader.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /root/workspace/TeamTalk_V2_20170422/db_proxy_server/CMakeFiles $(CMAKE_PROGRESS_12)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/db_proxy_server.dir/root/workspace/TeamTalk_V2_20170422/base/ConfigFileReader.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/db_proxy_server.dir/root/workspace/TeamTalk_V2_20170422/base/ConfigFileReader.cpp.o -c /root/workspace/TeamTalk_V2_20170422/base/ConfigFileReader.cpp
+
+CMakeFiles/db_proxy_server.dir/root/workspace/TeamTalk_V2_20170422/base/ConfigFileReader.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/db_proxy_server.dir/root/workspace/TeamTalk_V2_20170422/base/ConfigFileReader.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /root/workspace/TeamTalk_V2_20170422/base/ConfigFileReader.cpp > CMakeFiles/db_proxy_server.dir/root/workspace/TeamTalk_V2_20170422/base/ConfigFileReader.cpp.i
+
+CMakeFiles/db_proxy_server.dir/root/workspace/TeamTalk_V2_20170422/base/ConfigFileReader.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/db_proxy_server.dir/root/workspace/TeamTalk_V2_20170422/base/ConfigFileReader.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /root/workspace/TeamTalk_V2_20170422/base/ConfigFileReader.cpp -o CMakeFiles/db_proxy_server.dir/root/workspace/TeamTalk_V2_20170422/base/ConfigFileReader.cpp.s
+
+CMakeFiles/db_proxy_server.dir/root/workspace/TeamTalk_V2_20170422/base/ConfigFileReader.cpp.o.requires:
+.PHONY : CMakeFiles/db_proxy_server.dir/root/workspace/TeamTalk_V2_20170422/base/ConfigFileReader.cpp.o.requires
+
+CMakeFiles/db_proxy_server.dir/root/workspace/TeamTalk_V2_20170422/base/ConfigFileReader.cpp.o.provides: CMakeFiles/db_proxy_server.dir/root/workspace/TeamTalk_V2_20170422/base/ConfigFileReader.cpp.o.requires
+	$(MAKE) -f CMakeFiles/db_proxy_server.dir/build.make CMakeFiles/db_proxy_server.dir/root/workspace/TeamTalk_V2_20170422/base/ConfigFileReader.cpp.o.provides.build
+.PHONY : CMakeFiles/db_proxy_server.dir/root/workspace/TeamTalk_V2_20170422/base/ConfigFileReader.cpp.o.provides
+
+CMakeFiles/db_proxy_server.dir/root/workspace/TeamTalk_V2_20170422/base/ConfigFileReader.cpp.o.provides.build: CMakeFiles/db_proxy_server.dir/root/workspace/TeamTalk_V2_20170422/base/ConfigFileReader.cpp.o
+
+CMakeFiles/db_proxy_server.dir/root/workspace/TeamTalk_V2_20170422/base/SZFunctionDefines.cpp.o: CMakeFiles/db_proxy_server.dir/flags.make
+CMakeFiles/db_proxy_server.dir/root/workspace/TeamTalk_V2_20170422/base/SZFunctionDefines.cpp.o: /root/workspace/TeamTalk_V2_20170422/base/SZFunctionDefines.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /root/workspace/TeamTalk_V2_20170422/db_proxy_server/CMakeFiles $(CMAKE_PROGRESS_13)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/db_proxy_server.dir/root/workspace/TeamTalk_V2_20170422/base/SZFunctionDefines.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/db_proxy_server.dir/root/workspace/TeamTalk_V2_20170422/base/SZFunctionDefines.cpp.o -c /root/workspace/TeamTalk_V2_20170422/base/SZFunctionDefines.cpp
+
+CMakeFiles/db_proxy_server.dir/root/workspace/TeamTalk_V2_20170422/base/SZFunctionDefines.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/db_proxy_server.dir/root/workspace/TeamTalk_V2_20170422/base/SZFunctionDefines.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /root/workspace/TeamTalk_V2_20170422/base/SZFunctionDefines.cpp > CMakeFiles/db_proxy_server.dir/root/workspace/TeamTalk_V2_20170422/base/SZFunctionDefines.cpp.i
+
+CMakeFiles/db_proxy_server.dir/root/workspace/TeamTalk_V2_20170422/base/SZFunctionDefines.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/db_proxy_server.dir/root/workspace/TeamTalk_V2_20170422/base/SZFunctionDefines.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /root/workspace/TeamTalk_V2_20170422/base/SZFunctionDefines.cpp -o CMakeFiles/db_proxy_server.dir/root/workspace/TeamTalk_V2_20170422/base/SZFunctionDefines.cpp.s
+
+CMakeFiles/db_proxy_server.dir/root/workspace/TeamTalk_V2_20170422/base/SZFunctionDefines.cpp.o.requires:
+.PHONY : CMakeFiles/db_proxy_server.dir/root/workspace/TeamTalk_V2_20170422/base/SZFunctionDefines.cpp.o.requires
+
+CMakeFiles/db_proxy_server.dir/root/workspace/TeamTalk_V2_20170422/base/SZFunctionDefines.cpp.o.provides: CMakeFiles/db_proxy_server.dir/root/workspace/TeamTalk_V2_20170422/base/SZFunctionDefines.cpp.o.requires
+	$(MAKE) -f CMakeFiles/db_proxy_server.dir/build.make CMakeFiles/db_proxy_server.dir/root/workspace/TeamTalk_V2_20170422/base/SZFunctionDefines.cpp.o.provides.build
+.PHONY : CMakeFiles/db_proxy_server.dir/root/workspace/TeamTalk_V2_20170422/base/SZFunctionDefines.cpp.o.provides
+
+CMakeFiles/db_proxy_server.dir/root/workspace/TeamTalk_V2_20170422/base/SZFunctionDefines.cpp.o.provides.build: CMakeFiles/db_proxy_server.dir/root/workspace/TeamTalk_V2_20170422/base/SZFunctionDefines.cpp.o
+
 CMakeFiles/db_proxy_server.dir/root/workspace/TeamTalk_V2_20170422/base/SZEventDispatch.cpp.o: CMakeFiles/db_proxy_server.dir/flags.make
 CMakeFiles/db_proxy_server.dir/root/workspace/TeamTalk_V2_20170422/base/SZEventDispatch.cpp.o: /root/workspace/TeamTalk_V2_20170422/base/SZEventDispatch.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /root/workspace/TeamTalk_V2_20170422/db_proxy_server/CMakeFiles $(CMAKE_PROGRESS_9)
+	$(CMAKE_COMMAND) -E cmake_progress_report /root/workspace/TeamTalk_V2_20170422/db_proxy_server/CMakeFiles $(CMAKE_PROGRESS_14)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/db_proxy_server.dir/root/workspace/TeamTalk_V2_20170422/base/SZEventDispatch.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/db_proxy_server.dir/root/workspace/TeamTalk_V2_20170422/base/SZEventDispatch.cpp.o -c /root/workspace/TeamTalk_V2_20170422/base/SZEventDispatch.cpp
 
@@ -261,7 +376,7 @@ CMakeFiles/db_proxy_server.dir/root/workspace/TeamTalk_V2_20170422/base/SZEventD
 
 CMakeFiles/db_proxy_server.dir/root/workspace/TeamTalk_V2_20170422/base/SZBaseSocket.cpp.o: CMakeFiles/db_proxy_server.dir/flags.make
 CMakeFiles/db_proxy_server.dir/root/workspace/TeamTalk_V2_20170422/base/SZBaseSocket.cpp.o: /root/workspace/TeamTalk_V2_20170422/base/SZBaseSocket.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /root/workspace/TeamTalk_V2_20170422/db_proxy_server/CMakeFiles $(CMAKE_PROGRESS_10)
+	$(CMAKE_COMMAND) -E cmake_progress_report /root/workspace/TeamTalk_V2_20170422/db_proxy_server/CMakeFiles $(CMAKE_PROGRESS_15)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/db_proxy_server.dir/root/workspace/TeamTalk_V2_20170422/base/SZBaseSocket.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/db_proxy_server.dir/root/workspace/TeamTalk_V2_20170422/base/SZBaseSocket.cpp.o -c /root/workspace/TeamTalk_V2_20170422/base/SZBaseSocket.cpp
 
@@ -284,7 +399,7 @@ CMakeFiles/db_proxy_server.dir/root/workspace/TeamTalk_V2_20170422/base/SZBaseSo
 
 CMakeFiles/db_proxy_server.dir/root/workspace/TeamTalk_V2_20170422/base/pb/IM.Server.pb.cc.o: CMakeFiles/db_proxy_server.dir/flags.make
 CMakeFiles/db_proxy_server.dir/root/workspace/TeamTalk_V2_20170422/base/pb/IM.Server.pb.cc.o: /root/workspace/TeamTalk_V2_20170422/base/pb/IM.Server.pb.cc
-	$(CMAKE_COMMAND) -E cmake_progress_report /root/workspace/TeamTalk_V2_20170422/db_proxy_server/CMakeFiles $(CMAKE_PROGRESS_11)
+	$(CMAKE_COMMAND) -E cmake_progress_report /root/workspace/TeamTalk_V2_20170422/db_proxy_server/CMakeFiles $(CMAKE_PROGRESS_16)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/db_proxy_server.dir/root/workspace/TeamTalk_V2_20170422/base/pb/IM.Server.pb.cc.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/db_proxy_server.dir/root/workspace/TeamTalk_V2_20170422/base/pb/IM.Server.pb.cc.o -c /root/workspace/TeamTalk_V2_20170422/base/pb/IM.Server.pb.cc
 
@@ -305,9 +420,32 @@ CMakeFiles/db_proxy_server.dir/root/workspace/TeamTalk_V2_20170422/base/pb/IM.Se
 
 CMakeFiles/db_proxy_server.dir/root/workspace/TeamTalk_V2_20170422/base/pb/IM.Server.pb.cc.o.provides.build: CMakeFiles/db_proxy_server.dir/root/workspace/TeamTalk_V2_20170422/base/pb/IM.Server.pb.cc.o
 
+CMakeFiles/db_proxy_server.dir/root/workspace/TeamTalk_V2_20170422/base/pb/IM.Message.pb.cc.o: CMakeFiles/db_proxy_server.dir/flags.make
+CMakeFiles/db_proxy_server.dir/root/workspace/TeamTalk_V2_20170422/base/pb/IM.Message.pb.cc.o: /root/workspace/TeamTalk_V2_20170422/base/pb/IM.Message.pb.cc
+	$(CMAKE_COMMAND) -E cmake_progress_report /root/workspace/TeamTalk_V2_20170422/db_proxy_server/CMakeFiles $(CMAKE_PROGRESS_17)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/db_proxy_server.dir/root/workspace/TeamTalk_V2_20170422/base/pb/IM.Message.pb.cc.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/db_proxy_server.dir/root/workspace/TeamTalk_V2_20170422/base/pb/IM.Message.pb.cc.o -c /root/workspace/TeamTalk_V2_20170422/base/pb/IM.Message.pb.cc
+
+CMakeFiles/db_proxy_server.dir/root/workspace/TeamTalk_V2_20170422/base/pb/IM.Message.pb.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/db_proxy_server.dir/root/workspace/TeamTalk_V2_20170422/base/pb/IM.Message.pb.cc.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /root/workspace/TeamTalk_V2_20170422/base/pb/IM.Message.pb.cc > CMakeFiles/db_proxy_server.dir/root/workspace/TeamTalk_V2_20170422/base/pb/IM.Message.pb.cc.i
+
+CMakeFiles/db_proxy_server.dir/root/workspace/TeamTalk_V2_20170422/base/pb/IM.Message.pb.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/db_proxy_server.dir/root/workspace/TeamTalk_V2_20170422/base/pb/IM.Message.pb.cc.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /root/workspace/TeamTalk_V2_20170422/base/pb/IM.Message.pb.cc -o CMakeFiles/db_proxy_server.dir/root/workspace/TeamTalk_V2_20170422/base/pb/IM.Message.pb.cc.s
+
+CMakeFiles/db_proxy_server.dir/root/workspace/TeamTalk_V2_20170422/base/pb/IM.Message.pb.cc.o.requires:
+.PHONY : CMakeFiles/db_proxy_server.dir/root/workspace/TeamTalk_V2_20170422/base/pb/IM.Message.pb.cc.o.requires
+
+CMakeFiles/db_proxy_server.dir/root/workspace/TeamTalk_V2_20170422/base/pb/IM.Message.pb.cc.o.provides: CMakeFiles/db_proxy_server.dir/root/workspace/TeamTalk_V2_20170422/base/pb/IM.Message.pb.cc.o.requires
+	$(MAKE) -f CMakeFiles/db_proxy_server.dir/build.make CMakeFiles/db_proxy_server.dir/root/workspace/TeamTalk_V2_20170422/base/pb/IM.Message.pb.cc.o.provides.build
+.PHONY : CMakeFiles/db_proxy_server.dir/root/workspace/TeamTalk_V2_20170422/base/pb/IM.Message.pb.cc.o.provides
+
+CMakeFiles/db_proxy_server.dir/root/workspace/TeamTalk_V2_20170422/base/pb/IM.Message.pb.cc.o.provides.build: CMakeFiles/db_proxy_server.dir/root/workspace/TeamTalk_V2_20170422/base/pb/IM.Message.pb.cc.o
+
 CMakeFiles/db_proxy_server.dir/root/workspace/TeamTalk_V2_20170422/base/pb/IM.BaseDefine.pb.cc.o: CMakeFiles/db_proxy_server.dir/flags.make
 CMakeFiles/db_proxy_server.dir/root/workspace/TeamTalk_V2_20170422/base/pb/IM.BaseDefine.pb.cc.o: /root/workspace/TeamTalk_V2_20170422/base/pb/IM.BaseDefine.pb.cc
-	$(CMAKE_COMMAND) -E cmake_progress_report /root/workspace/TeamTalk_V2_20170422/db_proxy_server/CMakeFiles $(CMAKE_PROGRESS_12)
+	$(CMAKE_COMMAND) -E cmake_progress_report /root/workspace/TeamTalk_V2_20170422/db_proxy_server/CMakeFiles $(CMAKE_PROGRESS_18)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/db_proxy_server.dir/root/workspace/TeamTalk_V2_20170422/base/pb/IM.BaseDefine.pb.cc.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/db_proxy_server.dir/root/workspace/TeamTalk_V2_20170422/base/pb/IM.BaseDefine.pb.cc.o -c /root/workspace/TeamTalk_V2_20170422/base/pb/IM.BaseDefine.pb.cc
 
@@ -328,9 +466,32 @@ CMakeFiles/db_proxy_server.dir/root/workspace/TeamTalk_V2_20170422/base/pb/IM.Ba
 
 CMakeFiles/db_proxy_server.dir/root/workspace/TeamTalk_V2_20170422/base/pb/IM.BaseDefine.pb.cc.o.provides.build: CMakeFiles/db_proxy_server.dir/root/workspace/TeamTalk_V2_20170422/base/pb/IM.BaseDefine.pb.cc.o
 
+CMakeFiles/db_proxy_server.dir/business/UserModel.cpp.o: CMakeFiles/db_proxy_server.dir/flags.make
+CMakeFiles/db_proxy_server.dir/business/UserModel.cpp.o: business/UserModel.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /root/workspace/TeamTalk_V2_20170422/db_proxy_server/CMakeFiles $(CMAKE_PROGRESS_19)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/db_proxy_server.dir/business/UserModel.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/db_proxy_server.dir/business/UserModel.cpp.o -c /root/workspace/TeamTalk_V2_20170422/db_proxy_server/business/UserModel.cpp
+
+CMakeFiles/db_proxy_server.dir/business/UserModel.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/db_proxy_server.dir/business/UserModel.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /root/workspace/TeamTalk_V2_20170422/db_proxy_server/business/UserModel.cpp > CMakeFiles/db_proxy_server.dir/business/UserModel.cpp.i
+
+CMakeFiles/db_proxy_server.dir/business/UserModel.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/db_proxy_server.dir/business/UserModel.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /root/workspace/TeamTalk_V2_20170422/db_proxy_server/business/UserModel.cpp -o CMakeFiles/db_proxy_server.dir/business/UserModel.cpp.s
+
+CMakeFiles/db_proxy_server.dir/business/UserModel.cpp.o.requires:
+.PHONY : CMakeFiles/db_proxy_server.dir/business/UserModel.cpp.o.requires
+
+CMakeFiles/db_proxy_server.dir/business/UserModel.cpp.o.provides: CMakeFiles/db_proxy_server.dir/business/UserModel.cpp.o.requires
+	$(MAKE) -f CMakeFiles/db_proxy_server.dir/build.make CMakeFiles/db_proxy_server.dir/business/UserModel.cpp.o.provides.build
+.PHONY : CMakeFiles/db_proxy_server.dir/business/UserModel.cpp.o.provides
+
+CMakeFiles/db_proxy_server.dir/business/UserModel.cpp.o.provides.build: CMakeFiles/db_proxy_server.dir/business/UserModel.cpp.o
+
 CMakeFiles/db_proxy_server.dir/business/SZLogin.cpp.o: CMakeFiles/db_proxy_server.dir/flags.make
 CMakeFiles/db_proxy_server.dir/business/SZLogin.cpp.o: business/SZLogin.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /root/workspace/TeamTalk_V2_20170422/db_proxy_server/CMakeFiles $(CMAKE_PROGRESS_13)
+	$(CMAKE_COMMAND) -E cmake_progress_report /root/workspace/TeamTalk_V2_20170422/db_proxy_server/CMakeFiles $(CMAKE_PROGRESS_20)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/db_proxy_server.dir/business/SZLogin.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/db_proxy_server.dir/business/SZLogin.cpp.o -c /root/workspace/TeamTalk_V2_20170422/db_proxy_server/business/SZLogin.cpp
 
@@ -351,8 +512,102 @@ CMakeFiles/db_proxy_server.dir/business/SZLogin.cpp.o.provides: CMakeFiles/db_pr
 
 CMakeFiles/db_proxy_server.dir/business/SZLogin.cpp.o.provides.build: CMakeFiles/db_proxy_server.dir/business/SZLogin.cpp.o
 
+CMakeFiles/db_proxy_server.dir/business/SZSessionModel.cpp.o: CMakeFiles/db_proxy_server.dir/flags.make
+CMakeFiles/db_proxy_server.dir/business/SZSessionModel.cpp.o: business/SZSessionModel.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /root/workspace/TeamTalk_V2_20170422/db_proxy_server/CMakeFiles $(CMAKE_PROGRESS_21)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/db_proxy_server.dir/business/SZSessionModel.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/db_proxy_server.dir/business/SZSessionModel.cpp.o -c /root/workspace/TeamTalk_V2_20170422/db_proxy_server/business/SZSessionModel.cpp
+
+CMakeFiles/db_proxy_server.dir/business/SZSessionModel.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/db_proxy_server.dir/business/SZSessionModel.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /root/workspace/TeamTalk_V2_20170422/db_proxy_server/business/SZSessionModel.cpp > CMakeFiles/db_proxy_server.dir/business/SZSessionModel.cpp.i
+
+CMakeFiles/db_proxy_server.dir/business/SZSessionModel.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/db_proxy_server.dir/business/SZSessionModel.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /root/workspace/TeamTalk_V2_20170422/db_proxy_server/business/SZSessionModel.cpp -o CMakeFiles/db_proxy_server.dir/business/SZSessionModel.cpp.s
+
+CMakeFiles/db_proxy_server.dir/business/SZSessionModel.cpp.o.requires:
+.PHONY : CMakeFiles/db_proxy_server.dir/business/SZSessionModel.cpp.o.requires
+
+CMakeFiles/db_proxy_server.dir/business/SZSessionModel.cpp.o.provides: CMakeFiles/db_proxy_server.dir/business/SZSessionModel.cpp.o.requires
+	$(MAKE) -f CMakeFiles/db_proxy_server.dir/build.make CMakeFiles/db_proxy_server.dir/business/SZSessionModel.cpp.o.provides.build
+.PHONY : CMakeFiles/db_proxy_server.dir/business/SZSessionModel.cpp.o.provides
+
+CMakeFiles/db_proxy_server.dir/business/SZSessionModel.cpp.o.provides.build: CMakeFiles/db_proxy_server.dir/business/SZSessionModel.cpp.o
+
+CMakeFiles/db_proxy_server.dir/business/SZMessageModel.cpp.o: CMakeFiles/db_proxy_server.dir/flags.make
+CMakeFiles/db_proxy_server.dir/business/SZMessageModel.cpp.o: business/SZMessageModel.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /root/workspace/TeamTalk_V2_20170422/db_proxy_server/CMakeFiles $(CMAKE_PROGRESS_22)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/db_proxy_server.dir/business/SZMessageModel.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/db_proxy_server.dir/business/SZMessageModel.cpp.o -c /root/workspace/TeamTalk_V2_20170422/db_proxy_server/business/SZMessageModel.cpp
+
+CMakeFiles/db_proxy_server.dir/business/SZMessageModel.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/db_proxy_server.dir/business/SZMessageModel.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /root/workspace/TeamTalk_V2_20170422/db_proxy_server/business/SZMessageModel.cpp > CMakeFiles/db_proxy_server.dir/business/SZMessageModel.cpp.i
+
+CMakeFiles/db_proxy_server.dir/business/SZMessageModel.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/db_proxy_server.dir/business/SZMessageModel.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /root/workspace/TeamTalk_V2_20170422/db_proxy_server/business/SZMessageModel.cpp -o CMakeFiles/db_proxy_server.dir/business/SZMessageModel.cpp.s
+
+CMakeFiles/db_proxy_server.dir/business/SZMessageModel.cpp.o.requires:
+.PHONY : CMakeFiles/db_proxy_server.dir/business/SZMessageModel.cpp.o.requires
+
+CMakeFiles/db_proxy_server.dir/business/SZMessageModel.cpp.o.provides: CMakeFiles/db_proxy_server.dir/business/SZMessageModel.cpp.o.requires
+	$(MAKE) -f CMakeFiles/db_proxy_server.dir/build.make CMakeFiles/db_proxy_server.dir/business/SZMessageModel.cpp.o.provides.build
+.PHONY : CMakeFiles/db_proxy_server.dir/business/SZMessageModel.cpp.o.provides
+
+CMakeFiles/db_proxy_server.dir/business/SZMessageModel.cpp.o.provides.build: CMakeFiles/db_proxy_server.dir/business/SZMessageModel.cpp.o
+
+CMakeFiles/db_proxy_server.dir/business/SZMessageContent.cpp.o: CMakeFiles/db_proxy_server.dir/flags.make
+CMakeFiles/db_proxy_server.dir/business/SZMessageContent.cpp.o: business/SZMessageContent.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /root/workspace/TeamTalk_V2_20170422/db_proxy_server/CMakeFiles $(CMAKE_PROGRESS_23)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/db_proxy_server.dir/business/SZMessageContent.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/db_proxy_server.dir/business/SZMessageContent.cpp.o -c /root/workspace/TeamTalk_V2_20170422/db_proxy_server/business/SZMessageContent.cpp
+
+CMakeFiles/db_proxy_server.dir/business/SZMessageContent.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/db_proxy_server.dir/business/SZMessageContent.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /root/workspace/TeamTalk_V2_20170422/db_proxy_server/business/SZMessageContent.cpp > CMakeFiles/db_proxy_server.dir/business/SZMessageContent.cpp.i
+
+CMakeFiles/db_proxy_server.dir/business/SZMessageContent.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/db_proxy_server.dir/business/SZMessageContent.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /root/workspace/TeamTalk_V2_20170422/db_proxy_server/business/SZMessageContent.cpp -o CMakeFiles/db_proxy_server.dir/business/SZMessageContent.cpp.s
+
+CMakeFiles/db_proxy_server.dir/business/SZMessageContent.cpp.o.requires:
+.PHONY : CMakeFiles/db_proxy_server.dir/business/SZMessageContent.cpp.o.requires
+
+CMakeFiles/db_proxy_server.dir/business/SZMessageContent.cpp.o.provides: CMakeFiles/db_proxy_server.dir/business/SZMessageContent.cpp.o.requires
+	$(MAKE) -f CMakeFiles/db_proxy_server.dir/build.make CMakeFiles/db_proxy_server.dir/business/SZMessageContent.cpp.o.provides.build
+.PHONY : CMakeFiles/db_proxy_server.dir/business/SZMessageContent.cpp.o.provides
+
+CMakeFiles/db_proxy_server.dir/business/SZMessageContent.cpp.o.provides.build: CMakeFiles/db_proxy_server.dir/business/SZMessageContent.cpp.o
+
+CMakeFiles/db_proxy_server.dir/test/DBTestUser.cpp.o: CMakeFiles/db_proxy_server.dir/flags.make
+CMakeFiles/db_proxy_server.dir/test/DBTestUser.cpp.o: test/DBTestUser.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /root/workspace/TeamTalk_V2_20170422/db_proxy_server/CMakeFiles $(CMAKE_PROGRESS_24)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/db_proxy_server.dir/test/DBTestUser.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/db_proxy_server.dir/test/DBTestUser.cpp.o -c /root/workspace/TeamTalk_V2_20170422/db_proxy_server/test/DBTestUser.cpp
+
+CMakeFiles/db_proxy_server.dir/test/DBTestUser.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/db_proxy_server.dir/test/DBTestUser.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /root/workspace/TeamTalk_V2_20170422/db_proxy_server/test/DBTestUser.cpp > CMakeFiles/db_proxy_server.dir/test/DBTestUser.cpp.i
+
+CMakeFiles/db_proxy_server.dir/test/DBTestUser.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/db_proxy_server.dir/test/DBTestUser.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /root/workspace/TeamTalk_V2_20170422/db_proxy_server/test/DBTestUser.cpp -o CMakeFiles/db_proxy_server.dir/test/DBTestUser.cpp.s
+
+CMakeFiles/db_proxy_server.dir/test/DBTestUser.cpp.o.requires:
+.PHONY : CMakeFiles/db_proxy_server.dir/test/DBTestUser.cpp.o.requires
+
+CMakeFiles/db_proxy_server.dir/test/DBTestUser.cpp.o.provides: CMakeFiles/db_proxy_server.dir/test/DBTestUser.cpp.o.requires
+	$(MAKE) -f CMakeFiles/db_proxy_server.dir/build.make CMakeFiles/db_proxy_server.dir/test/DBTestUser.cpp.o.provides.build
+.PHONY : CMakeFiles/db_proxy_server.dir/test/DBTestUser.cpp.o.provides
+
+CMakeFiles/db_proxy_server.dir/test/DBTestUser.cpp.o.provides.build: CMakeFiles/db_proxy_server.dir/test/DBTestUser.cpp.o
+
 # Object files for target db_proxy_server
 db_proxy_server_OBJECTS = \
+"CMakeFiles/db_proxy_server.dir/SZCachePool.cpp.o" \
+"CMakeFiles/db_proxy_server.dir/DBPool.cpp.o" \
 "CMakeFiles/db_proxy_server.dir/SZProxyTask.cpp.o" \
 "CMakeFiles/db_proxy_server.dir/SZProxyConn.cpp.o" \
 "CMakeFiles/db_proxy_server.dir/SZHandlerMap.cpp.o" \
@@ -361,15 +616,26 @@ db_proxy_server_OBJECTS = \
 "CMakeFiles/db_proxy_server.dir/root/workspace/TeamTalk_V2_20170422/base/SZThreadPool.cpp.o" \
 "CMakeFiles/db_proxy_server.dir/root/workspace/TeamTalk_V2_20170422/base/SZSimpleBuffer.cpp.o" \
 "CMakeFiles/db_proxy_server.dir/root/workspace/TeamTalk_V2_20170422/base/SZPduBase.cpp.o" \
+"CMakeFiles/db_proxy_server.dir/root/workspace/TeamTalk_V2_20170422/base/StringUtils.cpp.o" \
+"CMakeFiles/db_proxy_server.dir/root/workspace/TeamTalk_V2_20170422/base/ConfigFileReader.cpp.o" \
+"CMakeFiles/db_proxy_server.dir/root/workspace/TeamTalk_V2_20170422/base/SZFunctionDefines.cpp.o" \
 "CMakeFiles/db_proxy_server.dir/root/workspace/TeamTalk_V2_20170422/base/SZEventDispatch.cpp.o" \
 "CMakeFiles/db_proxy_server.dir/root/workspace/TeamTalk_V2_20170422/base/SZBaseSocket.cpp.o" \
 "CMakeFiles/db_proxy_server.dir/root/workspace/TeamTalk_V2_20170422/base/pb/IM.Server.pb.cc.o" \
+"CMakeFiles/db_proxy_server.dir/root/workspace/TeamTalk_V2_20170422/base/pb/IM.Message.pb.cc.o" \
 "CMakeFiles/db_proxy_server.dir/root/workspace/TeamTalk_V2_20170422/base/pb/IM.BaseDefine.pb.cc.o" \
-"CMakeFiles/db_proxy_server.dir/business/SZLogin.cpp.o"
+"CMakeFiles/db_proxy_server.dir/business/UserModel.cpp.o" \
+"CMakeFiles/db_proxy_server.dir/business/SZLogin.cpp.o" \
+"CMakeFiles/db_proxy_server.dir/business/SZSessionModel.cpp.o" \
+"CMakeFiles/db_proxy_server.dir/business/SZMessageModel.cpp.o" \
+"CMakeFiles/db_proxy_server.dir/business/SZMessageContent.cpp.o" \
+"CMakeFiles/db_proxy_server.dir/test/DBTestUser.cpp.o"
 
 # External object files for target db_proxy_server
 db_proxy_server_EXTERNAL_OBJECTS =
 
+db_proxy_server: CMakeFiles/db_proxy_server.dir/SZCachePool.cpp.o
+db_proxy_server: CMakeFiles/db_proxy_server.dir/DBPool.cpp.o
 db_proxy_server: CMakeFiles/db_proxy_server.dir/SZProxyTask.cpp.o
 db_proxy_server: CMakeFiles/db_proxy_server.dir/SZProxyConn.cpp.o
 db_proxy_server: CMakeFiles/db_proxy_server.dir/SZHandlerMap.cpp.o
@@ -378,11 +644,20 @@ db_proxy_server: CMakeFiles/db_proxy_server.dir/root/workspace/TeamTalk_V2_20170
 db_proxy_server: CMakeFiles/db_proxy_server.dir/root/workspace/TeamTalk_V2_20170422/base/SZThreadPool.cpp.o
 db_proxy_server: CMakeFiles/db_proxy_server.dir/root/workspace/TeamTalk_V2_20170422/base/SZSimpleBuffer.cpp.o
 db_proxy_server: CMakeFiles/db_proxy_server.dir/root/workspace/TeamTalk_V2_20170422/base/SZPduBase.cpp.o
+db_proxy_server: CMakeFiles/db_proxy_server.dir/root/workspace/TeamTalk_V2_20170422/base/StringUtils.cpp.o
+db_proxy_server: CMakeFiles/db_proxy_server.dir/root/workspace/TeamTalk_V2_20170422/base/ConfigFileReader.cpp.o
+db_proxy_server: CMakeFiles/db_proxy_server.dir/root/workspace/TeamTalk_V2_20170422/base/SZFunctionDefines.cpp.o
 db_proxy_server: CMakeFiles/db_proxy_server.dir/root/workspace/TeamTalk_V2_20170422/base/SZEventDispatch.cpp.o
 db_proxy_server: CMakeFiles/db_proxy_server.dir/root/workspace/TeamTalk_V2_20170422/base/SZBaseSocket.cpp.o
 db_proxy_server: CMakeFiles/db_proxy_server.dir/root/workspace/TeamTalk_V2_20170422/base/pb/IM.Server.pb.cc.o
+db_proxy_server: CMakeFiles/db_proxy_server.dir/root/workspace/TeamTalk_V2_20170422/base/pb/IM.Message.pb.cc.o
 db_proxy_server: CMakeFiles/db_proxy_server.dir/root/workspace/TeamTalk_V2_20170422/base/pb/IM.BaseDefine.pb.cc.o
+db_proxy_server: CMakeFiles/db_proxy_server.dir/business/UserModel.cpp.o
 db_proxy_server: CMakeFiles/db_proxy_server.dir/business/SZLogin.cpp.o
+db_proxy_server: CMakeFiles/db_proxy_server.dir/business/SZSessionModel.cpp.o
+db_proxy_server: CMakeFiles/db_proxy_server.dir/business/SZMessageModel.cpp.o
+db_proxy_server: CMakeFiles/db_proxy_server.dir/business/SZMessageContent.cpp.o
+db_proxy_server: CMakeFiles/db_proxy_server.dir/test/DBTestUser.cpp.o
 db_proxy_server: CMakeFiles/db_proxy_server.dir/build.make
 db_proxy_server: CMakeFiles/db_proxy_server.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX executable db_proxy_server"
@@ -392,6 +667,8 @@ db_proxy_server: CMakeFiles/db_proxy_server.dir/link.txt
 CMakeFiles/db_proxy_server.dir/build: db_proxy_server
 .PHONY : CMakeFiles/db_proxy_server.dir/build
 
+CMakeFiles/db_proxy_server.dir/requires: CMakeFiles/db_proxy_server.dir/SZCachePool.cpp.o.requires
+CMakeFiles/db_proxy_server.dir/requires: CMakeFiles/db_proxy_server.dir/DBPool.cpp.o.requires
 CMakeFiles/db_proxy_server.dir/requires: CMakeFiles/db_proxy_server.dir/SZProxyTask.cpp.o.requires
 CMakeFiles/db_proxy_server.dir/requires: CMakeFiles/db_proxy_server.dir/SZProxyConn.cpp.o.requires
 CMakeFiles/db_proxy_server.dir/requires: CMakeFiles/db_proxy_server.dir/SZHandlerMap.cpp.o.requires
@@ -400,11 +677,20 @@ CMakeFiles/db_proxy_server.dir/requires: CMakeFiles/db_proxy_server.dir/root/wor
 CMakeFiles/db_proxy_server.dir/requires: CMakeFiles/db_proxy_server.dir/root/workspace/TeamTalk_V2_20170422/base/SZThreadPool.cpp.o.requires
 CMakeFiles/db_proxy_server.dir/requires: CMakeFiles/db_proxy_server.dir/root/workspace/TeamTalk_V2_20170422/base/SZSimpleBuffer.cpp.o.requires
 CMakeFiles/db_proxy_server.dir/requires: CMakeFiles/db_proxy_server.dir/root/workspace/TeamTalk_V2_20170422/base/SZPduBase.cpp.o.requires
+CMakeFiles/db_proxy_server.dir/requires: CMakeFiles/db_proxy_server.dir/root/workspace/TeamTalk_V2_20170422/base/StringUtils.cpp.o.requires
+CMakeFiles/db_proxy_server.dir/requires: CMakeFiles/db_proxy_server.dir/root/workspace/TeamTalk_V2_20170422/base/ConfigFileReader.cpp.o.requires
+CMakeFiles/db_proxy_server.dir/requires: CMakeFiles/db_proxy_server.dir/root/workspace/TeamTalk_V2_20170422/base/SZFunctionDefines.cpp.o.requires
 CMakeFiles/db_proxy_server.dir/requires: CMakeFiles/db_proxy_server.dir/root/workspace/TeamTalk_V2_20170422/base/SZEventDispatch.cpp.o.requires
 CMakeFiles/db_proxy_server.dir/requires: CMakeFiles/db_proxy_server.dir/root/workspace/TeamTalk_V2_20170422/base/SZBaseSocket.cpp.o.requires
 CMakeFiles/db_proxy_server.dir/requires: CMakeFiles/db_proxy_server.dir/root/workspace/TeamTalk_V2_20170422/base/pb/IM.Server.pb.cc.o.requires
+CMakeFiles/db_proxy_server.dir/requires: CMakeFiles/db_proxy_server.dir/root/workspace/TeamTalk_V2_20170422/base/pb/IM.Message.pb.cc.o.requires
 CMakeFiles/db_proxy_server.dir/requires: CMakeFiles/db_proxy_server.dir/root/workspace/TeamTalk_V2_20170422/base/pb/IM.BaseDefine.pb.cc.o.requires
+CMakeFiles/db_proxy_server.dir/requires: CMakeFiles/db_proxy_server.dir/business/UserModel.cpp.o.requires
 CMakeFiles/db_proxy_server.dir/requires: CMakeFiles/db_proxy_server.dir/business/SZLogin.cpp.o.requires
+CMakeFiles/db_proxy_server.dir/requires: CMakeFiles/db_proxy_server.dir/business/SZSessionModel.cpp.o.requires
+CMakeFiles/db_proxy_server.dir/requires: CMakeFiles/db_proxy_server.dir/business/SZMessageModel.cpp.o.requires
+CMakeFiles/db_proxy_server.dir/requires: CMakeFiles/db_proxy_server.dir/business/SZMessageContent.cpp.o.requires
+CMakeFiles/db_proxy_server.dir/requires: CMakeFiles/db_proxy_server.dir/test/DBTestUser.cpp.o.requires
 .PHONY : CMakeFiles/db_proxy_server.dir/requires
 
 CMakeFiles/db_proxy_server.dir/clean:

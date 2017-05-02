@@ -1,0 +1,68 @@
+package IM.BaseDefine;
+
+// service id
+enum ServiceID{
+	SID_LOGIN 				= 0x0001;
+	SID_MSG 				= 0x0003;
+	SID_OTHER 				= 0x0007;
+}
+
+enum LoginCmdID{
+	CID_LOGIN_REQ_MSGSERVER 			= 0x0101;
+	CID_LOGIN_REQ_USERLOGIN 			= 0x0103;
+	CID_LOGIN_RES_USERLOGIN 			= 0x0104;
+}
+
+enum MessageCmdID{
+	CID_MSG_DATA 						= 0x0301;  
+	CID_MSG_DATA_ACK 					= 0x0302;
+}
+
+enum OtherCmdID{
+	CID_OTHER_VALIDATE_REQ 				= 0x0703;
+	CID_OTHER_VALIDATE_RSP 				= 0x0704;
+
+}
+
+enum ResultType{
+	REFUSE_REASON_NONE 					= 0;
+	REFUSE_REASON_NO_MSG_SERVER			= 1;
+	REFUSE_REASON_MSG_SERVER_FULL		= 2;
+	REFUSE_REASON_NO_DB_SERVER 			= 3;
+	REFUSE_REASON_NO_LOGIN_SERVER 		= 4;
+	REFUSE_REASON_NO_ROUTE_SERVER		= 5;
+	REFUSE_REASON_DB_VALIDATE_FAILED	= 6;
+	REFUSE_REASON_VERSION_TOO_OLD		= 7;
+}
+
+enum SessionType{
+	SESSION_TYPE_SINGLE 				= 0x01;
+	SESSION_TYPE_GROUP 					= 0x02;
+}
+
+enum MsgType{
+	MSG_TYPE_SINGLE_TEXT 				= 0x01;
+	MSG_TYPE_SINGLE_AUDIO 				= 0x02;
+	MSG_TYPE_GROUP_TEXT 				= 0x11;
+	MSG_TYPE_GROUP_AUDIO 				= 0x12;
+}
+
+enum UserStatusType{
+	USER_STATUS_ONLINE = 1;
+	USER_STATUS_OFFLINE = 2;
+	USER_STATUS_LEAVE = 3;
+}
+
+enum ClientType{
+	CLIENT_TYPE_WINDOWS = 0x01;
+	CLIENT_TYPE_MAC = 0x02;
+	CLIENT_TYPE_IOS = 0x11;
+	CLIENT_TYPE_ANDROID = 0x12;
+}
+
+message UserInfo{
+	required uint32 user_id = 1;
+	required string user_nick_name = 2; 	
+}
+
+

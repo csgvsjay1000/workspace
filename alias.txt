@@ -1,0 +1,1 @@
+alias redisStart='redis-server /usr/local/redis/etc/redis.conf'

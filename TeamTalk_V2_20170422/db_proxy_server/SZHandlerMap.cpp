@@ -1,4 +1,5 @@
 #include "SZHandlerMap.h"
+#include "IM.BaseDefine.pb.h"
 #include "business/SZLogin.h"
 
 SZHandlerMap* SZHandlerMap::s_Instance = NULL;
@@ -13,7 +14,7 @@ SZHandlerMap* SZHandlerMap::Instance()
 }
 void SZHandlerMap::Init()
 {
-	m_handler_map.insert(make_pair(2,DB_PROXY::doLogin));
+	m_handler_map.insert(make_pair(IM::BaseDefine::CID_OTHER_VALIDATE_REQ,DB_PROXY::doLogin));
 }
 pdu_handler_t SZHandlerMap::GetHandler(uint32_t pdu_type)
 {

@@ -20,9 +20,11 @@
 #endif
 
 #include <google/protobuf/generated_message_util.h>
+#include <google/protobuf/message.h>
 #include <google/protobuf/repeated_field.h>
 #include <google/protobuf/extension_set.h>
 #include <google/protobuf/generated_enum_reflection.h>
+#include <google/protobuf/unknown_field_set.h>
 // @@protoc_insertion_point(includes)
 
 namespace IM {
@@ -33,13 +35,16 @@ void  protobuf_AddDesc_IM_2eBaseDefine_2eproto();
 void protobuf_AssignDesc_IM_2eBaseDefine_2eproto();
 void protobuf_ShutdownFile_IM_2eBaseDefine_2eproto();
 
+class UserInfo;
 
 enum ServiceID {
-  SID_LOGIN = 1
+  SID_LOGIN = 1,
+  SID_MSG = 3,
+  SID_OTHER = 7
 };
 bool ServiceID_IsValid(int value);
 const ServiceID ServiceID_MIN = SID_LOGIN;
-const ServiceID ServiceID_MAX = SID_LOGIN;
+const ServiceID ServiceID_MAX = SID_OTHER;
 const int ServiceID_ARRAYSIZE = ServiceID_MAX + 1;
 
 const ::google::protobuf::EnumDescriptor* ServiceID_descriptor();
@@ -70,13 +75,284 @@ inline bool LoginCmdID_Parse(
   return ::google::protobuf::internal::ParseNamedEnum<LoginCmdID>(
     LoginCmdID_descriptor(), name, value);
 }
+enum MessageCmdID {
+  CID_MSG_DATA = 769,
+  CID_MSG_DATA_ACK = 770
+};
+bool MessageCmdID_IsValid(int value);
+const MessageCmdID MessageCmdID_MIN = CID_MSG_DATA;
+const MessageCmdID MessageCmdID_MAX = CID_MSG_DATA_ACK;
+const int MessageCmdID_ARRAYSIZE = MessageCmdID_MAX + 1;
+
+const ::google::protobuf::EnumDescriptor* MessageCmdID_descriptor();
+inline const ::std::string& MessageCmdID_Name(MessageCmdID value) {
+  return ::google::protobuf::internal::NameOfEnum(
+    MessageCmdID_descriptor(), value);
+}
+inline bool MessageCmdID_Parse(
+    const ::std::string& name, MessageCmdID* value) {
+  return ::google::protobuf::internal::ParseNamedEnum<MessageCmdID>(
+    MessageCmdID_descriptor(), name, value);
+}
+enum OtherCmdID {
+  CID_OTHER_VALIDATE_REQ = 1795,
+  CID_OTHER_VALIDATE_RSP = 1796
+};
+bool OtherCmdID_IsValid(int value);
+const OtherCmdID OtherCmdID_MIN = CID_OTHER_VALIDATE_REQ;
+const OtherCmdID OtherCmdID_MAX = CID_OTHER_VALIDATE_RSP;
+const int OtherCmdID_ARRAYSIZE = OtherCmdID_MAX + 1;
+
+const ::google::protobuf::EnumDescriptor* OtherCmdID_descriptor();
+inline const ::std::string& OtherCmdID_Name(OtherCmdID value) {
+  return ::google::protobuf::internal::NameOfEnum(
+    OtherCmdID_descriptor(), value);
+}
+inline bool OtherCmdID_Parse(
+    const ::std::string& name, OtherCmdID* value) {
+  return ::google::protobuf::internal::ParseNamedEnum<OtherCmdID>(
+    OtherCmdID_descriptor(), name, value);
+}
+enum SessionType {
+  SESSION_TYPE_SINGLE = 1,
+  SESSION_TYPE_GROUP = 2
+};
+bool SessionType_IsValid(int value);
+const SessionType SessionType_MIN = SESSION_TYPE_SINGLE;
+const SessionType SessionType_MAX = SESSION_TYPE_GROUP;
+const int SessionType_ARRAYSIZE = SessionType_MAX + 1;
+
+const ::google::protobuf::EnumDescriptor* SessionType_descriptor();
+inline const ::std::string& SessionType_Name(SessionType value) {
+  return ::google::protobuf::internal::NameOfEnum(
+    SessionType_descriptor(), value);
+}
+inline bool SessionType_Parse(
+    const ::std::string& name, SessionType* value) {
+  return ::google::protobuf::internal::ParseNamedEnum<SessionType>(
+    SessionType_descriptor(), name, value);
+}
+enum MsgType {
+  MSG_TYPE_SINGLE_TEXT = 1,
+  MSG_TYPE_SINGLE_AUDIO = 2,
+  MSG_TYPE_GROUP_TEXT = 17,
+  MSG_TYPE_GROUP_AUDIO = 18
+};
+bool MsgType_IsValid(int value);
+const MsgType MsgType_MIN = MSG_TYPE_SINGLE_TEXT;
+const MsgType MsgType_MAX = MSG_TYPE_GROUP_AUDIO;
+const int MsgType_ARRAYSIZE = MsgType_MAX + 1;
+
+const ::google::protobuf::EnumDescriptor* MsgType_descriptor();
+inline const ::std::string& MsgType_Name(MsgType value) {
+  return ::google::protobuf::internal::NameOfEnum(
+    MsgType_descriptor(), value);
+}
+inline bool MsgType_Parse(
+    const ::std::string& name, MsgType* value) {
+  return ::google::protobuf::internal::ParseNamedEnum<MsgType>(
+    MsgType_descriptor(), name, value);
+}
+// ===================================================================
+
+class UserInfo : public ::google::protobuf::Message {
+ public:
+  UserInfo();
+  virtual ~UserInfo();
+
+  UserInfo(const UserInfo& from);
+
+  inline UserInfo& operator=(const UserInfo& from) {
+    CopyFrom(from);
+    return *this;
+  }
+
+  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
+    return _unknown_fields_;
+  }
+
+  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
+    return &_unknown_fields_;
+  }
+
+  static const ::google::protobuf::Descriptor* descriptor();
+  static const UserInfo& default_instance();
+
+  void Swap(UserInfo* other);
+
+  // implements Message ----------------------------------------------
+
+  UserInfo* New() const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
+  void CopyFrom(const UserInfo& from);
+  void MergeFrom(const UserInfo& from);
+  void Clear();
+  bool IsInitialized() const;
+
+  int ByteSize() const;
+  bool MergePartialFromCodedStream(
+      ::google::protobuf::io::CodedInputStream* input);
+  void SerializeWithCachedSizes(
+      ::google::protobuf::io::CodedOutputStream* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const;
+  int GetCachedSize() const { return _cached_size_; }
+  private:
+  void SharedCtor();
+  void SharedDtor();
+  void SetCachedSize(int size) const;
+  public:
+  ::google::protobuf::Metadata GetMetadata() const;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  // required uint32 user_id = 1;
+  inline bool has_user_id() const;
+  inline void clear_user_id();
+  static const int kUserIdFieldNumber = 1;
+  inline ::google::protobuf::uint32 user_id() const;
+  inline void set_user_id(::google::protobuf::uint32 value);
+
+  // required string user_nick_name = 2;
+  inline bool has_user_nick_name() const;
+  inline void clear_user_nick_name();
+  static const int kUserNickNameFieldNumber = 2;
+  inline const ::std::string& user_nick_name() const;
+  inline void set_user_nick_name(const ::std::string& value);
+  inline void set_user_nick_name(const char* value);
+  inline void set_user_nick_name(const char* value, size_t size);
+  inline ::std::string* mutable_user_nick_name();
+  inline ::std::string* release_user_nick_name();
+  inline void set_allocated_user_nick_name(::std::string* user_nick_name);
+
+  // @@protoc_insertion_point(class_scope:IM.BaseDefine.UserInfo)
+ private:
+  inline void set_has_user_id();
+  inline void clear_has_user_id();
+  inline void set_has_user_nick_name();
+  inline void clear_has_user_nick_name();
+
+  ::google::protobuf::UnknownFieldSet _unknown_fields_;
+
+  ::google::protobuf::uint32 _has_bits_[1];
+  mutable int _cached_size_;
+  ::std::string* user_nick_name_;
+  ::google::protobuf::uint32 user_id_;
+  friend void  protobuf_AddDesc_IM_2eBaseDefine_2eproto();
+  friend void protobuf_AssignDesc_IM_2eBaseDefine_2eproto();
+  friend void protobuf_ShutdownFile_IM_2eBaseDefine_2eproto();
+
+  void InitAsDefaultInstance();
+  static UserInfo* default_instance_;
+};
 // ===================================================================
 
 
 // ===================================================================
 
+// UserInfo
 
-// ===================================================================
+// required uint32 user_id = 1;
+inline bool UserInfo::has_user_id() const {
+  return (_has_bits_[0] & 0x00000001u) != 0;
+}
+inline void UserInfo::set_has_user_id() {
+  _has_bits_[0] |= 0x00000001u;
+}
+inline void UserInfo::clear_has_user_id() {
+  _has_bits_[0] &= ~0x00000001u;
+}
+inline void UserInfo::clear_user_id() {
+  user_id_ = 0u;
+  clear_has_user_id();
+}
+inline ::google::protobuf::uint32 UserInfo::user_id() const {
+  // @@protoc_insertion_point(field_get:IM.BaseDefine.UserInfo.user_id)
+  return user_id_;
+}
+inline void UserInfo::set_user_id(::google::protobuf::uint32 value) {
+  set_has_user_id();
+  user_id_ = value;
+  // @@protoc_insertion_point(field_set:IM.BaseDefine.UserInfo.user_id)
+}
+
+// required string user_nick_name = 2;
+inline bool UserInfo::has_user_nick_name() const {
+  return (_has_bits_[0] & 0x00000002u) != 0;
+}
+inline void UserInfo::set_has_user_nick_name() {
+  _has_bits_[0] |= 0x00000002u;
+}
+inline void UserInfo::clear_has_user_nick_name() {
+  _has_bits_[0] &= ~0x00000002u;
+}
+inline void UserInfo::clear_user_nick_name() {
+  if (user_nick_name_ != &::google::protobuf::internal::GetEmptyStringAlreadyInited()) {
+    user_nick_name_->clear();
+  }
+  clear_has_user_nick_name();
+}
+inline const ::std::string& UserInfo::user_nick_name() const {
+  // @@protoc_insertion_point(field_get:IM.BaseDefine.UserInfo.user_nick_name)
+  return *user_nick_name_;
+}
+inline void UserInfo::set_user_nick_name(const ::std::string& value) {
+  set_has_user_nick_name();
+  if (user_nick_name_ == &::google::protobuf::internal::GetEmptyStringAlreadyInited()) {
+    user_nick_name_ = new ::std::string;
+  }
+  user_nick_name_->assign(value);
+  // @@protoc_insertion_point(field_set:IM.BaseDefine.UserInfo.user_nick_name)
+}
+inline void UserInfo::set_user_nick_name(const char* value) {
+  set_has_user_nick_name();
+  if (user_nick_name_ == &::google::protobuf::internal::GetEmptyStringAlreadyInited()) {
+    user_nick_name_ = new ::std::string;
+  }
+  user_nick_name_->assign(value);
+  // @@protoc_insertion_point(field_set_char:IM.BaseDefine.UserInfo.user_nick_name)
+}
+inline void UserInfo::set_user_nick_name(const char* value, size_t size) {
+  set_has_user_nick_name();
+  if (user_nick_name_ == &::google::protobuf::internal::GetEmptyStringAlreadyInited()) {
+    user_nick_name_ = new ::std::string;
+  }
+  user_nick_name_->assign(reinterpret_cast<const char*>(value), size);
+  // @@protoc_insertion_point(field_set_pointer:IM.BaseDefine.UserInfo.user_nick_name)
+}
+inline ::std::string* UserInfo::mutable_user_nick_name() {
+  set_has_user_nick_name();
+  if (user_nick_name_ == &::google::protobuf::internal::GetEmptyStringAlreadyInited()) {
+    user_nick_name_ = new ::std::string;
+  }
+  // @@protoc_insertion_point(field_mutable:IM.BaseDefine.UserInfo.user_nick_name)
+  return user_nick_name_;
+}
+inline ::std::string* UserInfo::release_user_nick_name() {
+  clear_has_user_nick_name();
+  if (user_nick_name_ == &::google::protobuf::internal::GetEmptyStringAlreadyInited()) {
+    return NULL;
+  } else {
+    ::std::string* temp = user_nick_name_;
+    user_nick_name_ = const_cast< ::std::string*>(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+    return temp;
+  }
+}
+inline void UserInfo::set_allocated_user_nick_name(::std::string* user_nick_name) {
+  if (user_nick_name_ != &::google::protobuf::internal::GetEmptyStringAlreadyInited()) {
+    delete user_nick_name_;
+  }
+  if (user_nick_name) {
+    set_has_user_nick_name();
+    user_nick_name_ = user_nick_name;
+  } else {
+    clear_has_user_nick_name();
+    user_nick_name_ = const_cast< ::std::string*>(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  }
+  // @@protoc_insertion_point(field_set_allocated:IM.BaseDefine.UserInfo.user_nick_name)
+}
 
 
 // @@protoc_insertion_point(namespace_scope)
@@ -97,6 +373,26 @@ template <> struct is_proto_enum< ::IM::BaseDefine::LoginCmdID> : ::google::prot
 template <>
 inline const EnumDescriptor* GetEnumDescriptor< ::IM::BaseDefine::LoginCmdID>() {
   return ::IM::BaseDefine::LoginCmdID_descriptor();
+}
+template <> struct is_proto_enum< ::IM::BaseDefine::MessageCmdID> : ::google::protobuf::internal::true_type {};
+template <>
+inline const EnumDescriptor* GetEnumDescriptor< ::IM::BaseDefine::MessageCmdID>() {
+  return ::IM::BaseDefine::MessageCmdID_descriptor();
+}
+template <> struct is_proto_enum< ::IM::BaseDefine::OtherCmdID> : ::google::protobuf::internal::true_type {};
+template <>
+inline const EnumDescriptor* GetEnumDescriptor< ::IM::BaseDefine::OtherCmdID>() {
+  return ::IM::BaseDefine::OtherCmdID_descriptor();
+}
+template <> struct is_proto_enum< ::IM::BaseDefine::SessionType> : ::google::protobuf::internal::true_type {};
+template <>
+inline const EnumDescriptor* GetEnumDescriptor< ::IM::BaseDefine::SessionType>() {
+  return ::IM::BaseDefine::SessionType_descriptor();
+}
+template <> struct is_proto_enum< ::IM::BaseDefine::MsgType> : ::google::protobuf::internal::true_type {};
+template <>
+inline const EnumDescriptor* GetEnumDescriptor< ::IM::BaseDefine::MsgType>() {
+  return ::IM::BaseDefine::MsgType_descriptor();
 }
 
 }  // namespace google

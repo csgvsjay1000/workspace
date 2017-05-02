@@ -19,14 +19,10 @@ void* client_callback(void* pParam)
 
 int main()
 {
-
-	SZSimpleBuffer sb;
-	
-	
 	SZClientConn* pSocket = new SZClientConn();
 	int socket = pSocket->Connect("127.0.0.1",8001,&client_callback);
 	SZEventDispatch::Instance()->StartDispatch();
-/*
+	/*
 	string str;
 	SZPduBase pdu;
 	while(true)

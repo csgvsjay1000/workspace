@@ -10,54 +10,31 @@
 using namespace std;
 using namespace IM::Server;
 
-void* SZClientConn::HandleConn(void* arg)
+void SZClientConn::HandlePdu(SZPduBase* pPdu)
 {
-	string str;
-	SZPduBase pdu;
-	while(true)
+	IM::Server::IMValidateRsp msgResp;
+	if(!msgResp.ParseFromArray(pPdu->GetBodyData(),pPdu->GetBodyLength()))
 	{
-		cin>>str;
-		if(str == "break")
-		{
-			break;
-		}
-		IMValidateReq req;
-		req.set_user_name(str);
-		req.set_password("123456");	
-		pdu.SetPBMsg(&req);
-		pdu.SetServiceId(1);
-		pdu.SetCommandId(2);
-	}
-	return NULL;
+		printf("prase error\n");
+	}	
+	printf("service_id: %d\n",pPdu->GetServiceId());
+	printf("command_id: %d\n",pPdu->GetCommandId());
+	printf("user_name: %s\n",msgResp.result_string().c_str());
+
+	
 }
-
-void* test(void* arg)
-{
-	SZClientConn *pConn = (SZClientConn*)arg;
-	string str;
-	SZPduBase pdu;
-	while(true)
-	{
-		cin>>str;
-		if(str == "break")
-		{
-			break;
-		}
-		IMValidateReq req;
-		req.set_user_name(str);
-		req.set_password("123456");	
-		pdu.SetPBMsg(&req);
-		pdu.SetServiceId(1);
-		pdu.SetCommandId(2);
-		pConn->Send(pdu.GetBuffer(),pdu.GetLength());
-	}
-
-	return NULL;
-}
-
 void SZClientConn::OnConfirm()
 {
-	pthread_t thread;
-	pthread_create(&thread,NULL,test,this);
-	//pthread_create()
+		string str;
+	SZPduBase pdu;
+	IMValidateReq req;
+		str = "csg";
+		req.set_user_name(str);
+		req.set_password("123456");	
+		pdu.SetPBMsg(&req);
+		pdu.SetServiceId(IM::BaseDefine::SID_OTHER);
+		pdu.SetCommandId(IM::BaseDefine::CID_OTHER_VALIDATE_REQ);
+		Send(pdu.GetBuffer(),pdu.GetLength());
 }
+
+

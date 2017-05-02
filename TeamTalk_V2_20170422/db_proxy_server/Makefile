@@ -114,6 +114,54 @@ db_proxy_server/fast:
 	$(MAKE) -f CMakeFiles/db_proxy_server.dir/build.make CMakeFiles/db_proxy_server.dir/build
 .PHONY : db_proxy_server/fast
 
+DBPool.o: DBPool.cpp.o
+.PHONY : DBPool.o
+
+# target to build an object file
+DBPool.cpp.o:
+	$(MAKE) -f CMakeFiles/db_proxy_server.dir/build.make CMakeFiles/db_proxy_server.dir/DBPool.cpp.o
+.PHONY : DBPool.cpp.o
+
+DBPool.i: DBPool.cpp.i
+.PHONY : DBPool.i
+
+# target to preprocess a source file
+DBPool.cpp.i:
+	$(MAKE) -f CMakeFiles/db_proxy_server.dir/build.make CMakeFiles/db_proxy_server.dir/DBPool.cpp.i
+.PHONY : DBPool.cpp.i
+
+DBPool.s: DBPool.cpp.s
+.PHONY : DBPool.s
+
+# target to generate assembly for a file
+DBPool.cpp.s:
+	$(MAKE) -f CMakeFiles/db_proxy_server.dir/build.make CMakeFiles/db_proxy_server.dir/DBPool.cpp.s
+.PHONY : DBPool.cpp.s
+
+SZCachePool.o: SZCachePool.cpp.o
+.PHONY : SZCachePool.o
+
+# target to build an object file
+SZCachePool.cpp.o:
+	$(MAKE) -f CMakeFiles/db_proxy_server.dir/build.make CMakeFiles/db_proxy_server.dir/SZCachePool.cpp.o
+.PHONY : SZCachePool.cpp.o
+
+SZCachePool.i: SZCachePool.cpp.i
+.PHONY : SZCachePool.i
+
+# target to preprocess a source file
+SZCachePool.cpp.i:
+	$(MAKE) -f CMakeFiles/db_proxy_server.dir/build.make CMakeFiles/db_proxy_server.dir/SZCachePool.cpp.i
+.PHONY : SZCachePool.cpp.i
+
+SZCachePool.s: SZCachePool.cpp.s
+.PHONY : SZCachePool.s
+
+# target to generate assembly for a file
+SZCachePool.cpp.s:
+	$(MAKE) -f CMakeFiles/db_proxy_server.dir/build.make CMakeFiles/db_proxy_server.dir/SZCachePool.cpp.s
+.PHONY : SZCachePool.cpp.s
+
 SZHandlerMap.o: SZHandlerMap.cpp.o
 .PHONY : SZHandlerMap.o
 
@@ -210,6 +258,102 @@ business/SZLogin.cpp.s:
 	$(MAKE) -f CMakeFiles/db_proxy_server.dir/build.make CMakeFiles/db_proxy_server.dir/business/SZLogin.cpp.s
 .PHONY : business/SZLogin.cpp.s
 
+business/SZMessageContent.o: business/SZMessageContent.cpp.o
+.PHONY : business/SZMessageContent.o
+
+# target to build an object file
+business/SZMessageContent.cpp.o:
+	$(MAKE) -f CMakeFiles/db_proxy_server.dir/build.make CMakeFiles/db_proxy_server.dir/business/SZMessageContent.cpp.o
+.PHONY : business/SZMessageContent.cpp.o
+
+business/SZMessageContent.i: business/SZMessageContent.cpp.i
+.PHONY : business/SZMessageContent.i
+
+# target to preprocess a source file
+business/SZMessageContent.cpp.i:
+	$(MAKE) -f CMakeFiles/db_proxy_server.dir/build.make CMakeFiles/db_proxy_server.dir/business/SZMessageContent.cpp.i
+.PHONY : business/SZMessageContent.cpp.i
+
+business/SZMessageContent.s: business/SZMessageContent.cpp.s
+.PHONY : business/SZMessageContent.s
+
+# target to generate assembly for a file
+business/SZMessageContent.cpp.s:
+	$(MAKE) -f CMakeFiles/db_proxy_server.dir/build.make CMakeFiles/db_proxy_server.dir/business/SZMessageContent.cpp.s
+.PHONY : business/SZMessageContent.cpp.s
+
+business/SZMessageModel.o: business/SZMessageModel.cpp.o
+.PHONY : business/SZMessageModel.o
+
+# target to build an object file
+business/SZMessageModel.cpp.o:
+	$(MAKE) -f CMakeFiles/db_proxy_server.dir/build.make CMakeFiles/db_proxy_server.dir/business/SZMessageModel.cpp.o
+.PHONY : business/SZMessageModel.cpp.o
+
+business/SZMessageModel.i: business/SZMessageModel.cpp.i
+.PHONY : business/SZMessageModel.i
+
+# target to preprocess a source file
+business/SZMessageModel.cpp.i:
+	$(MAKE) -f CMakeFiles/db_proxy_server.dir/build.make CMakeFiles/db_proxy_server.dir/business/SZMessageModel.cpp.i
+.PHONY : business/SZMessageModel.cpp.i
+
+business/SZMessageModel.s: business/SZMessageModel.cpp.s
+.PHONY : business/SZMessageModel.s
+
+# target to generate assembly for a file
+business/SZMessageModel.cpp.s:
+	$(MAKE) -f CMakeFiles/db_proxy_server.dir/build.make CMakeFiles/db_proxy_server.dir/business/SZMessageModel.cpp.s
+.PHONY : business/SZMessageModel.cpp.s
+
+business/SZSessionModel.o: business/SZSessionModel.cpp.o
+.PHONY : business/SZSessionModel.o
+
+# target to build an object file
+business/SZSessionModel.cpp.o:
+	$(MAKE) -f CMakeFiles/db_proxy_server.dir/build.make CMakeFiles/db_proxy_server.dir/business/SZSessionModel.cpp.o
+.PHONY : business/SZSessionModel.cpp.o
+
+business/SZSessionModel.i: business/SZSessionModel.cpp.i
+.PHONY : business/SZSessionModel.i
+
+# target to preprocess a source file
+business/SZSessionModel.cpp.i:
+	$(MAKE) -f CMakeFiles/db_proxy_server.dir/build.make CMakeFiles/db_proxy_server.dir/business/SZSessionModel.cpp.i
+.PHONY : business/SZSessionModel.cpp.i
+
+business/SZSessionModel.s: business/SZSessionModel.cpp.s
+.PHONY : business/SZSessionModel.s
+
+# target to generate assembly for a file
+business/SZSessionModel.cpp.s:
+	$(MAKE) -f CMakeFiles/db_proxy_server.dir/build.make CMakeFiles/db_proxy_server.dir/business/SZSessionModel.cpp.s
+.PHONY : business/SZSessionModel.cpp.s
+
+business/UserModel.o: business/UserModel.cpp.o
+.PHONY : business/UserModel.o
+
+# target to build an object file
+business/UserModel.cpp.o:
+	$(MAKE) -f CMakeFiles/db_proxy_server.dir/build.make CMakeFiles/db_proxy_server.dir/business/UserModel.cpp.o
+.PHONY : business/UserModel.cpp.o
+
+business/UserModel.i: business/UserModel.cpp.i
+.PHONY : business/UserModel.i
+
+# target to preprocess a source file
+business/UserModel.cpp.i:
+	$(MAKE) -f CMakeFiles/db_proxy_server.dir/build.make CMakeFiles/db_proxy_server.dir/business/UserModel.cpp.i
+.PHONY : business/UserModel.cpp.i
+
+business/UserModel.s: business/UserModel.cpp.s
+.PHONY : business/UserModel.s
+
+# target to generate assembly for a file
+business/UserModel.cpp.s:
+	$(MAKE) -f CMakeFiles/db_proxy_server.dir/build.make CMakeFiles/db_proxy_server.dir/business/UserModel.cpp.s
+.PHONY : business/UserModel.cpp.s
+
 db_proxy_server.o: db_proxy_server.cpp.o
 .PHONY : db_proxy_server.o
 
@@ -233,6 +377,30 @@ db_proxy_server.s: db_proxy_server.cpp.s
 db_proxy_server.cpp.s:
 	$(MAKE) -f CMakeFiles/db_proxy_server.dir/build.make CMakeFiles/db_proxy_server.dir/db_proxy_server.cpp.s
 .PHONY : db_proxy_server.cpp.s
+
+root/workspace/TeamTalk_V2_20170422/base/ConfigFileReader.o: root/workspace/TeamTalk_V2_20170422/base/ConfigFileReader.cpp.o
+.PHONY : root/workspace/TeamTalk_V2_20170422/base/ConfigFileReader.o
+
+# target to build an object file
+root/workspace/TeamTalk_V2_20170422/base/ConfigFileReader.cpp.o:
+	$(MAKE) -f CMakeFiles/db_proxy_server.dir/build.make CMakeFiles/db_proxy_server.dir/root/workspace/TeamTalk_V2_20170422/base/ConfigFileReader.cpp.o
+.PHONY : root/workspace/TeamTalk_V2_20170422/base/ConfigFileReader.cpp.o
+
+root/workspace/TeamTalk_V2_20170422/base/ConfigFileReader.i: root/workspace/TeamTalk_V2_20170422/base/ConfigFileReader.cpp.i
+.PHONY : root/workspace/TeamTalk_V2_20170422/base/ConfigFileReader.i
+
+# target to preprocess a source file
+root/workspace/TeamTalk_V2_20170422/base/ConfigFileReader.cpp.i:
+	$(MAKE) -f CMakeFiles/db_proxy_server.dir/build.make CMakeFiles/db_proxy_server.dir/root/workspace/TeamTalk_V2_20170422/base/ConfigFileReader.cpp.i
+.PHONY : root/workspace/TeamTalk_V2_20170422/base/ConfigFileReader.cpp.i
+
+root/workspace/TeamTalk_V2_20170422/base/ConfigFileReader.s: root/workspace/TeamTalk_V2_20170422/base/ConfigFileReader.cpp.s
+.PHONY : root/workspace/TeamTalk_V2_20170422/base/ConfigFileReader.s
+
+# target to generate assembly for a file
+root/workspace/TeamTalk_V2_20170422/base/ConfigFileReader.cpp.s:
+	$(MAKE) -f CMakeFiles/db_proxy_server.dir/build.make CMakeFiles/db_proxy_server.dir/root/workspace/TeamTalk_V2_20170422/base/ConfigFileReader.cpp.s
+.PHONY : root/workspace/TeamTalk_V2_20170422/base/ConfigFileReader.cpp.s
 
 root/workspace/TeamTalk_V2_20170422/base/SZBaseSocket.o: root/workspace/TeamTalk_V2_20170422/base/SZBaseSocket.cpp.o
 .PHONY : root/workspace/TeamTalk_V2_20170422/base/SZBaseSocket.o
@@ -281,6 +449,30 @@ root/workspace/TeamTalk_V2_20170422/base/SZEventDispatch.s: root/workspace/TeamT
 root/workspace/TeamTalk_V2_20170422/base/SZEventDispatch.cpp.s:
 	$(MAKE) -f CMakeFiles/db_proxy_server.dir/build.make CMakeFiles/db_proxy_server.dir/root/workspace/TeamTalk_V2_20170422/base/SZEventDispatch.cpp.s
 .PHONY : root/workspace/TeamTalk_V2_20170422/base/SZEventDispatch.cpp.s
+
+root/workspace/TeamTalk_V2_20170422/base/SZFunctionDefines.o: root/workspace/TeamTalk_V2_20170422/base/SZFunctionDefines.cpp.o
+.PHONY : root/workspace/TeamTalk_V2_20170422/base/SZFunctionDefines.o
+
+# target to build an object file
+root/workspace/TeamTalk_V2_20170422/base/SZFunctionDefines.cpp.o:
+	$(MAKE) -f CMakeFiles/db_proxy_server.dir/build.make CMakeFiles/db_proxy_server.dir/root/workspace/TeamTalk_V2_20170422/base/SZFunctionDefines.cpp.o
+.PHONY : root/workspace/TeamTalk_V2_20170422/base/SZFunctionDefines.cpp.o
+
+root/workspace/TeamTalk_V2_20170422/base/SZFunctionDefines.i: root/workspace/TeamTalk_V2_20170422/base/SZFunctionDefines.cpp.i
+.PHONY : root/workspace/TeamTalk_V2_20170422/base/SZFunctionDefines.i
+
+# target to preprocess a source file
+root/workspace/TeamTalk_V2_20170422/base/SZFunctionDefines.cpp.i:
+	$(MAKE) -f CMakeFiles/db_proxy_server.dir/build.make CMakeFiles/db_proxy_server.dir/root/workspace/TeamTalk_V2_20170422/base/SZFunctionDefines.cpp.i
+.PHONY : root/workspace/TeamTalk_V2_20170422/base/SZFunctionDefines.cpp.i
+
+root/workspace/TeamTalk_V2_20170422/base/SZFunctionDefines.s: root/workspace/TeamTalk_V2_20170422/base/SZFunctionDefines.cpp.s
+.PHONY : root/workspace/TeamTalk_V2_20170422/base/SZFunctionDefines.s
+
+# target to generate assembly for a file
+root/workspace/TeamTalk_V2_20170422/base/SZFunctionDefines.cpp.s:
+	$(MAKE) -f CMakeFiles/db_proxy_server.dir/build.make CMakeFiles/db_proxy_server.dir/root/workspace/TeamTalk_V2_20170422/base/SZFunctionDefines.cpp.s
+.PHONY : root/workspace/TeamTalk_V2_20170422/base/SZFunctionDefines.cpp.s
 
 root/workspace/TeamTalk_V2_20170422/base/SZPduBase.o: root/workspace/TeamTalk_V2_20170422/base/SZPduBase.cpp.o
 .PHONY : root/workspace/TeamTalk_V2_20170422/base/SZPduBase.o
@@ -378,6 +570,30 @@ root/workspace/TeamTalk_V2_20170422/base/SZThreadPool.cpp.s:
 	$(MAKE) -f CMakeFiles/db_proxy_server.dir/build.make CMakeFiles/db_proxy_server.dir/root/workspace/TeamTalk_V2_20170422/base/SZThreadPool.cpp.s
 .PHONY : root/workspace/TeamTalk_V2_20170422/base/SZThreadPool.cpp.s
 
+root/workspace/TeamTalk_V2_20170422/base/StringUtils.o: root/workspace/TeamTalk_V2_20170422/base/StringUtils.cpp.o
+.PHONY : root/workspace/TeamTalk_V2_20170422/base/StringUtils.o
+
+# target to build an object file
+root/workspace/TeamTalk_V2_20170422/base/StringUtils.cpp.o:
+	$(MAKE) -f CMakeFiles/db_proxy_server.dir/build.make CMakeFiles/db_proxy_server.dir/root/workspace/TeamTalk_V2_20170422/base/StringUtils.cpp.o
+.PHONY : root/workspace/TeamTalk_V2_20170422/base/StringUtils.cpp.o
+
+root/workspace/TeamTalk_V2_20170422/base/StringUtils.i: root/workspace/TeamTalk_V2_20170422/base/StringUtils.cpp.i
+.PHONY : root/workspace/TeamTalk_V2_20170422/base/StringUtils.i
+
+# target to preprocess a source file
+root/workspace/TeamTalk_V2_20170422/base/StringUtils.cpp.i:
+	$(MAKE) -f CMakeFiles/db_proxy_server.dir/build.make CMakeFiles/db_proxy_server.dir/root/workspace/TeamTalk_V2_20170422/base/StringUtils.cpp.i
+.PHONY : root/workspace/TeamTalk_V2_20170422/base/StringUtils.cpp.i
+
+root/workspace/TeamTalk_V2_20170422/base/StringUtils.s: root/workspace/TeamTalk_V2_20170422/base/StringUtils.cpp.s
+.PHONY : root/workspace/TeamTalk_V2_20170422/base/StringUtils.s
+
+# target to generate assembly for a file
+root/workspace/TeamTalk_V2_20170422/base/StringUtils.cpp.s:
+	$(MAKE) -f CMakeFiles/db_proxy_server.dir/build.make CMakeFiles/db_proxy_server.dir/root/workspace/TeamTalk_V2_20170422/base/StringUtils.cpp.s
+.PHONY : root/workspace/TeamTalk_V2_20170422/base/StringUtils.cpp.s
+
 root/workspace/TeamTalk_V2_20170422/base/pb/IM.BaseDefine.pb.o: root/workspace/TeamTalk_V2_20170422/base/pb/IM.BaseDefine.pb.cc.o
 .PHONY : root/workspace/TeamTalk_V2_20170422/base/pb/IM.BaseDefine.pb.o
 
@@ -401,6 +617,30 @@ root/workspace/TeamTalk_V2_20170422/base/pb/IM.BaseDefine.pb.s: root/workspace/T
 root/workspace/TeamTalk_V2_20170422/base/pb/IM.BaseDefine.pb.cc.s:
 	$(MAKE) -f CMakeFiles/db_proxy_server.dir/build.make CMakeFiles/db_proxy_server.dir/root/workspace/TeamTalk_V2_20170422/base/pb/IM.BaseDefine.pb.cc.s
 .PHONY : root/workspace/TeamTalk_V2_20170422/base/pb/IM.BaseDefine.pb.cc.s
+
+root/workspace/TeamTalk_V2_20170422/base/pb/IM.Message.pb.o: root/workspace/TeamTalk_V2_20170422/base/pb/IM.Message.pb.cc.o
+.PHONY : root/workspace/TeamTalk_V2_20170422/base/pb/IM.Message.pb.o
+
+# target to build an object file
+root/workspace/TeamTalk_V2_20170422/base/pb/IM.Message.pb.cc.o:
+	$(MAKE) -f CMakeFiles/db_proxy_server.dir/build.make CMakeFiles/db_proxy_server.dir/root/workspace/TeamTalk_V2_20170422/base/pb/IM.Message.pb.cc.o
+.PHONY : root/workspace/TeamTalk_V2_20170422/base/pb/IM.Message.pb.cc.o
+
+root/workspace/TeamTalk_V2_20170422/base/pb/IM.Message.pb.i: root/workspace/TeamTalk_V2_20170422/base/pb/IM.Message.pb.cc.i
+.PHONY : root/workspace/TeamTalk_V2_20170422/base/pb/IM.Message.pb.i
+
+# target to preprocess a source file
+root/workspace/TeamTalk_V2_20170422/base/pb/IM.Message.pb.cc.i:
+	$(MAKE) -f CMakeFiles/db_proxy_server.dir/build.make CMakeFiles/db_proxy_server.dir/root/workspace/TeamTalk_V2_20170422/base/pb/IM.Message.pb.cc.i
+.PHONY : root/workspace/TeamTalk_V2_20170422/base/pb/IM.Message.pb.cc.i
+
+root/workspace/TeamTalk_V2_20170422/base/pb/IM.Message.pb.s: root/workspace/TeamTalk_V2_20170422/base/pb/IM.Message.pb.cc.s
+.PHONY : root/workspace/TeamTalk_V2_20170422/base/pb/IM.Message.pb.s
+
+# target to generate assembly for a file
+root/workspace/TeamTalk_V2_20170422/base/pb/IM.Message.pb.cc.s:
+	$(MAKE) -f CMakeFiles/db_proxy_server.dir/build.make CMakeFiles/db_proxy_server.dir/root/workspace/TeamTalk_V2_20170422/base/pb/IM.Message.pb.cc.s
+.PHONY : root/workspace/TeamTalk_V2_20170422/base/pb/IM.Message.pb.cc.s
 
 root/workspace/TeamTalk_V2_20170422/base/pb/IM.Server.pb.o: root/workspace/TeamTalk_V2_20170422/base/pb/IM.Server.pb.cc.o
 .PHONY : root/workspace/TeamTalk_V2_20170422/base/pb/IM.Server.pb.o
@@ -426,6 +666,30 @@ root/workspace/TeamTalk_V2_20170422/base/pb/IM.Server.pb.cc.s:
 	$(MAKE) -f CMakeFiles/db_proxy_server.dir/build.make CMakeFiles/db_proxy_server.dir/root/workspace/TeamTalk_V2_20170422/base/pb/IM.Server.pb.cc.s
 .PHONY : root/workspace/TeamTalk_V2_20170422/base/pb/IM.Server.pb.cc.s
 
+test/DBTestUser.o: test/DBTestUser.cpp.o
+.PHONY : test/DBTestUser.o
+
+# target to build an object file
+test/DBTestUser.cpp.o:
+	$(MAKE) -f CMakeFiles/db_proxy_server.dir/build.make CMakeFiles/db_proxy_server.dir/test/DBTestUser.cpp.o
+.PHONY : test/DBTestUser.cpp.o
+
+test/DBTestUser.i: test/DBTestUser.cpp.i
+.PHONY : test/DBTestUser.i
+
+# target to preprocess a source file
+test/DBTestUser.cpp.i:
+	$(MAKE) -f CMakeFiles/db_proxy_server.dir/build.make CMakeFiles/db_proxy_server.dir/test/DBTestUser.cpp.i
+.PHONY : test/DBTestUser.cpp.i
+
+test/DBTestUser.s: test/DBTestUser.cpp.s
+.PHONY : test/DBTestUser.s
+
+# target to generate assembly for a file
+test/DBTestUser.cpp.s:
+	$(MAKE) -f CMakeFiles/db_proxy_server.dir/build.make CMakeFiles/db_proxy_server.dir/test/DBTestUser.cpp.s
+.PHONY : test/DBTestUser.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -435,6 +699,12 @@ help:
 	@echo "... db_proxy_server"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... DBPool.o"
+	@echo "... DBPool.i"
+	@echo "... DBPool.s"
+	@echo "... SZCachePool.o"
+	@echo "... SZCachePool.i"
+	@echo "... SZCachePool.s"
 	@echo "... SZHandlerMap.o"
 	@echo "... SZHandlerMap.i"
 	@echo "... SZHandlerMap.s"
@@ -447,15 +717,33 @@ help:
 	@echo "... business/SZLogin.o"
 	@echo "... business/SZLogin.i"
 	@echo "... business/SZLogin.s"
+	@echo "... business/SZMessageContent.o"
+	@echo "... business/SZMessageContent.i"
+	@echo "... business/SZMessageContent.s"
+	@echo "... business/SZMessageModel.o"
+	@echo "... business/SZMessageModel.i"
+	@echo "... business/SZMessageModel.s"
+	@echo "... business/SZSessionModel.o"
+	@echo "... business/SZSessionModel.i"
+	@echo "... business/SZSessionModel.s"
+	@echo "... business/UserModel.o"
+	@echo "... business/UserModel.i"
+	@echo "... business/UserModel.s"
 	@echo "... db_proxy_server.o"
 	@echo "... db_proxy_server.i"
 	@echo "... db_proxy_server.s"
+	@echo "... root/workspace/TeamTalk_V2_20170422/base/ConfigFileReader.o"
+	@echo "... root/workspace/TeamTalk_V2_20170422/base/ConfigFileReader.i"
+	@echo "... root/workspace/TeamTalk_V2_20170422/base/ConfigFileReader.s"
 	@echo "... root/workspace/TeamTalk_V2_20170422/base/SZBaseSocket.o"
 	@echo "... root/workspace/TeamTalk_V2_20170422/base/SZBaseSocket.i"
 	@echo "... root/workspace/TeamTalk_V2_20170422/base/SZBaseSocket.s"
 	@echo "... root/workspace/TeamTalk_V2_20170422/base/SZEventDispatch.o"
 	@echo "... root/workspace/TeamTalk_V2_20170422/base/SZEventDispatch.i"
 	@echo "... root/workspace/TeamTalk_V2_20170422/base/SZEventDispatch.s"
+	@echo "... root/workspace/TeamTalk_V2_20170422/base/SZFunctionDefines.o"
+	@echo "... root/workspace/TeamTalk_V2_20170422/base/SZFunctionDefines.i"
+	@echo "... root/workspace/TeamTalk_V2_20170422/base/SZFunctionDefines.s"
 	@echo "... root/workspace/TeamTalk_V2_20170422/base/SZPduBase.o"
 	@echo "... root/workspace/TeamTalk_V2_20170422/base/SZPduBase.i"
 	@echo "... root/workspace/TeamTalk_V2_20170422/base/SZPduBase.s"
@@ -468,12 +756,21 @@ help:
 	@echo "... root/workspace/TeamTalk_V2_20170422/base/SZThreadPool.o"
 	@echo "... root/workspace/TeamTalk_V2_20170422/base/SZThreadPool.i"
 	@echo "... root/workspace/TeamTalk_V2_20170422/base/SZThreadPool.s"
+	@echo "... root/workspace/TeamTalk_V2_20170422/base/StringUtils.o"
+	@echo "... root/workspace/TeamTalk_V2_20170422/base/StringUtils.i"
+	@echo "... root/workspace/TeamTalk_V2_20170422/base/StringUtils.s"
 	@echo "... root/workspace/TeamTalk_V2_20170422/base/pb/IM.BaseDefine.pb.o"
 	@echo "... root/workspace/TeamTalk_V2_20170422/base/pb/IM.BaseDefine.pb.i"
 	@echo "... root/workspace/TeamTalk_V2_20170422/base/pb/IM.BaseDefine.pb.s"
+	@echo "... root/workspace/TeamTalk_V2_20170422/base/pb/IM.Message.pb.o"
+	@echo "... root/workspace/TeamTalk_V2_20170422/base/pb/IM.Message.pb.i"
+	@echo "... root/workspace/TeamTalk_V2_20170422/base/pb/IM.Message.pb.s"
 	@echo "... root/workspace/TeamTalk_V2_20170422/base/pb/IM.Server.pb.o"
 	@echo "... root/workspace/TeamTalk_V2_20170422/base/pb/IM.Server.pb.i"
 	@echo "... root/workspace/TeamTalk_V2_20170422/base/pb/IM.Server.pb.s"
+	@echo "... test/DBTestUser.o"
+	@echo "... test/DBTestUser.i"
+	@echo "... test/DBTestUser.s"
 .PHONY : help
 
 

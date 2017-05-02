@@ -282,6 +282,54 @@ root/workspace/TeamTalk_V2_20170422/base/SZSimpleBuffer.cpp.s:
 	$(MAKE) -f CMakeFiles/msg_server.dir/build.make CMakeFiles/msg_server.dir/root/workspace/TeamTalk_V2_20170422/base/SZSimpleBuffer.cpp.s
 .PHONY : root/workspace/TeamTalk_V2_20170422/base/SZSimpleBuffer.cpp.s
 
+root/workspace/TeamTalk_V2_20170422/base/SZThread.o: root/workspace/TeamTalk_V2_20170422/base/SZThread.cpp.o
+.PHONY : root/workspace/TeamTalk_V2_20170422/base/SZThread.o
+
+# target to build an object file
+root/workspace/TeamTalk_V2_20170422/base/SZThread.cpp.o:
+	$(MAKE) -f CMakeFiles/msg_server.dir/build.make CMakeFiles/msg_server.dir/root/workspace/TeamTalk_V2_20170422/base/SZThread.cpp.o
+.PHONY : root/workspace/TeamTalk_V2_20170422/base/SZThread.cpp.o
+
+root/workspace/TeamTalk_V2_20170422/base/SZThread.i: root/workspace/TeamTalk_V2_20170422/base/SZThread.cpp.i
+.PHONY : root/workspace/TeamTalk_V2_20170422/base/SZThread.i
+
+# target to preprocess a source file
+root/workspace/TeamTalk_V2_20170422/base/SZThread.cpp.i:
+	$(MAKE) -f CMakeFiles/msg_server.dir/build.make CMakeFiles/msg_server.dir/root/workspace/TeamTalk_V2_20170422/base/SZThread.cpp.i
+.PHONY : root/workspace/TeamTalk_V2_20170422/base/SZThread.cpp.i
+
+root/workspace/TeamTalk_V2_20170422/base/SZThread.s: root/workspace/TeamTalk_V2_20170422/base/SZThread.cpp.s
+.PHONY : root/workspace/TeamTalk_V2_20170422/base/SZThread.s
+
+# target to generate assembly for a file
+root/workspace/TeamTalk_V2_20170422/base/SZThread.cpp.s:
+	$(MAKE) -f CMakeFiles/msg_server.dir/build.make CMakeFiles/msg_server.dir/root/workspace/TeamTalk_V2_20170422/base/SZThread.cpp.s
+.PHONY : root/workspace/TeamTalk_V2_20170422/base/SZThread.cpp.s
+
+root/workspace/TeamTalk_V2_20170422/base/SZThreadPool.o: root/workspace/TeamTalk_V2_20170422/base/SZThreadPool.cpp.o
+.PHONY : root/workspace/TeamTalk_V2_20170422/base/SZThreadPool.o
+
+# target to build an object file
+root/workspace/TeamTalk_V2_20170422/base/SZThreadPool.cpp.o:
+	$(MAKE) -f CMakeFiles/msg_server.dir/build.make CMakeFiles/msg_server.dir/root/workspace/TeamTalk_V2_20170422/base/SZThreadPool.cpp.o
+.PHONY : root/workspace/TeamTalk_V2_20170422/base/SZThreadPool.cpp.o
+
+root/workspace/TeamTalk_V2_20170422/base/SZThreadPool.i: root/workspace/TeamTalk_V2_20170422/base/SZThreadPool.cpp.i
+.PHONY : root/workspace/TeamTalk_V2_20170422/base/SZThreadPool.i
+
+# target to preprocess a source file
+root/workspace/TeamTalk_V2_20170422/base/SZThreadPool.cpp.i:
+	$(MAKE) -f CMakeFiles/msg_server.dir/build.make CMakeFiles/msg_server.dir/root/workspace/TeamTalk_V2_20170422/base/SZThreadPool.cpp.i
+.PHONY : root/workspace/TeamTalk_V2_20170422/base/SZThreadPool.cpp.i
+
+root/workspace/TeamTalk_V2_20170422/base/SZThreadPool.s: root/workspace/TeamTalk_V2_20170422/base/SZThreadPool.cpp.s
+.PHONY : root/workspace/TeamTalk_V2_20170422/base/SZThreadPool.s
+
+# target to generate assembly for a file
+root/workspace/TeamTalk_V2_20170422/base/SZThreadPool.cpp.s:
+	$(MAKE) -f CMakeFiles/msg_server.dir/build.make CMakeFiles/msg_server.dir/root/workspace/TeamTalk_V2_20170422/base/SZThreadPool.cpp.s
+.PHONY : root/workspace/TeamTalk_V2_20170422/base/SZThreadPool.cpp.s
+
 root/workspace/TeamTalk_V2_20170422/base/pb/IM.BaseDefine.pb.o: root/workspace/TeamTalk_V2_20170422/base/pb/IM.BaseDefine.pb.cc.o
 .PHONY : root/workspace/TeamTalk_V2_20170422/base/pb/IM.BaseDefine.pb.o
 
@@ -360,6 +408,12 @@ help:
 	@echo "... root/workspace/TeamTalk_V2_20170422/base/SZSimpleBuffer.o"
 	@echo "... root/workspace/TeamTalk_V2_20170422/base/SZSimpleBuffer.i"
 	@echo "... root/workspace/TeamTalk_V2_20170422/base/SZSimpleBuffer.s"
+	@echo "... root/workspace/TeamTalk_V2_20170422/base/SZThread.o"
+	@echo "... root/workspace/TeamTalk_V2_20170422/base/SZThread.i"
+	@echo "... root/workspace/TeamTalk_V2_20170422/base/SZThread.s"
+	@echo "... root/workspace/TeamTalk_V2_20170422/base/SZThreadPool.o"
+	@echo "... root/workspace/TeamTalk_V2_20170422/base/SZThreadPool.i"
+	@echo "... root/workspace/TeamTalk_V2_20170422/base/SZThreadPool.s"
 	@echo "... root/workspace/TeamTalk_V2_20170422/base/pb/IM.BaseDefine.pb.o"
 	@echo "... root/workspace/TeamTalk_V2_20170422/base/pb/IM.BaseDefine.pb.i"
 	@echo "... root/workspace/TeamTalk_V2_20170422/base/pb/IM.BaseDefine.pb.s"
